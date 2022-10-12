@@ -32,6 +32,7 @@
             this.TXTBX_PassWord = new System.Windows.Forms.TextBox();
             this.TXTBX_UserName = new System.Windows.Forms.TextBox();
             this.LBL_UserLogin = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.SuspendLayout();
             // 
             // BTN_Login
@@ -56,25 +57,26 @@
             this.TXTBX_PassWord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
             this.TXTBX_PassWord.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TXTBX_PassWord.Font = new System.Drawing.Font("Inter", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTBX_PassWord.ForeColor = System.Drawing.Color.White;
+            this.TXTBX_PassWord.ForeColor = System.Drawing.Color.LightGray;
             this.TXTBX_PassWord.Location = new System.Drawing.Point(169, 232);
             this.TXTBX_PassWord.Name = "TXTBX_PassWord";
-            this.TXTBX_PassWord.PasswordChar = '*';
             this.TXTBX_PassWord.Size = new System.Drawing.Size(269, 39);
             this.TXTBX_PassWord.TabIndex = 1;
-            this.TXTBX_PassWord.TextChanged += new System.EventHandler(this.TXTBX_PassWord_TextChanged);
+            this.TXTBX_PassWord.Enter += new System.EventHandler(this.TXTBX_PassWord_Enter);
+            this.TXTBX_PassWord.Leave += new System.EventHandler(this.TXTBX_PassWord_Leave);
             // 
             // TXTBX_UserName
             // 
             this.TXTBX_UserName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
             this.TXTBX_UserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TXTBX_UserName.Font = new System.Drawing.Font("Inter", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTBX_UserName.ForeColor = System.Drawing.Color.White;
+            this.TXTBX_UserName.ForeColor = System.Drawing.Color.LightGray;
             this.TXTBX_UserName.Location = new System.Drawing.Point(169, 163);
             this.TXTBX_UserName.Name = "TXTBX_UserName";
             this.TXTBX_UserName.Size = new System.Drawing.Size(269, 39);
             this.TXTBX_UserName.TabIndex = 2;
-            this.TXTBX_UserName.TextChanged += new System.EventHandler(this.TXTBX_UserName_TextChanged);
+            this.TXTBX_UserName.Enter += new System.EventHandler(this.TXTBX_UserName_Enter);
+            this.TXTBX_UserName.Leave += new System.EventHandler(this.TXTBX_UserName_Leave);
             // 
             // LBL_UserLogin
             // 
@@ -87,7 +89,6 @@
             this.LBL_UserLogin.TabIndex = 3;
             this.LBL_UserLogin.Text = "User Login\r\n\r\n";
             this.LBL_UserLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LBL_UserLogin.Click += new System.EventHandler(this.label1_Click);
             // 
             // FRM_Login
             // 
@@ -108,7 +109,6 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ULMS";
-            this.Load += new System.EventHandler(this.FRM_Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,6 +120,7 @@
         private System.Windows.Forms.TextBox TXTBX_PassWord;
         private System.Windows.Forms.TextBox TXTBX_UserName;
         private System.Windows.Forms.Label LBL_UserLogin;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 
