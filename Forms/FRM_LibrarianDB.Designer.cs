@@ -56,6 +56,7 @@
             // 
             // IBTN_LogOut
             // 
+            this.IBTN_LogOut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.IBTN_LogOut.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.IBTN_LogOut.FlatAppearance.BorderSize = 0;
             this.IBTN_LogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -79,6 +80,7 @@
             // 
             // IBTN_Lending
             // 
+            this.IBTN_Lending.Cursor = System.Windows.Forms.Cursors.Hand;
             this.IBTN_Lending.Dock = System.Windows.Forms.DockStyle.Top;
             this.IBTN_Lending.FlatAppearance.BorderSize = 0;
             this.IBTN_Lending.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -101,6 +103,7 @@
             // 
             // IBTN_Inventory
             // 
+            this.IBTN_Inventory.Cursor = System.Windows.Forms.Cursors.Hand;
             this.IBTN_Inventory.Dock = System.Windows.Forms.DockStyle.Top;
             this.IBTN_Inventory.FlatAppearance.BorderSize = 0;
             this.IBTN_Inventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -123,6 +126,7 @@
             // 
             // IBTN_DashBoard
             // 
+            this.IBTN_DashBoard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.IBTN_DashBoard.Dock = System.Windows.Forms.DockStyle.Top;
             this.IBTN_DashBoard.FlatAppearance.BorderSize = 0;
             this.IBTN_DashBoard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

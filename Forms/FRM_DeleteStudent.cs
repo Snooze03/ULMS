@@ -7,20 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ULMS_Forms.Forms;
 
-namespace ULMS_Forms
+namespace ULMS_Forms.Forms
 {
-    public partial class FRM_Inventory : Form
+    public partial class FRM_DeleteStudent : Form
     {
-        public FRM_Inventory()
+        public FRM_DeleteStudent()
         {
             InitializeComponent();
         }
-        private void BTN_Add_Click(object sender, EventArgs e)
+
+        private void IPB_Trash_Click(object sender, EventArgs e)
         {
-            FRM_AddBook addBook = new FRM_AddBook();
-            addBook.ShowDialog();
+
         }
     }
 }

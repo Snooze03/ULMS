@@ -16,5 +16,17 @@ namespace ULMS_Forms.Forms
         {
             InitializeComponent();
         }
+
+        private void BTN_Add_Click(object sender, EventArgs e)
+        {
+            FRM_StudentLend studentLend = new FRM_StudentLend();
+            studentLend.ShowDialog();
+        }
+
+        private void BTN_Delete_Click(object sender, EventArgs e)
+        {
+            FRM_DeleteStudent delStudent = new FRM_DeleteStudent();
+            delStudent.ShowDialog();
+        }
     }
 }
