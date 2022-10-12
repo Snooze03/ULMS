@@ -33,6 +33,7 @@
             this.Author = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CH_Genre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CH_DatePub = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.CH_Price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.PNL_Options = new System.Windows.Forms.Panel();
             this.TXTBX_Search = new System.Windows.Forms.TextBox();
             this.BTN_Sort = new System.Windows.Forms.Button();
@@ -46,7 +47,8 @@
             this.Title,
             this.Author,
             this.CH_Genre,
-            this.CH_DatePub});
+            this.CH_DatePub,
+            this.CH_Price});
             this.LSTV_Inventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LSTV_Inventory.GridLines = true;
             this.LSTV_Inventory.HideSelection = false;
@@ -61,25 +63,31 @@
             // Title
             // 
             this.Title.Text = "                         Title";
-            this.Title.Width = 250;
+            this.Title.Width = 205;
             // 
             // Author
             // 
             this.Author.Text = "Author";
             this.Author.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Author.Width = 250;
+            this.Author.Width = 200;
             // 
             // CH_Genre
             // 
             this.CH_Genre.Text = "Genre";
             this.CH_Genre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.CH_Genre.Width = 237;
+            this.CH_Genre.Width = 250;
             // 
             // CH_DatePub
             // 
             this.CH_DatePub.Text = "Date Published";
             this.CH_DatePub.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.CH_DatePub.Width = 200;
+            // 
+            // CH_Price
+            // 
+            this.CH_Price.Text = "Price";
+            this.CH_Price.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CH_Price.Width = 80;
             // 
             // PNL_Options
             // 
@@ -145,5 +153,6 @@
         private System.Windows.Forms.Panel PNL_Options;
         private System.Windows.Forms.Button BTN_Sort;
         private System.Windows.Forms.TextBox TXTBX_Search;
+        private System.Windows.Forms.ColumnHeader CH_Price;
     }
 }

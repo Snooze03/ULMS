@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FontAwesome.Sharp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,10 +15,21 @@ namespace ULMS_Forms
 {
     public partial class FRM_LibrarianDB : Form
     {
+        Boolean activeBTN;
+
         public FRM_LibrarianDB()
         {
             InitializeComponent();
+
             showChildFRM(new FRM_DashBoard());
+            highLight(IBTN_DashBoard, IBTN_Inventory, IBTN_Lending);
+        }
+
+        private void highLight(IconButton focused, IconButton btn1, IconButton btn2)
+        {
+            focused.Font = new Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            btn1.Font = new Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            btn2.Font = new Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
         }
 
         private void showChildFRM(object childFRM)
@@ -36,17 +48,19 @@ namespace ULMS_Forms
 
         private void IBTN_DashBoard_Click(object sender, EventArgs e)
         {
-            IBTN_DashBoard.Font = new Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            highLight(IBTN_DashBoard, IBTN_Inventory, IBTN_Lending);
             showChildFRM(new FRM_DashBoard());
         }
 
         private void IBTN_Inventory_Click(object sender, EventArgs e)
         {
+            highLight(IBTN_Inventory, IBTN_DashBoard, IBTN_Lending);
             showChildFRM(new FRM_Inventory());
         }
 
         private void IBTN_Lending_Click(object sender, EventArgs e)
         {
+            highLight(IBTN_Lending, IBTN_DashBoard, IBTN_Inventory);
             showChildFRM(new FRM_Lending());
         }
         private void IBTN_LogOut_Click(object sender, EventArgs e)

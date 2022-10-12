@@ -29,16 +29,17 @@
         private void InitializeComponent()
         {
             this.LSTV_Lending = new System.Windows.Forms.ListView();
-            this.PNL_Options = new System.Windows.Forms.Panel();
-            this.TXTBX_Search = new System.Windows.Forms.TextBox();
-            this.BTN_Add = new System.Windows.Forms.Button();
             this.CH_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CH_BookBorrowed = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CH_DateBorrowed = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CH_ReturnDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CH_Email = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.BTN_Delete = new System.Windows.Forms.Button();
+            this.PNL_Options = new System.Windows.Forms.Panel();
             this.BTN_Sort = new System.Windows.Forms.Button();
+            this.BTN_Delete = new System.Windows.Forms.Button();
+            this.TXTBX_Search = new System.Windows.Forms.TextBox();
+            this.BTN_Add = new System.Windows.Forms.Button();
+            this.CH_Phone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.PNL_Options.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,6 +51,7 @@
             this.CH_BookBorrowed,
             this.CH_DateBorrowed,
             this.CH_ReturnDate,
+            this.CH_Phone,
             this.CH_Email});
             this.LSTV_Lending.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LSTV_Lending.GridLines = true;
@@ -60,6 +62,35 @@
             this.LSTV_Lending.TabIndex = 1;
             this.LSTV_Lending.UseCompatibleStateImageBehavior = false;
             this.LSTV_Lending.View = System.Windows.Forms.View.Details;
+            // 
+            // CH_Name
+            // 
+            this.CH_Name.Text = "                   Name";
+            this.CH_Name.Width = 200;
+            // 
+            // CH_BookBorrowed
+            // 
+            this.CH_BookBorrowed.Text = "Book Borrowed";
+            this.CH_BookBorrowed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CH_BookBorrowed.Width = 177;
+            // 
+            // CH_DateBorrowed
+            // 
+            this.CH_DateBorrowed.Text = "Date Borrowed";
+            this.CH_DateBorrowed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CH_DateBorrowed.Width = 150;
+            // 
+            // CH_ReturnDate
+            // 
+            this.CH_ReturnDate.Text = "Return Date";
+            this.CH_ReturnDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CH_ReturnDate.Width = 150;
+            // 
+            // CH_Email
+            // 
+            this.CH_Email.Text = "Email";
+            this.CH_Email.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CH_Email.Width = 130;
             // 
             // PNL_Options
             // 
@@ -72,6 +103,34 @@
             this.PNL_Options.Name = "PNL_Options";
             this.PNL_Options.Size = new System.Drawing.Size(941, 39);
             this.PNL_Options.TabIndex = 2;
+            // 
+            // BTN_Sort
+            // 
+            this.BTN_Sort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.BTN_Sort.FlatAppearance.BorderSize = 0;
+            this.BTN_Sort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_Sort.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Sort.ForeColor = System.Drawing.Color.White;
+            this.BTN_Sort.Location = new System.Drawing.Point(202, 5);
+            this.BTN_Sort.Name = "BTN_Sort";
+            this.BTN_Sort.Size = new System.Drawing.Size(80, 26);
+            this.BTN_Sort.TabIndex = 3;
+            this.BTN_Sort.Text = "Sort";
+            this.BTN_Sort.UseVisualStyleBackColor = false;
+            // 
+            // BTN_Delete
+            // 
+            this.BTN_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.BTN_Delete.FlatAppearance.BorderSize = 0;
+            this.BTN_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Delete.ForeColor = System.Drawing.Color.White;
+            this.BTN_Delete.Location = new System.Drawing.Point(105, 5);
+            this.BTN_Delete.Name = "BTN_Delete";
+            this.BTN_Delete.Size = new System.Drawing.Size(80, 26);
+            this.BTN_Delete.TabIndex = 2;
+            this.BTN_Delete.Text = "Delete";
+            this.BTN_Delete.UseVisualStyleBackColor = false;
             // 
             // TXTBX_Search
             // 
@@ -99,64 +158,13 @@
             this.BTN_Add.Text = "Add";
             this.BTN_Add.UseVisualStyleBackColor = false;
             // 
-            // CH_Name
+            // CH_Phone
             // 
-            this.CH_Name.Text = "Name";
-            this.CH_Name.Width = 200;
+            this.CH_Phone.Text = "Phone #";
+            this.CH_Phone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CH_Phone.Width = 130;
             // 
-            // CH_BookBorrowed
-            // 
-            this.CH_BookBorrowed.Text = "Book Borrowed";
-            this.CH_BookBorrowed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.CH_BookBorrowed.Width = 200;
-            // 
-            // CH_DateBorrowed
-            // 
-            this.CH_DateBorrowed.Text = "Date Borrowed";
-            this.CH_DateBorrowed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.CH_DateBorrowed.Width = 180;
-            // 
-            // CH_ReturnDate
-            // 
-            this.CH_ReturnDate.Text = "Return Date";
-            this.CH_ReturnDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.CH_ReturnDate.Width = 180;
-            // 
-            // CH_Email
-            // 
-            this.CH_Email.Text = "Email";
-            this.CH_Email.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.CH_Email.Width = 180;
-            // 
-            // BTN_Delete
-            // 
-            this.BTN_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.BTN_Delete.FlatAppearance.BorderSize = 0;
-            this.BTN_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTN_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Delete.ForeColor = System.Drawing.Color.White;
-            this.BTN_Delete.Location = new System.Drawing.Point(105, 5);
-            this.BTN_Delete.Name = "BTN_Delete";
-            this.BTN_Delete.Size = new System.Drawing.Size(80, 26);
-            this.BTN_Delete.TabIndex = 2;
-            this.BTN_Delete.Text = "Delete";
-            this.BTN_Delete.UseVisualStyleBackColor = false;
-            // 
-            // BTN_Sort
-            // 
-            this.BTN_Sort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.BTN_Sort.FlatAppearance.BorderSize = 0;
-            this.BTN_Sort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTN_Sort.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Sort.ForeColor = System.Drawing.Color.White;
-            this.BTN_Sort.Location = new System.Drawing.Point(202, 5);
-            this.BTN_Sort.Name = "BTN_Sort";
-            this.BTN_Sort.Size = new System.Drawing.Size(80, 26);
-            this.BTN_Sort.TabIndex = 3;
-            this.BTN_Sort.Text = "Sort";
-            this.BTN_Sort.UseVisualStyleBackColor = false;
-            // 
-            // Lending
+            // FRM_Lending
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -164,7 +172,7 @@
             this.ClientSize = new System.Drawing.Size(968, 561);
             this.Controls.Add(this.PNL_Options);
             this.Controls.Add(this.LSTV_Lending);
-            this.Name = "Lending";
+            this.Name = "FRM_Lending";
             this.Text = "Lending";
             this.PNL_Options.ResumeLayout(false);
             this.PNL_Options.PerformLayout();
@@ -185,5 +193,6 @@
         private System.Windows.Forms.ColumnHeader CH_Email;
         private System.Windows.Forms.Button BTN_Sort;
         private System.Windows.Forms.Button BTN_Delete;
+        private System.Windows.Forms.ColumnHeader CH_Phone;
     }
 }

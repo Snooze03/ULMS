@@ -54,7 +54,7 @@
             this.panel1.Controls.Add(this.LBL_Students);
             this.panel1.Controls.Add(this.IPB_Student);
             this.panel1.Controls.Add(this.LBL_StudentsNO);
-            this.panel1.Location = new System.Drawing.Point(38, 42);
+            this.panel1.Location = new System.Drawing.Point(57, 42);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(248, 138);
             this.panel1.TabIndex = 0;
@@ -151,7 +151,7 @@
             this.panel3.Controls.Add(this.LBL_OverDue);
             this.panel3.Controls.Add(this.IPB_OverDue);
             this.panel3.Controls.Add(this.LBL_OverDueNO);
-            this.panel3.Location = new System.Drawing.Point(678, 42);
+            this.panel3.Location = new System.Drawing.Point(649, 42);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(248, 138);
             this.panel3.TabIndex = 2;
@@ -198,7 +198,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.ClientSize = new System.Drawing.Size(1164, 561);
+            this.ClientSize = new System.Drawing.Size(972, 229);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

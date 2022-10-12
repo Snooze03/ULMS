@@ -48,8 +48,10 @@ namespace ULMS_Forms
             FRM_LibrarianDB libDB = new FRM_LibrarianDB();
             if (TXTBX_UserName.Text == "librarian" && TXTBX_PassWord.Text == "12345678")
             {
-                libDB.Show();
                 this.Hide();
+                libDB.ShowDialog();
+                this.Close();
+
             }
         }
 
