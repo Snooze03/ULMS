@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Forms;
+using ULMS_Forms.Forms;
 
 namespace ULMS_Forms
 {
@@ -44,16 +45,15 @@ namespace ULMS_Forms
             showChildFRM(new FRM_Inventory());
         }
 
+        private void IBTN_Lending_Click(object sender, EventArgs e)
+        {
+            showChildFRM(new FRM_Lending());
+        }
         private void IBTN_LogOut_Click(object sender, EventArgs e)
         {
             FRM_Login login = new FRM_Login();
             login.Show();
             this.Close();
-        }
-
-        private void IBTN_Lending_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

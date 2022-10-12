@@ -33,10 +33,10 @@
             this.Author = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CH_Genre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CH_DatePub = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.PNL_Options = new System.Windows.Forms.Panel();
+            this.TXTBX_Search = new System.Windows.Forms.TextBox();
+            this.BTN_Sort = new System.Windows.Forms.Button();
+            this.PNL_Options.SuspendLayout();
             this.SuspendLayout();
             // 
             // LSTV_Inventory
@@ -50,9 +50,9 @@
             this.LSTV_Inventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LSTV_Inventory.GridLines = true;
             this.LSTV_Inventory.HideSelection = false;
-            this.LSTV_Inventory.Location = new System.Drawing.Point(12, 86);
+            this.LSTV_Inventory.Location = new System.Drawing.Point(12, 67);
             this.LSTV_Inventory.Name = "LSTV_Inventory";
-            this.LSTV_Inventory.Size = new System.Drawing.Size(941, 463);
+            this.LSTV_Inventory.Size = new System.Drawing.Size(941, 482);
             this.LSTV_Inventory.TabIndex = 0;
             this.LSTV_Inventory.UseCompatibleStateImageBehavior = false;
             this.LSTV_Inventory.View = System.Windows.Forms.View.Details;
@@ -81,42 +81,42 @@
             this.CH_DatePub.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.CH_DatePub.Width = 200;
             // 
-            // panel1
+            // PNL_Options
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(941, 56);
-            this.panel1.TabIndex = 1;
+            this.PNL_Options.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.PNL_Options.Controls.Add(this.TXTBX_Search);
+            this.PNL_Options.Controls.Add(this.BTN_Sort);
+            this.PNL_Options.Location = new System.Drawing.Point(12, 12);
+            this.PNL_Options.Name = "PNL_Options";
+            this.PNL_Options.Size = new System.Drawing.Size(941, 39);
+            this.PNL_Options.TabIndex = 1;
             // 
-            // textBox1
+            // TXTBX_Search
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(754, 14);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(175, 26);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = " Search";
+            this.TXTBX_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.TXTBX_Search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TXTBX_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TXTBX_Search.ForeColor = System.Drawing.Color.White;
+            this.TXTBX_Search.Location = new System.Drawing.Point(759, 6);
+            this.TXTBX_Search.Name = "TXTBX_Search";
+            this.TXTBX_Search.Size = new System.Drawing.Size(175, 26);
+            this.TXTBX_Search.TabIndex = 1;
+            this.TXTBX_Search.Text = " Search";
             // 
-            // button1
+            // BTN_Sort
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(15, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 26);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Sort";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BTN_Sort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.BTN_Sort.FlatAppearance.BorderSize = 0;
+            this.BTN_Sort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_Sort.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Sort.ForeColor = System.Drawing.Color.White;
+            this.BTN_Sort.Location = new System.Drawing.Point(9, 6);
+            this.BTN_Sort.Name = "BTN_Sort";
+            this.BTN_Sort.Size = new System.Drawing.Size(80, 26);
+            this.BTN_Sort.TabIndex = 0;
+            this.BTN_Sort.Text = "Sort";
+            this.BTN_Sort.UseVisualStyleBackColor = false;
+            this.BTN_Sort.Click += new System.EventHandler(this.button1_Click);
             // 
             // FRM_Inventory
             // 
@@ -124,13 +124,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(968, 561);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.PNL_Options);
             this.Controls.Add(this.LSTV_Inventory);
             this.Name = "FRM_Inventory";
             this.Text = "FRM_Inventory";
             this.Load += new System.EventHandler(this.FRM_Inventory_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.PNL_Options.ResumeLayout(false);
+            this.PNL_Options.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -142,8 +142,8 @@
         private System.Windows.Forms.ColumnHeader CH_DatePub;
         private System.Windows.Forms.ColumnHeader Title;
         private System.Windows.Forms.ColumnHeader Author;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel PNL_Options;
+        private System.Windows.Forms.Button BTN_Sort;
+        private System.Windows.Forms.TextBox TXTBX_Search;
     }
 }
