@@ -43,10 +43,11 @@
             this.IPB_Trash.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
             this.IPB_Trash.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(208)))), ((int)(((byte)(245)))));
             this.IPB_Trash.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.IPB_Trash.IconSize = 125;
-            this.IPB_Trash.Location = new System.Drawing.Point(33, 25);
+            this.IPB_Trash.IconSize = 154;
+            this.IPB_Trash.Location = new System.Drawing.Point(44, 31);
+            this.IPB_Trash.Margin = new System.Windows.Forms.Padding(4);
             this.IPB_Trash.Name = "IPB_Trash";
-            this.IPB_Trash.Size = new System.Drawing.Size(127, 125);
+            this.IPB_Trash.Size = new System.Drawing.Size(169, 154);
             this.IPB_Trash.TabIndex = 0;
             this.IPB_Trash.TabStop = false;
             this.IPB_Trash.Click += new System.EventHandler(this.IPB_Trash_Click);
@@ -56,9 +57,10 @@
             this.LBL_Msg1.AutoSize = true;
             this.LBL_Msg1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBL_Msg1.ForeColor = System.Drawing.Color.White;
-            this.LBL_Msg1.Location = new System.Drawing.Point(199, 25);
+            this.LBL_Msg1.Location = new System.Drawing.Point(265, 31);
+            this.LBL_Msg1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBL_Msg1.Name = "LBL_Msg1";
-            this.LBL_Msg1.Size = new System.Drawing.Size(421, 24);
+            this.LBL_Msg1.Size = new System.Drawing.Size(522, 29);
             this.LBL_Msg1.TabIndex = 1;
             this.LBL_Msg1.Text = "Are you sure you want to delete [item name]";
             // 
@@ -67,9 +69,10 @@
             this.LBL_Msg2.AutoSize = true;
             this.LBL_Msg2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBL_Msg2.ForeColor = System.Drawing.Color.White;
-            this.LBL_Msg2.Location = new System.Drawing.Point(199, 60);
+            this.LBL_Msg2.Location = new System.Drawing.Point(265, 74);
+            this.LBL_Msg2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBL_Msg2.Name = "LBL_Msg2";
-            this.LBL_Msg2.Size = new System.Drawing.Size(385, 40);
+            this.LBL_Msg2.Size = new System.Drawing.Size(475, 50);
             this.LBL_Msg2.TabIndex = 2;
             this.LBL_Msg2.Text = "This item will be permanently deleted. You can\'t undo \r\nthis action";
             // 
@@ -81,9 +84,10 @@
             this.BTN_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_Delete.ForeColor = System.Drawing.Color.White;
-            this.BTN_Delete.Location = new System.Drawing.Point(384, 114);
+            this.BTN_Delete.Location = new System.Drawing.Point(571, 142);
+            this.BTN_Delete.Margin = new System.Windows.Forms.Padding(4);
             this.BTN_Delete.Name = "BTN_Delete";
-            this.BTN_Delete.Size = new System.Drawing.Size(108, 36);
+            this.BTN_Delete.Size = new System.Drawing.Size(144, 44);
             this.BTN_Delete.TabIndex = 3;
             this.BTN_Delete.Text = "Delete";
             this.BTN_Delete.UseVisualStyleBackColor = false;
@@ -97,9 +101,10 @@
             this.BTN_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_Cancel.ForeColor = System.Drawing.Color.White;
-            this.BTN_Cancel.Location = new System.Drawing.Point(512, 114);
+            this.BTN_Cancel.Location = new System.Drawing.Point(747, 141);
+            this.BTN_Cancel.Margin = new System.Windows.Forms.Padding(4);
             this.BTN_Cancel.Name = "BTN_Cancel";
-            this.BTN_Cancel.Size = new System.Drawing.Size(108, 36);
+            this.BTN_Cancel.Size = new System.Drawing.Size(144, 44);
             this.BTN_Cancel.TabIndex = 4;
             this.BTN_Cancel.Text = "Cancel";
             this.BTN_Cancel.UseVisualStyleBackColor = false;
@@ -107,17 +112,18 @@
             // FRM_DeleteStudent
             // 
             this.AcceptButton = this.BTN_Delete;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.CancelButton = this.BTN_Cancel;
-            this.ClientSize = new System.Drawing.Size(655, 180);
+            this.ClientSize = new System.Drawing.Size(1041, 226);
             this.Controls.Add(this.BTN_Cancel);
             this.Controls.Add(this.BTN_Delete);
             this.Controls.Add(this.LBL_Msg2);
             this.Controls.Add(this.LBL_Msg1);
             this.Controls.Add(this.IPB_Trash);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FRM_DeleteStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_DeleteStudent";

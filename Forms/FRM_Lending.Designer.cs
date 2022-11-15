@@ -181,6 +181,9 @@
             this.ClientSize = new System.Drawing.Size(968, 561);
             this.Controls.Add(this.PNL_Options);
             this.Controls.Add(this.LSTV_Lending);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FRM_Lending";
             this.Text = "Lending";
             this.PNL_Options.ResumeLayout(false);

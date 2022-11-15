@@ -1,5 +1,5 @@
-﻿using FontAwesome.Sharp;
-using System;
+﻿using System;
+using FontAwesome.Sharp;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,12 +10,14 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Forms;
 using ULMS_Forms.Forms;
+using System.Threading;
+using Application = System.Windows.Forms.Application;
 
 namespace ULMS_Forms
 {
     public partial class FRM_LibrarianDB : Form
     {
-        Boolean activeBTN;
+        Thread th;
 
         public FRM_LibrarianDB()
         {
@@ -65,9 +67,15 @@ namespace ULMS_Forms
         }
         private void IBTN_LogOut_Click(object sender, EventArgs e)
         {
-            FRM_Login login = new FRM_Login();
-            login.Show();
+            th = new Thread(OpenNewForm);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
             this.Close();
+        }
+
+        private void OpenNewForm()
+        {
+            Application.Run(new FRM_Login());
         }
     }
 }

@@ -46,7 +46,7 @@ namespace ULMS_Forms
         private void BTN_Login_Click(object sender, EventArgs e)
         {
             FRM_LibrarianDB libDB = new FRM_LibrarianDB();
-            if (TXTBX_UserName.Text == "librarian" && TXTBX_PassWord.Text == "12345678")
+            if (TXTBX_UserName.Text == "librarian" && TXTBX_PassWord.Text == "1234")
             {
                 this.Hide();
                 libDB.ShowDialog();

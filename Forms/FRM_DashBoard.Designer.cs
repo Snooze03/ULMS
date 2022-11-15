@@ -74,9 +74,9 @@
             // IPB_Student
             // 
             this.IPB_Student.BackColor = System.Drawing.Color.Transparent;
-            this.IPB_Student.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.IPB_Student.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(208)))), ((int)(((byte)(245)))));
             this.IPB_Student.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.IPB_Student.IconColor = System.Drawing.SystemColors.ControlText;
+            this.IPB_Student.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(208)))), ((int)(((byte)(245)))));
             this.IPB_Student.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IPB_Student.IconSize = 115;
             this.IPB_Student.Location = new System.Drawing.Point(133, 16);
@@ -122,9 +122,9 @@
             // IPB_Books
             // 
             this.IPB_Books.BackColor = System.Drawing.Color.Transparent;
-            this.IPB_Books.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.IPB_Books.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(208)))), ((int)(((byte)(245)))));
             this.IPB_Books.IconChar = FontAwesome.Sharp.IconChar.Book;
-            this.IPB_Books.IconColor = System.Drawing.SystemColors.ControlText;
+            this.IPB_Books.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(208)))), ((int)(((byte)(245)))));
             this.IPB_Books.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IPB_Books.IconSize = 115;
             this.IPB_Books.Location = new System.Drawing.Point(133, 19);
@@ -171,9 +171,9 @@
             // IPB_OverDue
             // 
             this.IPB_OverDue.BackColor = System.Drawing.Color.Transparent;
-            this.IPB_OverDue.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.IPB_OverDue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(208)))), ((int)(((byte)(245)))));
             this.IPB_OverDue.IconChar = FontAwesome.Sharp.IconChar.ClockFour;
-            this.IPB_OverDue.IconColor = System.Drawing.SystemColors.ControlText;
+            this.IPB_OverDue.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(208)))), ((int)(((byte)(245)))));
             this.IPB_OverDue.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IPB_OverDue.IconSize = 112;
             this.IPB_OverDue.Location = new System.Drawing.Point(136, 16);
