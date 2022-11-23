@@ -154,7 +154,7 @@
             this.LBL_BookInfo.AutoSize = true;
             this.LBL_BookInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBL_BookInfo.ForeColor = System.Drawing.Color.White;
-            this.LBL_BookInfo.Location = new System.Drawing.Point(52, 25);
+            this.LBL_BookInfo.Location = new System.Drawing.Point(100, 28);
             this.LBL_BookInfo.Name = "LBL_BookInfo";
             this.LBL_BookInfo.Size = new System.Drawing.Size(360, 42);
             this.LBL_BookInfo.TabIndex = 14;
@@ -215,7 +215,11 @@
             this.Controls.Add(this.LBL_BookInfo);
             this.Controls.Add(this.LBL_Email);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FRM_StudentLend";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_StudentLend";
             this.ResumeLayout(false);

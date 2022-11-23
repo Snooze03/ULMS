@@ -202,6 +202,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FRM_DashBoard";
             this.Text = "FRM_DashBoard";
             this.Load += new System.EventHandler(this.FRM_DashBoard_Load);
