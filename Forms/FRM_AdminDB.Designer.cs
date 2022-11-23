@@ -82,6 +82,7 @@
             this.IBTN_LogOut.Text = "          Logout";
             this.IBTN_LogOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.IBTN_LogOut.UseVisualStyleBackColor = true;
+            this.IBTN_LogOut.Click += new System.EventHandler(this.IBTN_LogOut_Click);
             // 
             // IBTN_Users
             // 
@@ -155,6 +156,7 @@
             this.Controls.Add(this.PNL_DashBoard);
             this.Controls.Add(this.PNL_NavBar);
             this.Name = "FRM_AdminDB";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_AdminDB";
             this.PNL_NavBar.ResumeLayout(false);
             this.PNL_ULMS.ResumeLayout(false);

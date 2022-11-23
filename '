@@ -1,0 +1,29 @@
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace ULMS_Forms.src
+{
+    class FRM_Events
+    {
+        private void TXTBX_PlaceHolder(TextBox txtBX, string plHolder, Boolean isPSWD)
+        {
+            if (String.IsNullOrEmpty(txtBX)
+            {
+                txtBX.Text = plHolder;
+                txtBX.ForeColor = Color.LightGray;
+                if (isPSWD) txtBX.PasswordChar = '\0';
+            }
+        }
+
+        private void TXTBX_DelPlaceHolder(TextBox txtBX, string plHolder, Boolean isPSWD)
+        {
+            if (txtBX.Text == plHolder)
+            {
+                txtBX.Text = "";
+                txtBX.ForeColor = Color.White;
+                if (isPSWD) txtBX.PasswordChar = pswdChar;
+            }
+        }
+    }
+}

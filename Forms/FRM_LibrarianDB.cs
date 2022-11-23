@@ -1,13 +1,6 @@
 ﻿using System;
 using FontAwesome.Sharp;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Forms;
 using ULMS_Forms.Forms;
 using System.Threading;
@@ -65,6 +58,7 @@ namespace ULMS_Forms
             highLight(IBTN_Lending, IBTN_DashBoard, IBTN_Inventory);
             showChildFRM(new FRM_Lending());
         }
+
         private void IBTN_LogOut_Click(object sender, EventArgs e)
         {
             th = new Thread(OpenNewForm);

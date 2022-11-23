@@ -1,19 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using ULMS_Forms.Forms;
+using ULMS_Forms.src;
 
 namespace ULMS_Forms
 {
     public partial class FRM_Login : Form
     {
+        private FRM_Events frmEvents = new FRM_Events();
         private string usrNamePLHolder = "User name", pswdPlHolder = "Password";
-        private char pswdChar = '*';
 
         public FRM_Login()
         {
@@ -23,56 +18,51 @@ namespace ULMS_Forms
             TXTBX_PassWord.Text = pswdPlHolder;
         }
 
-        private void TXTBX_PlaceHolder(TextBox txtBX, string plHolder, Boolean isPSWD)
-        {
-            if (txtBX.Text == "")
-            {
-                txtBX.Text = plHolder;
-                txtBX.ForeColor = Color.LightGray;
-                if (isPSWD) txtBX.PasswordChar = '\0';
-            }
-        }
-
-        private void TXTBX_DelPlaceHolder(TextBox txtBX, string plHolder, Boolean isPSWD)
-        {
-            if (txtBX.Text == plHolder)
-            {
-                txtBX.Text = "";
-                txtBX.ForeColor = Color.White;
-                if (isPSWD) txtBX.PasswordChar = pswdChar;
-            }
-        }
-
         private void BTN_Login_Click(object sender, EventArgs e)
         {
+            // Fake logic fix later by connecting to a proper DataBase
             FRM_LibrarianDB libDB = new FRM_LibrarianDB();
+            FRM_AdminDB adminDB = new FRM_AdminDB();
+
             if (TXTBX_UserName.Text == "librarian" && TXTBX_PassWord.Text == "1234")
             {
                 this.Hide();
                 libDB.ShowDialog();
                 this.Close();
-
             }
+            else if (TXTBX_UserName.Text == "admin" && TXTBX_PassWord.Text == "1234")
+            {
+                this.Hide();
+                adminDB.ShowDialog();
+                this.Close();
+            }
+
+            // #######################################
+            //          Add code to handle:
+            // 1. If no input, tell user to input
+            // 2. Incorrect pswd or usrname
+            // #######################################
         }
 
+        // Text Box place holder
         private void TXTBX_UserName_Enter(object sender, EventArgs e)
         {
-            TXTBX_DelPlaceHolder(this.TXTBX_UserName, usrNamePLHolder, false);
+            frmEvents.TXTBX_DelPlaceHolder(TXTBX_UserName, usrNamePLHolder);
         }
 
         private void TXTBX_UserName_Leave(object sender, EventArgs e)
         {
-            TXTBX_PlaceHolder(this.TXTBX_UserName, usrNamePLHolder, false);
+            frmEvents.TXTBX_InsertPlaceHolder(TXTBX_UserName, usrNamePLHolder);
         }
 
         private void TXTBX_PassWord_Enter(object sender, EventArgs e)
         {
-            TXTBX_DelPlaceHolder(TXTBX_PassWord, pswdPlHolder, true);
+            frmEvents.TXTBX_DelPlaceHolder(TXTBX_PassWord, pswdPlHolder, true);
         }
 
         private void TXTBX_PassWord_Leave(object sender, EventArgs e)
         {
-            TXTBX_PlaceHolder(TXTBX_PassWord, pswdPlHolder, true);
+            frmEvents.TXTBX_InsertPlaceHolder(TXTBX_PassWord, pswdPlHolder, true);
         }
     }
 }
