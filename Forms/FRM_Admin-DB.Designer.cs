@@ -157,6 +157,8 @@
             this.ClientSize = new System.Drawing.Size(1164, 561);
             this.Controls.Add(this.PNL_DashBoard);
             this.Controls.Add(this.PNL_NavBar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FRM_AdminDB";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_AdminDB";

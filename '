@@ -1,6 +1,8 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Threading;
+
 
 namespace ULMS_Forms.src
 {
@@ -30,6 +32,22 @@ namespace ULMS_Forms.src
             }
         }
 
+        // Checks if textboxes are filled
+        public bool IsValid(Controls frmControls)
+        {
+            bool validData = true;
+            foreach (Control control in Controls)
+            {
+                if (control is TextBox)
+                {
+                    TextBox textbox = control as TextBox;
+                    validData &= !string.IsNullOrWhiteSpace(textbox.Text);
+                }
+            }
+
+            if (validData) return true;
+            return false;
+        }
         // ##################################################
 
 

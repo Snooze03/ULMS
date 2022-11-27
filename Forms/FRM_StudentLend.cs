@@ -1,20 +1,59 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using DatabaseProject;
 
 namespace ULMS_Forms.Forms
 {
     public partial class FRM_StudentLend : Form
     {
+        private DBAccess dbAccess = new DBAccess();
+
         public FRM_StudentLend()
         {
             InitializeComponent();
+        }
+
+        private void BTN_Ok_Click(object sender, EventArgs e)
+        {
+            // Store input in vars
+            string firstName = TXTBX_FirstName.Text, middleName = TXTBX_MiddleName.Text, lastName = TXTBX_LastName.Text;
+            string fullName = lastName + ", " + firstName + " " + middleName;
+            string email = TXTBX_Email.Text;
+            string book = TXTBX_Book.Text;
+            DateTime returnDate = DTP_ReturnDate.Value;
+
+            if (IsValid())
+            {
+                SqlCommand insertCommand = new SqlCommand("insert into TBL_Students(Name, Email, Book, ReturnDate) values(@fullName, @email, @book, @returnDate)");
+
+                insertCommand.Parameters.AddWithValue("@fullName", fullName);
+                insertCommand.Parameters.AddWithValue("@email", email);
+                insertCommand.Parameters.AddWithValue("@book", book);
+                insertCommand.Parameters.AddWithValue("@returnDate", returnDate);
+
+                int row = dbAccess.executeQuery(insertCommand);
+
+                if (row == 1) MessageBox.Show("Student has been added!");
+            }
+            else MessageBox.Show("Empty fields are not allowed");
+        }
+
+        // Checks if textboxes are filled
+        private bool IsValid()  
+        {
+            bool validData = true;
+            foreach (Control control in Controls)
+            {
+                if (control is TextBox)
+                {
+                    TextBox textbox = control as TextBox;
+                    validData &= !string.IsNullOrWhiteSpace(textbox.Text);
+                }
+            }
+
+            if (validData) return true;
+            return false;
         }
     }
 }

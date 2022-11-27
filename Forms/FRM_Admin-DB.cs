@@ -11,6 +11,7 @@ namespace ULMS_Forms.Forms
         private FRM_Events frmEvents = new FRM_Events();
 
         // UI Instances
+        private FRM_Admin_Inventory adminInven = new FRM_Admin_Inventory();
 
         public FRM_AdminDB()
         {
@@ -19,6 +20,7 @@ namespace ULMS_Forms.Forms
 
         private void IBTN_Inventory_Click(object sender, EventArgs e)
         {
+            frmEvents.PNL_ShowForm(PNL_DashBoard, adminInven);
         }
 
         private void IBTN_Users_Click(object sender, EventArgs e)

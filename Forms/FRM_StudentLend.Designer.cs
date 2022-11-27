@@ -56,6 +56,7 @@
             this.BTN_Ok.TabIndex = 25;
             this.BTN_Ok.Text = "Ok";
             this.BTN_Ok.UseVisualStyleBackColor = false;
+            this.BTN_Ok.Click += new System.EventHandler(this.BTN_Ok_Click);
             // 
             // BTN_Close
             // 
@@ -221,7 +222,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FRM_StudentLend";
+            this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
 

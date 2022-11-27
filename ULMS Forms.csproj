@@ -115,6 +115,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\DBAccess.cs" />
     <Compile Include="src\FRM_Events.cs" />
     <EmbeddedResource Include="Forms\FRM_AddBook.resx">
       <DependentUpon>FRM_AddBook.cs</DependentUpon>
