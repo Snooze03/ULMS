@@ -13,10 +13,8 @@ namespace ULMS_Forms
 
         // UI instances
         private FRM_DashBoard db = new FRM_DashBoard();
-        private FRM_Inventory inven = new FRM_Inventory();
+        private FRM_Books inven = new FRM_Books();
         private FRM_Lending lend = new FRM_Lending();
-
-        Thread th;
 
         public FRM_LibrarianDB()
         {

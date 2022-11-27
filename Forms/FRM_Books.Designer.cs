@@ -1,6 +1,6 @@
 ﻿namespace ULMS_Forms
 {
-    partial class FRM_Inventory
+    partial class FRM_Books
     {
         /// <summary>
         /// Required designer variable.
@@ -34,10 +34,9 @@
             this.CH_Genre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CH_DatePub = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CH_Price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.PNL_Options = new System.Windows.Forms.Panel();
-            this.BTN_Add = new System.Windows.Forms.Button();
-            this.CBX_Sort = new System.Windows.Forms.ComboBox();
             this.TXTBX_Search = new System.Windows.Forms.TextBox();
+            this.CBX_Sort = new System.Windows.Forms.ComboBox();
+            this.PNL_Options = new System.Windows.Forms.Panel();
             this.PNL_Options.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,32 +88,17 @@
             this.CH_Price.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.CH_Price.Width = 80;
             // 
-            // PNL_Options
+            // TXTBX_Search
             // 
-            this.PNL_Options.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
-            this.PNL_Options.Controls.Add(this.BTN_Add);
-            this.PNL_Options.Controls.Add(this.CBX_Sort);
-            this.PNL_Options.Controls.Add(this.TXTBX_Search);
-            this.PNL_Options.Location = new System.Drawing.Point(12, 12);
-            this.PNL_Options.Name = "PNL_Options";
-            this.PNL_Options.Size = new System.Drawing.Size(941, 39);
-            this.PNL_Options.TabIndex = 1;
-            // 
-            // BTN_Add
-            // 
-            this.BTN_Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.BTN_Add.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BTN_Add.FlatAppearance.BorderSize = 0;
-            this.BTN_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTN_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Add.ForeColor = System.Drawing.Color.White;
-            this.BTN_Add.Location = new System.Drawing.Point(12, 6);
-            this.BTN_Add.Name = "BTN_Add";
-            this.BTN_Add.Size = new System.Drawing.Size(80, 26);
-            this.BTN_Add.TabIndex = 3;
-            this.BTN_Add.Text = "Add";
-            this.BTN_Add.UseVisualStyleBackColor = false;
-            this.BTN_Add.Click += new System.EventHandler(this.BTN_Add_Click);
+            this.TXTBX_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.TXTBX_Search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TXTBX_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TXTBX_Search.ForeColor = System.Drawing.Color.White;
+            this.TXTBX_Search.Location = new System.Drawing.Point(759, 6);
+            this.TXTBX_Search.Name = "TXTBX_Search";
+            this.TXTBX_Search.Size = new System.Drawing.Size(175, 26);
+            this.TXTBX_Search.TabIndex = 1;
+            this.TXTBX_Search.Text = " Search";
             // 
             // CBX_Sort
             // 
@@ -129,25 +113,23 @@
             "Descending",
             "Genre",
             "Price"});
-            this.CBX_Sort.Location = new System.Drawing.Point(107, 5);
+            this.CBX_Sort.Location = new System.Drawing.Point(12, 5);
             this.CBX_Sort.Name = "CBX_Sort";
             this.CBX_Sort.Size = new System.Drawing.Size(115, 28);
             this.CBX_Sort.TabIndex = 2;
             this.CBX_Sort.Text = "  Sort";
             // 
-            // TXTBX_Search
+            // PNL_Options
             // 
-            this.TXTBX_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.TXTBX_Search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TXTBX_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTBX_Search.ForeColor = System.Drawing.Color.White;
-            this.TXTBX_Search.Location = new System.Drawing.Point(759, 6);
-            this.TXTBX_Search.Name = "TXTBX_Search";
-            this.TXTBX_Search.Size = new System.Drawing.Size(175, 26);
-            this.TXTBX_Search.TabIndex = 1;
-            this.TXTBX_Search.Text = " Search";
+            this.PNL_Options.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.PNL_Options.Controls.Add(this.CBX_Sort);
+            this.PNL_Options.Controls.Add(this.TXTBX_Search);
+            this.PNL_Options.Location = new System.Drawing.Point(12, 12);
+            this.PNL_Options.Name = "PNL_Options";
+            this.PNL_Options.Size = new System.Drawing.Size(941, 39);
+            this.PNL_Options.TabIndex = 1;
             // 
-            // FRM_Inventory
+            // FRM_Books
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -158,7 +140,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FRM_Inventory";
+            this.Name = "FRM_Books";
             this.Text = "FRM_Inventory";
             this.PNL_Options.ResumeLayout(false);
             this.PNL_Options.PerformLayout();
@@ -173,10 +155,9 @@
         private System.Windows.Forms.ColumnHeader CH_DatePub;
         private System.Windows.Forms.ColumnHeader Title;
         private System.Windows.Forms.ColumnHeader Author;
-        private System.Windows.Forms.Panel PNL_Options;
-        private System.Windows.Forms.TextBox TXTBX_Search;
         private System.Windows.Forms.ColumnHeader CH_Price;
+        private System.Windows.Forms.TextBox TXTBX_Search;
         private System.Windows.Forms.ComboBox CBX_Sort;
-        private System.Windows.Forms.Button BTN_Add;
+        private System.Windows.Forms.Panel PNL_Options;
     }
 }

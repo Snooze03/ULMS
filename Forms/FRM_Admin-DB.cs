@@ -1,36 +1,45 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Threading;
+using ULMS_Forms.src;
 using System.Windows.Forms;
 
 namespace ULMS_Forms.Forms
 {
     public partial class FRM_AdminDB : Form
     {
-        Thread th;
+
+        private FRM_Events frmEvents = new FRM_Events();
+
+        // UI Instances
 
         public FRM_AdminDB()
         {
             InitializeComponent();
         }
 
+        private void IBTN_Inventory_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void IBTN_Users_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void IBTN_LogOut_Click(object sender, EventArgs e)
         {
+            Thread th;
+
             th = new Thread(OpenNewForm);
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
-            this.Close();
+            Close();
         }
 
         private void OpenNewForm()
         {
             Application.Run(new FRM_Login());
         }
+
     }
 }

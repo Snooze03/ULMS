@@ -59,11 +59,17 @@
     <Compile Include="Forms\FRM_AddBook.Designer.cs">
       <DependentUpon>FRM_AddBook.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FRM_AdminDB.cs">
+    <Compile Include="Forms\FRM_Admin-DB.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FRM_AdminDB.Designer.cs">
-      <DependentUpon>FRM_AdminDB.cs</DependentUpon>
+    <Compile Include="Forms\FRM_Admin-DB.Designer.cs">
+      <DependentUpon>FRM_Admin-DB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FRM_Admin-Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FRM_Admin-Inventory.Designer.cs">
+      <DependentUpon>FRM_Admin-Inventory.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FRM_DashBoard.cs">
       <SubType>Form</SubType>
@@ -77,11 +83,11 @@
     <Compile Include="Forms\FRM_DeleteStudent.Designer.cs">
       <DependentUpon>FRM_DeleteStudent.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FRM_Inventory.cs">
+    <Compile Include="Forms\FRM_Books.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FRM_Inventory.Designer.cs">
-      <DependentUpon>FRM_Inventory.cs</DependentUpon>
+    <Compile Include="Forms\FRM_Books.Designer.cs">
+      <DependentUpon>FRM_Books.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FRM_Login.cs">
       <SubType>Form</SubType>
@@ -89,11 +95,11 @@
     <Compile Include="Forms\FRM_Login.Designer.cs">
       <DependentUpon>FRM_Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FRM_LibrarianDB.cs">
+    <Compile Include="Forms\FRM_Librarian-DB.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FRM_LibrarianDB.Designer.cs">
-      <DependentUpon>FRM_LibrarianDB.cs</DependentUpon>
+    <Compile Include="Forms\FRM_Librarian-DB.Designer.cs">
+      <DependentUpon>FRM_Librarian-DB.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FRM_Lending.cs">
       <SubType>Form</SubType>
@@ -113,8 +119,11 @@
     <EmbeddedResource Include="Forms\FRM_AddBook.resx">
       <DependentUpon>FRM_AddBook.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FRM_AdminDB.resx">
-      <DependentUpon>FRM_AdminDB.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FRM_Admin-DB.resx">
+      <DependentUpon>FRM_Admin-DB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FRM_Admin-Inventory.resx">
+      <DependentUpon>FRM_Admin-Inventory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FRM_DashBoard.resx">
       <DependentUpon>FRM_DashBoard.cs</DependentUpon>
@@ -122,14 +131,14 @@
     <EmbeddedResource Include="Forms\FRM_DeleteStudent.resx">
       <DependentUpon>FRM_DeleteStudent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FRM_Inventory.resx">
-      <DependentUpon>FRM_Inventory.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FRM_Books.resx">
+      <DependentUpon>FRM_Books.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FRM_Login.resx">
       <DependentUpon>FRM_Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FRM_LibrarianDB.resx">
-      <DependentUpon>FRM_LibrarianDB.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FRM_Librarian-DB.resx">
+      <DependentUpon>FRM_Librarian-DB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FRM_Lending.resx">
       <DependentUpon>FRM_Lending.cs</DependentUpon>

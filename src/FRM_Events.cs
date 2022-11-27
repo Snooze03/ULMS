@@ -50,21 +50,6 @@ namespace ULMS_Forms.src
 
         // ##################################################
 
-        // ################# BUTTON EVENTS ##################
-        public void BTN_LogOut(Form currentForm)
-        {
-            Thread th;
-
-            th = new Thread(OpenNewForm);
-            th.SetApartmentState(ApartmentState.STA);
-            th.Start();
-            currentForm.Close();
-        }
-
-        private void OpenNewForm()
-        {
-            Application.Run(new FRM_Login());
-        }
     }
 
 }

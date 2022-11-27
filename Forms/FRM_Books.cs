@@ -11,9 +11,9 @@ using ULMS_Forms.Forms;
 
 namespace ULMS_Forms
 {
-    public partial class FRM_Inventory : Form
+    public partial class FRM_Books : Form
     {
-        public FRM_Inventory()
+        public FRM_Books()
         {
             InitializeComponent();
         }
