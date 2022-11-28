@@ -40,8 +40,9 @@
             this.TXTBX_Email = new System.Windows.Forms.TextBox();
             this.LBL_BookInfo = new System.Windows.Forms.Label();
             this.LBL_Email = new System.Windows.Forms.Label();
-            this.CBX_Role = new System.Windows.Forms.ComboBox();
             this.LBL_Role = new System.Windows.Forms.Label();
+            this.RB_Admin = new System.Windows.Forms.RadioButton();
+            this.RB_Librarian = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // TXTBX_Book
@@ -101,6 +102,7 @@
             this.BTN_Ok.TabIndex = 37;
             this.BTN_Ok.Text = "Ok";
             this.BTN_Ok.UseVisualStyleBackColor = false;
+            this.BTN_Ok.Click += new System.EventHandler(this.BTN_Ok_Click);
             // 
             // BTN_Close
             // 
@@ -123,9 +125,9 @@
             this.TXTBX_LastName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TXTBX_LastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TXTBX_LastName.ForeColor = System.Drawing.Color.White;
-            this.TXTBX_LastName.Location = new System.Drawing.Point(241, 118);
+            this.TXTBX_LastName.Location = new System.Drawing.Point(252, 118);
             this.TXTBX_LastName.Name = "TXTBX_LastName";
-            this.TXTBX_LastName.Size = new System.Drawing.Size(235, 24);
+            this.TXTBX_LastName.Size = new System.Drawing.Size(224, 24);
             this.TXTBX_LastName.TabIndex = 35;
             // 
             // TXTBX_FirstName
@@ -136,7 +138,7 @@
             this.TXTBX_FirstName.ForeColor = System.Drawing.Color.White;
             this.TXTBX_FirstName.Location = new System.Drawing.Point(28, 118);
             this.TXTBX_FirstName.Name = "TXTBX_FirstName";
-            this.TXTBX_FirstName.Size = new System.Drawing.Size(198, 24);
+            this.TXTBX_FirstName.Size = new System.Drawing.Size(207, 24);
             this.TXTBX_FirstName.TabIndex = 34;
             // 
             // LBL_Name
@@ -183,24 +185,6 @@
             this.LBL_Email.TabIndex = 30;
             this.LBL_Email.Text = "Email";
             // 
-            // CBX_Role
-            // 
-            this.CBX_Role.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.CBX_Role.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CBX_Role.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CBX_Role.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBX_Role.ForeColor = System.Drawing.Color.White;
-            this.CBX_Role.FormattingEnabled = true;
-            this.CBX_Role.Items.AddRange(new object[] {
-            "Ascending",
-            "Descending",
-            "Genre",
-            "Price"});
-            this.CBX_Role.Location = new System.Drawing.Point(28, 369);
-            this.CBX_Role.Name = "CBX_Role";
-            this.CBX_Role.Size = new System.Drawing.Size(448, 28);
-            this.CBX_Role.TabIndex = 42;
-            // 
             // LBL_Role
             // 
             this.LBL_Role.AutoSize = true;
@@ -212,14 +196,41 @@
             this.LBL_Role.TabIndex = 43;
             this.LBL_Role.Text = "Role";
             // 
+            // RB_Admin
+            // 
+            this.RB_Admin.AutoSize = true;
+            this.RB_Admin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RB_Admin.ForeColor = System.Drawing.Color.White;
+            this.RB_Admin.Location = new System.Drawing.Point(28, 374);
+            this.RB_Admin.Name = "RB_Admin";
+            this.RB_Admin.Size = new System.Drawing.Size(72, 24);
+            this.RB_Admin.TabIndex = 44;
+            this.RB_Admin.TabStop = true;
+            this.RB_Admin.Text = "Admin";
+            this.RB_Admin.UseVisualStyleBackColor = true;
+            // 
+            // RB_Librarian
+            // 
+            this.RB_Librarian.AutoSize = true;
+            this.RB_Librarian.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RB_Librarian.ForeColor = System.Drawing.Color.White;
+            this.RB_Librarian.Location = new System.Drawing.Point(128, 374);
+            this.RB_Librarian.Name = "RB_Librarian";
+            this.RB_Librarian.Size = new System.Drawing.Size(88, 24);
+            this.RB_Librarian.TabIndex = 45;
+            this.RB_Librarian.TabStop = true;
+            this.RB_Librarian.Text = "Librarian";
+            this.RB_Librarian.UseVisualStyleBackColor = true;
+            // 
             // FRM_AddUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(501, 569);
+            this.Controls.Add(this.RB_Librarian);
+            this.Controls.Add(this.RB_Admin);
             this.Controls.Add(this.LBL_Role);
-            this.Controls.Add(this.CBX_Role);
             this.Controls.Add(this.TXTBX_Book);
             this.Controls.Add(this.LBL_Book);
             this.Controls.Add(this.TXTBX_PhoneNumber);
@@ -257,7 +268,8 @@
         private System.Windows.Forms.TextBox TXTBX_Email;
         private System.Windows.Forms.Label LBL_BookInfo;
         private System.Windows.Forms.Label LBL_Email;
-        private System.Windows.Forms.ComboBox CBX_Role;
         private System.Windows.Forms.Label LBL_Role;
+        private System.Windows.Forms.RadioButton RB_Admin;
+        private System.Windows.Forms.RadioButton RB_Librarian;
     }
 }
