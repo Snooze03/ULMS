@@ -1,6 +1,6 @@
 ﻿namespace ULMS_Forms
 {
-    partial class FRM_DashBoard
+    partial class FRM_LibrarianDB
     {
         /// <summary>
         /// Required designer variable.
@@ -28,210 +28,185 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.LBL_Students = new System.Windows.Forms.Label();
-            this.IPB_Student = new FontAwesome.Sharp.IconPictureBox();
-            this.LBL_StudentsNO = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.LBL_Books = new System.Windows.Forms.Label();
-            this.IPB_Books = new FontAwesome.Sharp.IconPictureBox();
-            this.LBL_BooksNO = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.LBL_OverDue = new System.Windows.Forms.Label();
-            this.IPB_OverDue = new FontAwesome.Sharp.IconPictureBox();
-            this.LBL_OverDueNO = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IPB_Student)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IPB_Books)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IPB_OverDue)).BeginInit();
+            this.PNL_NavBar = new System.Windows.Forms.Panel();
+            this.IBTN_LogOut = new FontAwesome.Sharp.IconButton();
+            this.IBTN_Lending = new FontAwesome.Sharp.IconButton();
+            this.IBTN_Inventory = new FontAwesome.Sharp.IconButton();
+            this.IBTN_DashBoard = new FontAwesome.Sharp.IconButton();
+            this.PNL_ULMS = new System.Windows.Forms.Panel();
+            this.LBL_ULMS = new System.Windows.Forms.Label();
+            this.PNL_DashBoard = new System.Windows.Forms.Panel();
+            this.PNL_NavBar.SuspendLayout();
+            this.PNL_ULMS.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // PNL_NavBar
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
-            this.panel1.Controls.Add(this.LBL_Students);
-            this.panel1.Controls.Add(this.IPB_Student);
-            this.panel1.Controls.Add(this.LBL_StudentsNO);
-            this.panel1.Location = new System.Drawing.Point(57, 42);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(248, 138);
-            this.panel1.TabIndex = 0;
+            this.PNL_NavBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.PNL_NavBar.Controls.Add(this.IBTN_LogOut);
+            this.PNL_NavBar.Controls.Add(this.IBTN_Lending);
+            this.PNL_NavBar.Controls.Add(this.IBTN_Inventory);
+            this.PNL_NavBar.Controls.Add(this.IBTN_DashBoard);
+            this.PNL_NavBar.Controls.Add(this.PNL_ULMS);
+            this.PNL_NavBar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PNL_NavBar.Location = new System.Drawing.Point(0, 0);
+            this.PNL_NavBar.Name = "PNL_NavBar";
+            this.PNL_NavBar.Size = new System.Drawing.Size(200, 561);
+            this.PNL_NavBar.TabIndex = 0;
             // 
-            // LBL_Students
+            // IBTN_LogOut
             // 
-            this.LBL_Students.AutoSize = true;
-            this.LBL_Students.BackColor = System.Drawing.Color.Transparent;
-            this.LBL_Students.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_Students.ForeColor = System.Drawing.Color.White;
-            this.LBL_Students.Location = new System.Drawing.Point(30, 87);
-            this.LBL_Students.Name = "LBL_Students";
-            this.LBL_Students.Size = new System.Drawing.Size(97, 25);
-            this.LBL_Students.TabIndex = 2;
-            this.LBL_Students.Text = "Students";
+            this.IBTN_LogOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IBTN_LogOut.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.IBTN_LogOut.FlatAppearance.BorderSize = 0;
+            this.IBTN_LogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.IBTN_LogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IBTN_LogOut.ForeColor = System.Drawing.Color.White;
+            this.IBTN_LogOut.IconChar = FontAwesome.Sharp.IconChar.SignOut;
+            this.IBTN_LogOut.IconColor = System.Drawing.Color.White;
+            this.IBTN_LogOut.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.IBTN_LogOut.IconSize = 30;
+            this.IBTN_LogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.IBTN_LogOut.Location = new System.Drawing.Point(0, 513);
+            this.IBTN_LogOut.Name = "IBTN_LogOut";
+            this.IBTN_LogOut.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.IBTN_LogOut.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.IBTN_LogOut.Size = new System.Drawing.Size(200, 48);
+            this.IBTN_LogOut.TabIndex = 5;
+            this.IBTN_LogOut.Text = "         Logout";
+            this.IBTN_LogOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.IBTN_LogOut.UseVisualStyleBackColor = true;
+            this.IBTN_LogOut.Click += new System.EventHandler(this.IBTN_LogOut_Click);
             // 
-            // IPB_Student
+            // IBTN_Lending
             // 
-            this.IPB_Student.BackColor = System.Drawing.Color.Transparent;
-            this.IPB_Student.ForeColor = System.Drawing.Color.Black;
-            this.IPB_Student.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.IPB_Student.IconColor = System.Drawing.Color.Black;
-            this.IPB_Student.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.IPB_Student.IconSize = 115;
-            this.IPB_Student.Location = new System.Drawing.Point(133, 16);
-            this.IPB_Student.Name = "IPB_Student";
-            this.IPB_Student.Size = new System.Drawing.Size(115, 119);
-            this.IPB_Student.TabIndex = 1;
-            this.IPB_Student.TabStop = false;
+            this.IBTN_Lending.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IBTN_Lending.Dock = System.Windows.Forms.DockStyle.Top;
+            this.IBTN_Lending.FlatAppearance.BorderSize = 0;
+            this.IBTN_Lending.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.IBTN_Lending.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IBTN_Lending.ForeColor = System.Drawing.Color.White;
+            this.IBTN_Lending.IconChar = FontAwesome.Sharp.IconChar.HandHoldingHand;
+            this.IBTN_Lending.IconColor = System.Drawing.Color.White;
+            this.IBTN_Lending.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.IBTN_Lending.IconSize = 30;
+            this.IBTN_Lending.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.IBTN_Lending.Location = new System.Drawing.Point(0, 196);
+            this.IBTN_Lending.Name = "IBTN_Lending";
+            this.IBTN_Lending.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.IBTN_Lending.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.IBTN_Lending.Size = new System.Drawing.Size(200, 48);
+            this.IBTN_Lending.TabIndex = 4;
+            this.IBTN_Lending.Text = "Lending‎ ‎ ‎ ‎ ‎ ";
+            this.IBTN_Lending.UseVisualStyleBackColor = true;
+            this.IBTN_Lending.Click += new System.EventHandler(this.IBTN_Lending_Click);
             // 
-            // LBL_StudentsNO
+            // IBTN_Inventory
             // 
-            this.LBL_StudentsNO.AutoSize = true;
-            this.LBL_StudentsNO.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_StudentsNO.ForeColor = System.Drawing.Color.White;
-            this.LBL_StudentsNO.Location = new System.Drawing.Point(48, 30);
-            this.LBL_StudentsNO.Name = "LBL_StudentsNO";
-            this.LBL_StudentsNO.Size = new System.Drawing.Size(57, 39);
-            this.LBL_StudentsNO.TabIndex = 0;
-            this.LBL_StudentsNO.Text = "20";
+            this.IBTN_Inventory.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IBTN_Inventory.Dock = System.Windows.Forms.DockStyle.Top;
+            this.IBTN_Inventory.FlatAppearance.BorderSize = 0;
+            this.IBTN_Inventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.IBTN_Inventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IBTN_Inventory.ForeColor = System.Drawing.Color.White;
+            this.IBTN_Inventory.IconChar = FontAwesome.Sharp.IconChar.Book;
+            this.IBTN_Inventory.IconColor = System.Drawing.Color.White;
+            this.IBTN_Inventory.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.IBTN_Inventory.IconSize = 30;
+            this.IBTN_Inventory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.IBTN_Inventory.Location = new System.Drawing.Point(0, 148);
+            this.IBTN_Inventory.Name = "IBTN_Inventory";
+            this.IBTN_Inventory.Padding = new System.Windows.Forms.Padding(15, 0, 35, 0);
+            this.IBTN_Inventory.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.IBTN_Inventory.Size = new System.Drawing.Size(200, 48);
+            this.IBTN_Inventory.TabIndex = 3;
+            this.IBTN_Inventory.Text = "Books";
+            this.IBTN_Inventory.UseVisualStyleBackColor = true;
+            this.IBTN_Inventory.Click += new System.EventHandler(this.IBTN_Inventory_Click);
             // 
-            // panel2
+            // IBTN_DashBoard
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
-            this.panel2.Controls.Add(this.LBL_Books);
-            this.panel2.Controls.Add(this.IPB_Books);
-            this.panel2.Controls.Add(this.LBL_BooksNO);
-            this.panel2.Location = new System.Drawing.Point(352, 42);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(248, 138);
-            this.panel2.TabIndex = 1;
+            this.IBTN_DashBoard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IBTN_DashBoard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.IBTN_DashBoard.FlatAppearance.BorderSize = 0;
+            this.IBTN_DashBoard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.IBTN_DashBoard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IBTN_DashBoard.ForeColor = System.Drawing.Color.White;
+            this.IBTN_DashBoard.IconChar = FontAwesome.Sharp.IconChar.Navicon;
+            this.IBTN_DashBoard.IconColor = System.Drawing.Color.White;
+            this.IBTN_DashBoard.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.IBTN_DashBoard.IconSize = 30;
+            this.IBTN_DashBoard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.IBTN_DashBoard.Location = new System.Drawing.Point(0, 100);
+            this.IBTN_DashBoard.Name = "IBTN_DashBoard";
+            this.IBTN_DashBoard.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.IBTN_DashBoard.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.IBTN_DashBoard.Size = new System.Drawing.Size(200, 48);
+            this.IBTN_DashBoard.TabIndex = 2;
+            this.IBTN_DashBoard.Text = "Dashboard";
+            this.IBTN_DashBoard.UseVisualStyleBackColor = true;
+            this.IBTN_DashBoard.Click += new System.EventHandler(this.IBTN_DashBoard_Click);
             // 
-            // LBL_Books
+            // PNL_ULMS
             // 
-            this.LBL_Books.AutoSize = true;
-            this.LBL_Books.BackColor = System.Drawing.Color.Transparent;
-            this.LBL_Books.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_Books.ForeColor = System.Drawing.Color.White;
-            this.LBL_Books.Location = new System.Drawing.Point(41, 87);
-            this.LBL_Books.Name = "LBL_Books";
-            this.LBL_Books.Size = new System.Drawing.Size(72, 25);
-            this.LBL_Books.TabIndex = 4;
-            this.LBL_Books.Text = "Books";
+            this.PNL_ULMS.Controls.Add(this.LBL_ULMS);
+            this.PNL_ULMS.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PNL_ULMS.Location = new System.Drawing.Point(0, 0);
+            this.PNL_ULMS.Name = "PNL_ULMS";
+            this.PNL_ULMS.Size = new System.Drawing.Size(200, 100);
+            this.PNL_ULMS.TabIndex = 0;
             // 
-            // IPB_Books
+            // LBL_ULMS
             // 
-            this.IPB_Books.BackColor = System.Drawing.Color.Transparent;
-            this.IPB_Books.ForeColor = System.Drawing.Color.Black;
-            this.IPB_Books.IconChar = FontAwesome.Sharp.IconChar.Book;
-            this.IPB_Books.IconColor = System.Drawing.Color.Black;
-            this.IPB_Books.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.IPB_Books.IconSize = 115;
-            this.IPB_Books.Location = new System.Drawing.Point(133, 19);
-            this.IPB_Books.Name = "IPB_Books";
-            this.IPB_Books.Size = new System.Drawing.Size(115, 119);
-            this.IPB_Books.TabIndex = 3;
-            this.IPB_Books.TabStop = false;
-            this.IPB_Books.Click += new System.EventHandler(this.IPB_Books_Click);
+            this.LBL_ULMS.AutoSize = true;
+            this.LBL_ULMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LBL_ULMS.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBL_ULMS.ForeColor = System.Drawing.Color.White;
+            this.LBL_ULMS.Location = new System.Drawing.Point(39, 29);
+            this.LBL_ULMS.Name = "LBL_ULMS";
+            this.LBL_ULMS.Size = new System.Drawing.Size(126, 42);
+            this.LBL_ULMS.TabIndex = 0;
+            this.LBL_ULMS.Text = "ULMS";
             // 
-            // LBL_BooksNO
+            // PNL_DashBoard
             // 
-            this.LBL_BooksNO.AutoSize = true;
-            this.LBL_BooksNO.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_BooksNO.ForeColor = System.Drawing.Color.White;
-            this.LBL_BooksNO.Location = new System.Drawing.Point(36, 30);
-            this.LBL_BooksNO.Name = "LBL_BooksNO";
-            this.LBL_BooksNO.Size = new System.Drawing.Size(77, 39);
-            this.LBL_BooksNO.TabIndex = 3;
-            this.LBL_BooksNO.Text = "100";
+            this.PNL_DashBoard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PNL_DashBoard.Location = new System.Drawing.Point(200, 0);
+            this.PNL_DashBoard.Name = "PNL_DashBoard";
+            this.PNL_DashBoard.Size = new System.Drawing.Size(964, 561);
+            this.PNL_DashBoard.TabIndex = 1;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
-            this.panel3.Controls.Add(this.LBL_OverDue);
-            this.panel3.Controls.Add(this.IPB_OverDue);
-            this.panel3.Controls.Add(this.LBL_OverDueNO);
-            this.panel3.Location = new System.Drawing.Point(649, 42);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(248, 138);
-            this.panel3.TabIndex = 2;
-            // 
-            // LBL_OverDue
-            // 
-            this.LBL_OverDue.AutoSize = true;
-            this.LBL_OverDue.BackColor = System.Drawing.Color.Transparent;
-            this.LBL_OverDue.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_OverDue.ForeColor = System.Drawing.Color.White;
-            this.LBL_OverDue.Location = new System.Drawing.Point(32, 87);
-            this.LBL_OverDue.Name = "LBL_OverDue";
-            this.LBL_OverDue.Size = new System.Drawing.Size(94, 25);
-            this.LBL_OverDue.TabIndex = 6;
-            this.LBL_OverDue.Text = "Overdue";
-            // 
-            // IPB_OverDue
-            // 
-            this.IPB_OverDue.BackColor = System.Drawing.Color.Transparent;
-            this.IPB_OverDue.ForeColor = System.Drawing.Color.Black;
-            this.IPB_OverDue.IconChar = FontAwesome.Sharp.IconChar.ClockFour;
-            this.IPB_OverDue.IconColor = System.Drawing.Color.Black;
-            this.IPB_OverDue.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.IPB_OverDue.IconSize = 112;
-            this.IPB_OverDue.Location = new System.Drawing.Point(136, 16);
-            this.IPB_OverDue.Name = "IPB_OverDue";
-            this.IPB_OverDue.Size = new System.Drawing.Size(112, 119);
-            this.IPB_OverDue.TabIndex = 4;
-            this.IPB_OverDue.TabStop = false;
-            // 
-            // LBL_OverDueNO
-            // 
-            this.LBL_OverDueNO.AutoSize = true;
-            this.LBL_OverDueNO.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_OverDueNO.ForeColor = System.Drawing.Color.White;
-            this.LBL_OverDueNO.Location = new System.Drawing.Point(50, 30);
-            this.LBL_OverDueNO.Name = "LBL_OverDueNO";
-            this.LBL_OverDueNO.Size = new System.Drawing.Size(57, 39);
-            this.LBL_OverDueNO.TabIndex = 5;
-            this.LBL_OverDueNO.Text = "12";
-            // 
-            // FRM_DashBoard
+            // FRM_LibrarianDB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.ClientSize = new System.Drawing.Size(972, 229);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FRM_DashBoard";
-            this.Text = "FRM_DashBoard";
-            this.Load += new System.EventHandler(this.FRM_DashBoard_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IPB_Student)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IPB_Books)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IPB_OverDue)).EndInit();
+            this.ClientSize = new System.Drawing.Size(1164, 561);
+            this.Controls.Add(this.PNL_DashBoard);
+            this.Controls.Add(this.PNL_NavBar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1180, 600);
+            this.Name = "FRM_LibrarianDB";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Dashboard";
+            this.PNL_NavBar.ResumeLayout(false);
+            this.PNL_ULMS.ResumeLayout(false);
+            this.PNL_ULMS.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private FontAwesome.Sharp.IconPictureBox IPB_Student;
-        private System.Windows.Forms.Label LBL_StudentsNO;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label LBL_Students;
-        private FontAwesome.Sharp.IconPictureBox IPB_Books;
-        private FontAwesome.Sharp.IconPictureBox IPB_OverDue;
-        private System.Windows.Forms.Label LBL_Books;
-        private System.Windows.Forms.Label LBL_BooksNO;
-        private System.Windows.Forms.Label LBL_OverDue;
-        private System.Windows.Forms.Label LBL_OverDueNO;
+        private System.Windows.Forms.Panel PNL_NavBar;
+        private System.Windows.Forms.Panel PNL_ULMS;
+        private FontAwesome.Sharp.IconButton IBTN_Inventory;
+        private FontAwesome.Sharp.IconButton IBTN_Lending;
+        private FontAwesome.Sharp.IconButton IBTN_DashBoard;
+        private FontAwesome.Sharp.IconButton IBTN_LogOut;
+        private System.Windows.Forms.Label LBL_ULMS;
+        private System.Windows.Forms.Panel PNL_DashBoard;
     }
 }

@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.PNL_Options = new System.Windows.Forms.Panel();
+            this.BTN_Delete = new System.Windows.Forms.Button();
+            this.BTN_Add = new System.Windows.Forms.Button();
             this.CBX_Sort = new System.Windows.Forms.ComboBox();
             this.TXTBX_Search = new System.Windows.Forms.TextBox();
             this.LSTV_Inventory = new System.Windows.Forms.ListView();
@@ -43,12 +45,46 @@
             // PNL_Options
             // 
             this.PNL_Options.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.PNL_Options.Controls.Add(this.BTN_Delete);
+            this.PNL_Options.Controls.Add(this.BTN_Add);
             this.PNL_Options.Controls.Add(this.CBX_Sort);
             this.PNL_Options.Controls.Add(this.TXTBX_Search);
             this.PNL_Options.Location = new System.Drawing.Point(12, 12);
             this.PNL_Options.Name = "PNL_Options";
             this.PNL_Options.Size = new System.Drawing.Size(941, 39);
             this.PNL_Options.TabIndex = 3;
+            // 
+            // BTN_Delete
+            // 
+            this.BTN_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.BTN_Delete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTN_Delete.FlatAppearance.BorderSize = 0;
+            this.BTN_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Delete.ForeColor = System.Drawing.Color.White;
+            this.BTN_Delete.Location = new System.Drawing.Point(107, 7);
+            this.BTN_Delete.Name = "BTN_Delete";
+            this.BTN_Delete.Size = new System.Drawing.Size(80, 26);
+            this.BTN_Delete.TabIndex = 4;
+            this.BTN_Delete.Text = "Delete";
+            this.BTN_Delete.UseVisualStyleBackColor = false;
+            this.BTN_Delete.Click += new System.EventHandler(this.BTN_Delete_Click);
+            // 
+            // BTN_Add
+            // 
+            this.BTN_Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.BTN_Add.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTN_Add.FlatAppearance.BorderSize = 0;
+            this.BTN_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Add.ForeColor = System.Drawing.Color.White;
+            this.BTN_Add.Location = new System.Drawing.Point(12, 7);
+            this.BTN_Add.Name = "BTN_Add";
+            this.BTN_Add.Size = new System.Drawing.Size(80, 26);
+            this.BTN_Add.TabIndex = 3;
+            this.BTN_Add.Text = "Add";
+            this.BTN_Add.UseVisualStyleBackColor = false;
+            this.BTN_Add.Click += new System.EventHandler(this.BTN_Add_Click);
             // 
             // CBX_Sort
             // 
@@ -63,7 +99,7 @@
             "Descending",
             "Genre",
             "Price"});
-            this.CBX_Sort.Location = new System.Drawing.Point(12, 5);
+            this.CBX_Sort.Location = new System.Drawing.Point(202, 5);
             this.CBX_Sort.Name = "CBX_Sort";
             this.CBX_Sort.Size = new System.Drawing.Size(115, 28);
             this.CBX_Sort.TabIndex = 2;
@@ -157,5 +193,7 @@
         private System.Windows.Forms.ColumnHeader CH_Genre;
         private System.Windows.Forms.ColumnHeader CH_DatePub;
         private System.Windows.Forms.ColumnHeader CH_Price;
+        private System.Windows.Forms.Button BTN_Add;
+        private System.Windows.Forms.Button BTN_Delete;
     }
 }

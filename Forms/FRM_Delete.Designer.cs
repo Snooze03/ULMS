@@ -1,6 +1,6 @@
 ﻿namespace ULMS_Forms.Forms
 {
-    partial class FRM_DeleteStudent
+    partial class FRM_Delete
     {
         /// <summary>
         /// Required designer variable.

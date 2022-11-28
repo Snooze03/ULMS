@@ -17,18 +17,20 @@ namespace ULMS_Forms.Forms
         private void BTN_Ok_Click(object sender, EventArgs e)
         {
             // Store input in vars
-            string firstName = TXTBX_FirstName.Text, middleName = TXTBX_MiddleName.Text, lastName = TXTBX_LastName.Text;
-            string fullName = lastName + ", " + firstName + " " + middleName;
+            string firstName = TXTBX_FirstName.Text, lastName = TXTBX_LastName.Text;
+            string fullName = lastName + ", " + firstName;
+            string phoneNumber = TXTBX_PhoneNumber.Text;
             string email = TXTBX_Email.Text;
-            string book = TXTBX_Book.Text;
+            string book = TXTBX_PhoneNumber.Text;
             DateTime returnDate = DTP_ReturnDate.Value;
 
             if (IsValid())
             {
-                SqlCommand insertCommand = new SqlCommand("insert into TBL_Students(Name, Email, Book, ReturnDate) values(@fullName, @email, @book, @returnDate)");
+                SqlCommand insertCommand = new SqlCommand("insert into TBL_Students(Name, Email, PhoneNumber, Book, ReturnDate) values(@fullName, @email, @phoneNumber, @book, @returnDate)");
 
                 insertCommand.Parameters.AddWithValue("@fullName", fullName);
                 insertCommand.Parameters.AddWithValue("@email", email);
+                insertCommand.Parameters.AddWithValue("@phoneNumber", phoneNumber);
                 insertCommand.Parameters.AddWithValue("@book", book);
                 insertCommand.Parameters.AddWithValue("@returnDate", returnDate);
 

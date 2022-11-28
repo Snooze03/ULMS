@@ -33,7 +33,6 @@
             this.Author = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CH_Genre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CH_DatePub = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.CH_Price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.TXTBX_Search = new System.Windows.Forms.TextBox();
             this.CBX_Sort = new System.Windows.Forms.ComboBox();
             this.PNL_Options = new System.Windows.Forms.Panel();
@@ -47,14 +46,13 @@
             this.Title,
             this.Author,
             this.CH_Genre,
-            this.CH_DatePub,
-            this.CH_Price});
+            this.CH_DatePub});
             this.LSTV_Inventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LSTV_Inventory.GridLines = true;
             this.LSTV_Inventory.HideSelection = false;
             this.LSTV_Inventory.Location = new System.Drawing.Point(12, 67);
             this.LSTV_Inventory.Name = "LSTV_Inventory";
-            this.LSTV_Inventory.Size = new System.Drawing.Size(941, 482);
+            this.LSTV_Inventory.Size = new System.Drawing.Size(863, 482);
             this.LSTV_Inventory.TabIndex = 0;
             this.LSTV_Inventory.UseCompatibleStateImageBehavior = false;
             this.LSTV_Inventory.View = System.Windows.Forms.View.Details;
@@ -82,19 +80,13 @@
             this.CH_DatePub.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.CH_DatePub.Width = 200;
             // 
-            // CH_Price
-            // 
-            this.CH_Price.Text = "Price";
-            this.CH_Price.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.CH_Price.Width = 80;
-            // 
             // TXTBX_Search
             // 
             this.TXTBX_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.TXTBX_Search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TXTBX_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TXTBX_Search.ForeColor = System.Drawing.Color.White;
-            this.TXTBX_Search.Location = new System.Drawing.Point(759, 6);
+            this.TXTBX_Search.Location = new System.Drawing.Point(676, 7);
             this.TXTBX_Search.Name = "TXTBX_Search";
             this.TXTBX_Search.Size = new System.Drawing.Size(175, 26);
             this.TXTBX_Search.TabIndex = 1;
@@ -126,7 +118,7 @@
             this.PNL_Options.Controls.Add(this.TXTBX_Search);
             this.PNL_Options.Location = new System.Drawing.Point(12, 12);
             this.PNL_Options.Name = "PNL_Options";
-            this.PNL_Options.Size = new System.Drawing.Size(941, 39);
+            this.PNL_Options.Size = new System.Drawing.Size(863, 39);
             this.PNL_Options.TabIndex = 1;
             // 
             // FRM_Books
@@ -134,7 +126,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.ClientSize = new System.Drawing.Size(968, 561);
+            this.ClientSize = new System.Drawing.Size(891, 561);
             this.Controls.Add(this.PNL_Options);
             this.Controls.Add(this.LSTV_Inventory);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -155,7 +147,6 @@
         private System.Windows.Forms.ColumnHeader CH_DatePub;
         private System.Windows.Forms.ColumnHeader Title;
         private System.Windows.Forms.ColumnHeader Author;
-        private System.Windows.Forms.ColumnHeader CH_Price;
         private System.Windows.Forms.TextBox TXTBX_Search;
         private System.Windows.Forms.ComboBox CBX_Sort;
         private System.Windows.Forms.Panel PNL_Options;

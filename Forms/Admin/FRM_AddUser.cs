@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ULMS_Forms.Forms
+namespace ULMS_Forms.Forms.Admin
 {
-    public partial class FRM_DeleteStudent : Form
+    public partial class FRM_AddUser : Form
     {
-        public FRM_DeleteStudent()
+        public FRM_AddUser()
         {
             InitializeComponent();
-        }
-
-        private void IPB_Trash_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

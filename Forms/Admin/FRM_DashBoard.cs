@@ -12,6 +12,7 @@ namespace ULMS_Forms.Forms
 
         // UI Instances
         private FRM_Admin_Inventory adminInven = new FRM_Admin_Inventory();
+        private FRM_AdminUserEditor adminUserEditor = new FRM_AdminUserEditor();
 
         public FRM_AdminDB()
         {
@@ -25,7 +26,7 @@ namespace ULMS_Forms.Forms
 
         private void IBTN_Users_Click(object sender, EventArgs e)
         {
-
+            frmEvents.PNL_ShowForm(PNL_DashBoard, adminUserEditor);
         }
 
         private void IBTN_LogOut_Click(object sender, EventArgs e)

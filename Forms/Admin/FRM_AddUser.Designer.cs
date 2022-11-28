@@ -1,6 +1,6 @@
-﻿namespace ULMS_Forms.Forms
+﻿namespace ULMS_Forms.Forms.Admin
 {
-    partial class FRM_StudenInfo
+    partial class FRM_AddUser
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.TXTBX_Book = new System.Windows.Forms.TextBox();
+            this.LBL_Book = new System.Windows.Forms.Label();
+            this.TXTBX_PhoneNumber = new System.Windows.Forms.TextBox();
+            this.LBL_Number = new System.Windows.Forms.Label();
             this.BTN_Ok = new System.Windows.Forms.Button();
             this.BTN_Close = new System.Windows.Forms.Button();
-            this.DTP_ReturnDate = new System.Windows.Forms.DateTimePicker();
-            this.LBL_ReturnDate = new System.Windows.Forms.Label();
             this.TXTBX_LastName = new System.Windows.Forms.TextBox();
             this.TXTBX_FirstName = new System.Windows.Forms.TextBox();
             this.LBL_Name = new System.Windows.Forms.Label();
             this.TXTBX_Email = new System.Windows.Forms.TextBox();
             this.LBL_BookInfo = new System.Windows.Forms.Label();
             this.LBL_Email = new System.Windows.Forms.Label();
-            this.TXTBX_PhoneNumber = new System.Windows.Forms.TextBox();
-            this.LBL_Number = new System.Windows.Forms.Label();
-            this.TXTBX_Book = new System.Windows.Forms.TextBox();
-            this.LBL_Book = new System.Windows.Forms.Label();
+            this.CBX_Role = new System.Windows.Forms.ComboBox();
+            this.LBL_Role = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // TXTBX_Book
+            // 
+            this.TXTBX_Book.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.TXTBX_Book.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TXTBX_Book.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TXTBX_Book.ForeColor = System.Drawing.Color.White;
+            this.TXTBX_Book.Location = new System.Drawing.Point(28, 451);
+            this.TXTBX_Book.Name = "TXTBX_Book";
+            this.TXTBX_Book.Size = new System.Drawing.Size(448, 24);
+            this.TXTBX_Book.TabIndex = 41;
+            // 
+            // LBL_Book
+            // 
+            this.LBL_Book.AutoSize = true;
+            this.LBL_Book.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBL_Book.ForeColor = System.Drawing.Color.White;
+            this.LBL_Book.Location = new System.Drawing.Point(23, 414);
+            this.LBL_Book.Name = "LBL_Book";
+            this.LBL_Book.Size = new System.Drawing.Size(106, 25);
+            this.LBL_Book.TabIndex = 40;
+            this.LBL_Book.Text = "Password";
+            // 
+            // TXTBX_PhoneNumber
+            // 
+            this.TXTBX_PhoneNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.TXTBX_PhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TXTBX_PhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TXTBX_PhoneNumber.ForeColor = System.Drawing.Color.White;
+            this.TXTBX_PhoneNumber.Location = new System.Drawing.Point(28, 277);
+            this.TXTBX_PhoneNumber.Name = "TXTBX_PhoneNumber";
+            this.TXTBX_PhoneNumber.Size = new System.Drawing.Size(448, 24);
+            this.TXTBX_PhoneNumber.TabIndex = 39;
+            // 
+            // LBL_Number
+            // 
+            this.LBL_Number.AutoSize = true;
+            this.LBL_Number.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBL_Number.ForeColor = System.Drawing.Color.White;
+            this.LBL_Number.Location = new System.Drawing.Point(23, 240);
+            this.LBL_Number.Name = "LBL_Number";
+            this.LBL_Number.Size = new System.Drawing.Size(155, 25);
+            this.LBL_Number.TabIndex = 38;
+            this.LBL_Number.Text = "Phone Number";
             // 
             // BTN_Ok
             // 
@@ -51,13 +95,12 @@
             this.BTN_Ok.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_Ok.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_Ok.ForeColor = System.Drawing.Color.White;
-            this.BTN_Ok.Location = new System.Drawing.Point(234, 523);
+            this.BTN_Ok.Location = new System.Drawing.Point(215, 502);
             this.BTN_Ok.Name = "BTN_Ok";
             this.BTN_Ok.Size = new System.Drawing.Size(118, 35);
-            this.BTN_Ok.TabIndex = 25;
+            this.BTN_Ok.TabIndex = 37;
             this.BTN_Ok.Text = "Ok";
             this.BTN_Ok.UseVisualStyleBackColor = false;
-            this.BTN_Ok.Click += new System.EventHandler(this.BTN_Ok_Click);
             // 
             // BTN_Close
             // 
@@ -67,34 +110,12 @@
             this.BTN_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_Close.ForeColor = System.Drawing.Color.White;
-            this.BTN_Close.Location = new System.Drawing.Point(377, 523);
+            this.BTN_Close.Location = new System.Drawing.Point(358, 502);
             this.BTN_Close.Name = "BTN_Close";
             this.BTN_Close.Size = new System.Drawing.Size(118, 35);
-            this.BTN_Close.TabIndex = 24;
+            this.BTN_Close.TabIndex = 36;
             this.BTN_Close.Text = "Close";
             this.BTN_Close.UseVisualStyleBackColor = false;
-            // 
-            // DTP_ReturnDate
-            // 
-            this.DTP_ReturnDate.CalendarForeColor = System.Drawing.Color.White;
-            this.DTP_ReturnDate.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
-            this.DTP_ReturnDate.CalendarTitleForeColor = System.Drawing.Color.White;
-            this.DTP_ReturnDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DTP_ReturnDate.Location = new System.Drawing.Point(47, 464);
-            this.DTP_ReturnDate.Name = "DTP_ReturnDate";
-            this.DTP_ReturnDate.Size = new System.Drawing.Size(448, 31);
-            this.DTP_ReturnDate.TabIndex = 23;
-            // 
-            // LBL_ReturnDate
-            // 
-            this.LBL_ReturnDate.AutoSize = true;
-            this.LBL_ReturnDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_ReturnDate.ForeColor = System.Drawing.Color.White;
-            this.LBL_ReturnDate.Location = new System.Drawing.Point(42, 423);
-            this.LBL_ReturnDate.Name = "LBL_ReturnDate";
-            this.LBL_ReturnDate.Size = new System.Drawing.Size(127, 25);
-            this.LBL_ReturnDate.TabIndex = 22;
-            this.LBL_ReturnDate.Text = "Return Date";
             // 
             // TXTBX_LastName
             // 
@@ -102,10 +123,10 @@
             this.TXTBX_LastName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TXTBX_LastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TXTBX_LastName.ForeColor = System.Drawing.Color.White;
-            this.TXTBX_LastName.Location = new System.Drawing.Point(260, 127);
+            this.TXTBX_LastName.Location = new System.Drawing.Point(241, 118);
             this.TXTBX_LastName.Name = "TXTBX_LastName";
             this.TXTBX_LastName.Size = new System.Drawing.Size(235, 24);
-            this.TXTBX_LastName.TabIndex = 19;
+            this.TXTBX_LastName.TabIndex = 35;
             // 
             // TXTBX_FirstName
             // 
@@ -113,20 +134,20 @@
             this.TXTBX_FirstName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TXTBX_FirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TXTBX_FirstName.ForeColor = System.Drawing.Color.White;
-            this.TXTBX_FirstName.Location = new System.Drawing.Point(47, 127);
+            this.TXTBX_FirstName.Location = new System.Drawing.Point(28, 118);
             this.TXTBX_FirstName.Name = "TXTBX_FirstName";
             this.TXTBX_FirstName.Size = new System.Drawing.Size(198, 24);
-            this.TXTBX_FirstName.TabIndex = 17;
+            this.TXTBX_FirstName.TabIndex = 34;
             // 
             // LBL_Name
             // 
             this.LBL_Name.AutoSize = true;
             this.LBL_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBL_Name.ForeColor = System.Drawing.Color.White;
-            this.LBL_Name.Location = new System.Drawing.Point(42, 90);
+            this.LBL_Name.Location = new System.Drawing.Point(23, 81);
             this.LBL_Name.Name = "LBL_Name";
             this.LBL_Name.Size = new System.Drawing.Size(68, 25);
-            this.LBL_Name.TabIndex = 16;
+            this.LBL_Name.TabIndex = 33;
             this.LBL_Name.Text = "Name";
             // 
             // TXTBX_Email
@@ -135,93 +156,76 @@
             this.TXTBX_Email.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TXTBX_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TXTBX_Email.ForeColor = System.Drawing.Color.White;
-            this.TXTBX_Email.Location = new System.Drawing.Point(47, 202);
+            this.TXTBX_Email.Location = new System.Drawing.Point(28, 193);
             this.TXTBX_Email.Name = "TXTBX_Email";
             this.TXTBX_Email.Size = new System.Drawing.Size(448, 24);
-            this.TXTBX_Email.TabIndex = 15;
+            this.TXTBX_Email.TabIndex = 32;
             // 
             // LBL_BookInfo
             // 
             this.LBL_BookInfo.AutoSize = true;
             this.LBL_BookInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBL_BookInfo.ForeColor = System.Drawing.Color.White;
-            this.LBL_BookInfo.Location = new System.Drawing.Point(100, 28);
+            this.LBL_BookInfo.Location = new System.Drawing.Point(99, 18);
             this.LBL_BookInfo.Name = "LBL_BookInfo";
-            this.LBL_BookInfo.Size = new System.Drawing.Size(360, 42);
-            this.LBL_BookInfo.TabIndex = 14;
-            this.LBL_BookInfo.Text = "Student Information";
+            this.LBL_BookInfo.Size = new System.Drawing.Size(307, 42);
+            this.LBL_BookInfo.TabIndex = 31;
+            this.LBL_BookInfo.Text = "User Information";
             // 
             // LBL_Email
             // 
             this.LBL_Email.AutoSize = true;
             this.LBL_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBL_Email.ForeColor = System.Drawing.Color.White;
-            this.LBL_Email.Location = new System.Drawing.Point(42, 165);
+            this.LBL_Email.Location = new System.Drawing.Point(23, 156);
             this.LBL_Email.Name = "LBL_Email";
             this.LBL_Email.Size = new System.Drawing.Size(65, 25);
-            this.LBL_Email.TabIndex = 13;
+            this.LBL_Email.TabIndex = 30;
             this.LBL_Email.Text = "Email";
             // 
-            // TXTBX_PhoneNumber
+            // CBX_Role
             // 
-            this.TXTBX_PhoneNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
-            this.TXTBX_PhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TXTBX_PhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTBX_PhoneNumber.ForeColor = System.Drawing.Color.White;
-            this.TXTBX_PhoneNumber.Location = new System.Drawing.Point(47, 286);
-            this.TXTBX_PhoneNumber.Name = "TXTBX_PhoneNumber";
-            this.TXTBX_PhoneNumber.Size = new System.Drawing.Size(448, 24);
-            this.TXTBX_PhoneNumber.TabIndex = 27;
+            this.CBX_Role.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.CBX_Role.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CBX_Role.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CBX_Role.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CBX_Role.ForeColor = System.Drawing.Color.White;
+            this.CBX_Role.FormattingEnabled = true;
+            this.CBX_Role.Items.AddRange(new object[] {
+            "Ascending",
+            "Descending",
+            "Genre",
+            "Price"});
+            this.CBX_Role.Location = new System.Drawing.Point(28, 369);
+            this.CBX_Role.Name = "CBX_Role";
+            this.CBX_Role.Size = new System.Drawing.Size(448, 28);
+            this.CBX_Role.TabIndex = 42;
             // 
-            // LBL_Number
+            // LBL_Role
             // 
-            this.LBL_Number.AutoSize = true;
-            this.LBL_Number.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_Number.ForeColor = System.Drawing.Color.White;
-            this.LBL_Number.Location = new System.Drawing.Point(42, 249);
-            this.LBL_Number.Name = "LBL_Number";
-            this.LBL_Number.Size = new System.Drawing.Size(155, 25);
-            this.LBL_Number.TabIndex = 26;
-            this.LBL_Number.Text = "Phone Number";
+            this.LBL_Role.AutoSize = true;
+            this.LBL_Role.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBL_Role.ForeColor = System.Drawing.Color.White;
+            this.LBL_Role.Location = new System.Drawing.Point(23, 324);
+            this.LBL_Role.Name = "LBL_Role";
+            this.LBL_Role.Size = new System.Drawing.Size(56, 25);
+            this.LBL_Role.TabIndex = 43;
+            this.LBL_Role.Text = "Role";
             // 
-            // TXTBX_Book
+            // FRM_AddUser
             // 
-            this.TXTBX_Book.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
-            this.TXTBX_Book.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TXTBX_Book.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTBX_Book.ForeColor = System.Drawing.Color.White;
-            this.TXTBX_Book.Location = new System.Drawing.Point(47, 371);
-            this.TXTBX_Book.Name = "TXTBX_Book";
-            this.TXTBX_Book.Size = new System.Drawing.Size(448, 24);
-            this.TXTBX_Book.TabIndex = 29;
-            // 
-            // LBL_Book
-            // 
-            this.LBL_Book.AutoSize = true;
-            this.LBL_Book.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_Book.ForeColor = System.Drawing.Color.White;
-            this.LBL_Book.Location = new System.Drawing.Point(42, 334);
-            this.LBL_Book.Name = "LBL_Book";
-            this.LBL_Book.Size = new System.Drawing.Size(61, 25);
-            this.LBL_Book.TabIndex = 28;
-            this.LBL_Book.Text = "Book";
-            // 
-            // FRM_StudenInfo
-            // 
-            this.AcceptButton = this.BTN_Ok;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.CancelButton = this.BTN_Close;
-            this.ClientSize = new System.Drawing.Size(541, 587);
+            this.ClientSize = new System.Drawing.Size(501, 569);
+            this.Controls.Add(this.LBL_Role);
+            this.Controls.Add(this.CBX_Role);
             this.Controls.Add(this.TXTBX_Book);
             this.Controls.Add(this.LBL_Book);
             this.Controls.Add(this.TXTBX_PhoneNumber);
             this.Controls.Add(this.LBL_Number);
             this.Controls.Add(this.BTN_Ok);
             this.Controls.Add(this.BTN_Close);
-            this.Controls.Add(this.DTP_ReturnDate);
-            this.Controls.Add(this.LBL_ReturnDate);
             this.Controls.Add(this.TXTBX_LastName);
             this.Controls.Add(this.TXTBX_FirstName);
             this.Controls.Add(this.LBL_Name);
@@ -231,11 +235,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FRM_StudenInfo";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
+            this.Name = "FRM_AddUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " ";
+            this.Text = "FRM_StudentAdd";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,19 +245,19 @@
 
         #endregion
 
+        private System.Windows.Forms.TextBox TXTBX_Book;
+        private System.Windows.Forms.Label LBL_Book;
+        private System.Windows.Forms.TextBox TXTBX_PhoneNumber;
+        private System.Windows.Forms.Label LBL_Number;
         private System.Windows.Forms.Button BTN_Ok;
         private System.Windows.Forms.Button BTN_Close;
-        private System.Windows.Forms.DateTimePicker DTP_ReturnDate;
-        private System.Windows.Forms.Label LBL_ReturnDate;
         private System.Windows.Forms.TextBox TXTBX_LastName;
         private System.Windows.Forms.TextBox TXTBX_FirstName;
         private System.Windows.Forms.Label LBL_Name;
         private System.Windows.Forms.TextBox TXTBX_Email;
         private System.Windows.Forms.Label LBL_BookInfo;
         private System.Windows.Forms.Label LBL_Email;
-        private System.Windows.Forms.TextBox TXTBX_PhoneNumber;
-        private System.Windows.Forms.Label LBL_Number;
-        private System.Windows.Forms.TextBox TXTBX_Book;
-        private System.Windows.Forms.Label LBL_Book;
+        private System.Windows.Forms.ComboBox CBX_Role;
+        private System.Windows.Forms.Label LBL_Role;
     }
 }

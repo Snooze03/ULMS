@@ -26,15 +26,15 @@ namespace ULMS_Forms
 
             if (TXTBX_UserName.Text == "librarian" && TXTBX_PassWord.Text == "1234")
             {
-                this.Hide();
+                Hide();
                 libDB.ShowDialog();
-                this.Close();
+                Close();
             }
             else if (TXTBX_UserName.Text == "admin" && TXTBX_PassWord.Text == "1234")
             {
-                this.Hide();
+                Hide();
                 adminDB.ShowDialog();
-                this.Close();
+                Close();
             }
 
             // #######################################

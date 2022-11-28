@@ -40,6 +40,8 @@
             this.DTP_DatePub = new System.Windows.Forms.DateTimePicker();
             this.BTN_Close = new System.Windows.Forms.Button();
             this.BTN_Ok = new System.Windows.Forms.Button();
+            this.TXTBX_Price = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LBL_Title
@@ -59,7 +61,7 @@
             this.LBL_BookInfo.AutoSize = true;
             this.LBL_BookInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBL_BookInfo.ForeColor = System.Drawing.Color.White;
-            this.LBL_BookInfo.Location = new System.Drawing.Point(81, 20);
+            this.LBL_BookInfo.Location = new System.Drawing.Point(117, 20);
             this.LBL_BookInfo.Name = "LBL_BookInfo";
             this.LBL_BookInfo.Size = new System.Drawing.Size(314, 42);
             this.LBL_BookInfo.TabIndex = 1;
@@ -142,7 +144,7 @@
             this.LBL_DatePub.AutoSize = true;
             this.LBL_DatePub.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBL_DatePub.ForeColor = System.Drawing.Color.White;
-            this.LBL_DatePub.Location = new System.Drawing.Point(48, 348);
+            this.LBL_DatePub.Location = new System.Drawing.Point(48, 424);
             this.LBL_DatePub.Name = "LBL_DatePub";
             this.LBL_DatePub.Size = new System.Drawing.Size(158, 25);
             this.LBL_DatePub.TabIndex = 9;
@@ -154,7 +156,7 @@
             this.DTP_DatePub.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
             this.DTP_DatePub.CalendarTitleForeColor = System.Drawing.Color.White;
             this.DTP_DatePub.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DTP_DatePub.Location = new System.Drawing.Point(53, 389);
+            this.DTP_DatePub.Location = new System.Drawing.Point(53, 465);
             this.DTP_DatePub.Name = "DTP_DatePub";
             this.DTP_DatePub.Size = new System.Drawing.Size(448, 31);
             this.DTP_DatePub.TabIndex = 10;
@@ -168,7 +170,7 @@
             this.BTN_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_Close.ForeColor = System.Drawing.Color.White;
-            this.BTN_Close.Location = new System.Drawing.Point(383, 449);
+            this.BTN_Close.Location = new System.Drawing.Point(383, 525);
             this.BTN_Close.Name = "BTN_Close";
             this.BTN_Close.Size = new System.Drawing.Size(118, 35);
             this.BTN_Close.TabIndex = 11;
@@ -183,12 +185,34 @@
             this.BTN_Ok.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_Ok.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_Ok.ForeColor = System.Drawing.Color.White;
-            this.BTN_Ok.Location = new System.Drawing.Point(240, 449);
+            this.BTN_Ok.Location = new System.Drawing.Point(240, 525);
             this.BTN_Ok.Name = "BTN_Ok";
             this.BTN_Ok.Size = new System.Drawing.Size(118, 35);
             this.BTN_Ok.TabIndex = 12;
             this.BTN_Ok.Text = "Ok";
             this.BTN_Ok.UseVisualStyleBackColor = false;
+            // 
+            // TXTBX_Price
+            // 
+            this.TXTBX_Price.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.TXTBX_Price.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TXTBX_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TXTBX_Price.ForeColor = System.Drawing.Color.White;
+            this.TXTBX_Price.Location = new System.Drawing.Point(53, 382);
+            this.TXTBX_Price.Name = "TXTBX_Price";
+            this.TXTBX_Price.Size = new System.Drawing.Size(201, 24);
+            this.TXTBX_Price.TabIndex = 14;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(48, 345);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 25);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Price";
             // 
             // FRM_AddBook
             // 
@@ -197,7 +221,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.CancelButton = this.BTN_Close;
-            this.ClientSize = new System.Drawing.Size(550, 510);
+            this.ClientSize = new System.Drawing.Size(550, 588);
+            this.Controls.Add(this.TXTBX_Price);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.BTN_Ok);
             this.Controls.Add(this.BTN_Close);
             this.Controls.Add(this.DTP_DatePub);
@@ -235,5 +261,7 @@
         private System.Windows.Forms.DateTimePicker DTP_DatePub;
         private System.Windows.Forms.Button BTN_Close;
         private System.Windows.Forms.Button BTN_Ok;
+        private System.Windows.Forms.TextBox TXTBX_Price;
+        private System.Windows.Forms.Label label1;
     }
 }
