@@ -19,7 +19,7 @@ namespace ULMS_Forms.Forms
 
         private void BTN_Add_Click(object sender, EventArgs e)
         {
-            FRM_StudentLend studentLend = new FRM_StudentLend();
+            FRM_StudenInfo studentLend = new FRM_StudenInfo();
             studentLend.ShowDialog();
         }
 

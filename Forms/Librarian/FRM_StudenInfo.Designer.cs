@@ -1,6 +1,6 @@
 ﻿namespace ULMS_Forms.Forms
 {
-    partial class FRM_StudentLend
+    partial class FRM_StudenInfo
     {
         /// <summary>
         /// Required designer variable.
@@ -194,7 +194,7 @@
             this.LBL_Book.TabIndex = 26;
             this.LBL_Book.Text = "Book";
             // 
-            // FRM_StudentLend
+            // FRM_StudenInfo
             // 
             this.AcceptButton = this.BTN_Ok;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -218,7 +218,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FRM_StudentLend";
+            this.Name = "FRM_StudenInfo";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -5,11 +5,11 @@ using DatabaseProject;
 
 namespace ULMS_Forms.Forms
 {
-    public partial class FRM_StudentLend : Form
+    public partial class FRM_StudenInfo : Form
     {
         private DBAccess dbAccess = new DBAccess();
 
-        public FRM_StudentLend()
+        public FRM_StudenInfo()
         {
             InitializeComponent();
         }
