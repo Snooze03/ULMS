@@ -48,10 +48,6 @@ namespace ULMS_Forms.src
             form.Show();
         }
 
-        internal bool IsValid(Control.ControlCollection controls)
-        {
-            throw new NotImplementedException();
-        }
 
         // ##################################################
 

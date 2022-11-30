@@ -1,10 +1,9 @@
-﻿using System;
+using System;
 using System.Threading;
 using System.Windows.Forms;
 using ULMS_Forms.src;
 using DatabaseProject;
 using System.Data;
-using ULMS_Forms.Forms;
 
 namespace ULMS_Forms
 {
@@ -40,10 +39,12 @@ namespace ULMS_Forms
                 th = new Thread(OpenNewForm);
                 th.SetApartmentState(ApartmentState.STA);
                 th.Start();
-
                 Close();
             }
-            else MessageBox.Show("User '" + userName + "' does not exist");
+        }
+        private void OpenNewForm()
+        {
+            Application.Run(new FRM_Login());
         }
 
         // Text Box place holder
@@ -65,11 +66,6 @@ namespace ULMS_Forms
         private void TXTBX_PassWord_Leave(object sender, EventArgs e)
         {
             frmEvents.TXTBX_InsertPlaceHolder(TXTBX_PassWord, pswdPlHolder, true);
-        }
-
-        private void OpenNewForm()
-        {
-            Application.Run(new FRM_AdminDB());
         }
     }
 }
