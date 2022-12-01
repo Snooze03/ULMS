@@ -5,6 +5,8 @@ A program intendted to help libraries manage their inventory, borrowed books, fe
 ## To do list
 - **U.I**
     - [x] Admin Dashboard
+    - [ ] Show database data
+    - [ ] Search and sort 
 	- [ ] Refine Dialogs: add, delete, sort, search
 	- [ ] New color scheme
 	- [ ] Rounded corners
