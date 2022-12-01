@@ -159,7 +159,9 @@
             this.Controls.Add(this.PNL_NavBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FRM_AdminDB";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_AdminDB";
             this.PNL_NavBar.ResumeLayout(false);

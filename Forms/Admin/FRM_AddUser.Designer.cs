@@ -273,6 +273,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FRM_AddUser";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_StudentAdd";
             this.ResumeLayout(false);

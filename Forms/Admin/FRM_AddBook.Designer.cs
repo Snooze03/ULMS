@@ -54,7 +54,6 @@
             this.LBL_Title.Size = new System.Drawing.Size(53, 25);
             this.LBL_Title.TabIndex = 0;
             this.LBL_Title.Text = "Title";
-            this.LBL_Title.Click += new System.EventHandler(this.LBL_Title_Click);
             // 
             // LBL_BookInfo
             // 
@@ -129,15 +128,25 @@
             this.CBX_Genre.ForeColor = System.Drawing.Color.White;
             this.CBX_Genre.FormattingEnabled = true;
             this.CBX_Genre.Items.AddRange(new object[] {
-            "Fiction",
-            "Drama",
+            "Adventure",
+            "Romance",
+            "Contemporary",
+            "Dystopian",
+            "Mystery",
             "Horror",
-            "Math",
-            "Philosophy"});
+            "Art",
+            "Self-help",
+            "Development",
+            "Motivational",
+            "Health",
+            "History",
+            "Travel",
+            "Other"});
             this.CBX_Genre.Location = new System.Drawing.Point(53, 290);
             this.CBX_Genre.Name = "CBX_Genre";
             this.CBX_Genre.Size = new System.Drawing.Size(448, 33);
             this.CBX_Genre.TabIndex = 8;
+            this.CBX_Genre.SelectionChangeCommitted += new System.EventHandler(this.CBX_Genre_SelectionChangeCommitted);
             // 
             // LBL_DatePub
             // 
@@ -239,7 +248,10 @@
             this.Controls.Add(this.LBL_Title);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FRM_AddBook";
+            this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_AddBook";

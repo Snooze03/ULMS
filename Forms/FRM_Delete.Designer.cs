@@ -104,7 +104,7 @@
             this.BTN_Cancel.Text = "Cancel";
             this.BTN_Cancel.UseVisualStyleBackColor = false;
             // 
-            // FRM_DeleteStudent
+            // FRM_Delete
             // 
             this.AcceptButton = this.BTN_Delete;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -118,7 +118,11 @@
             this.Controls.Add(this.LBL_Msg1);
             this.Controls.Add(this.IPB_Trash);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FRM_DeleteStudent";
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "FRM_Delete";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_DeleteStudent";
             ((System.ComponentModel.ISupportInitialize)(this.IPB_Trash)).EndInit();
