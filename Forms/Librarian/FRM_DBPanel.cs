@@ -22,9 +22,5 @@ namespace ULMS_Forms
 
         }
 
-        private void IPB_Books_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

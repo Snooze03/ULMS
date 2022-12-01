@@ -28,57 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.LSTV_Inventory = new System.Windows.Forms.ListView();
-            this.Title = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Author = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.CH_Genre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.CH_DatePub = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TXTBX_Search = new System.Windows.Forms.TextBox();
             this.CBX_Sort = new System.Windows.Forms.ComboBox();
             this.PNL_Options = new System.Windows.Forms.Panel();
+            this.DGV_Inventory = new System.Windows.Forms.DataGridView();
             this.PNL_Options.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Inventory)).BeginInit();
             this.SuspendLayout();
-            // 
-            // LSTV_Inventory
-            // 
-            this.LSTV_Inventory.BackColor = System.Drawing.Color.White;
-            this.LSTV_Inventory.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Title,
-            this.Author,
-            this.CH_Genre,
-            this.CH_DatePub});
-            this.LSTV_Inventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LSTV_Inventory.GridLines = true;
-            this.LSTV_Inventory.HideSelection = false;
-            this.LSTV_Inventory.Location = new System.Drawing.Point(12, 67);
-            this.LSTV_Inventory.Name = "LSTV_Inventory";
-            this.LSTV_Inventory.Size = new System.Drawing.Size(863, 482);
-            this.LSTV_Inventory.TabIndex = 0;
-            this.LSTV_Inventory.UseCompatibleStateImageBehavior = false;
-            this.LSTV_Inventory.View = System.Windows.Forms.View.Details;
-            // 
-            // Title
-            // 
-            this.Title.Text = "                         Title";
-            this.Title.Width = 205;
-            // 
-            // Author
-            // 
-            this.Author.Text = "Author";
-            this.Author.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Author.Width = 200;
-            // 
-            // CH_Genre
-            // 
-            this.CH_Genre.Text = "Genre";
-            this.CH_Genre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.CH_Genre.Width = 250;
-            // 
-            // CH_DatePub
-            // 
-            this.CH_DatePub.Text = "Date Published";
-            this.CH_DatePub.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.CH_DatePub.Width = 200;
             // 
             // TXTBX_Search
             // 
@@ -121,34 +79,62 @@
             this.PNL_Options.Size = new System.Drawing.Size(863, 39);
             this.PNL_Options.TabIndex = 1;
             // 
+            // DGV_Inventory
+            // 
+            this.DGV_Inventory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DGV_Inventory.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.DGV_Inventory.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.DGV_Inventory.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_Inventory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.DGV_Inventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_Inventory.DefaultCellStyle = dataGridViewCellStyle2;
+            this.DGV_Inventory.Location = new System.Drawing.Point(12, 64);
+            this.DGV_Inventory.Margin = new System.Windows.Forms.Padding(0);
+            this.DGV_Inventory.Name = "DGV_Inventory";
+            this.DGV_Inventory.ReadOnly = true;
+            this.DGV_Inventory.RowHeadersWidth = 10;
+            this.DGV_Inventory.Size = new System.Drawing.Size(863, 488);
+            this.DGV_Inventory.TabIndex = 8;
+            // 
             // FRM_Books
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(891, 561);
+            this.Controls.Add(this.DGV_Inventory);
             this.Controls.Add(this.PNL_Options);
-            this.Controls.Add(this.LSTV_Inventory);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FRM_Books";
             this.Text = "FRM_Inventory";
+            this.Load += new System.EventHandler(this.FRM_Books_Load);
             this.PNL_Options.ResumeLayout(false);
             this.PNL_Options.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Inventory)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ListView LSTV_Inventory;
-        private System.Windows.Forms.ColumnHeader CH_Genre;
-        private System.Windows.Forms.ColumnHeader CH_DatePub;
-        private System.Windows.Forms.ColumnHeader Title;
-        private System.Windows.Forms.ColumnHeader Author;
         private System.Windows.Forms.TextBox TXTBX_Search;
         private System.Windows.Forms.ComboBox CBX_Sort;
         private System.Windows.Forms.Panel PNL_Options;
+        private System.Windows.Forms.DataGridView DGV_Inventory;
     }
 }

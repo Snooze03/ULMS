@@ -132,7 +132,6 @@
             this.IPB_Books.Size = new System.Drawing.Size(115, 119);
             this.IPB_Books.TabIndex = 3;
             this.IPB_Books.TabStop = false;
-            this.IPB_Books.Click += new System.EventHandler(this.IPB_Books_Click);
             // 
             // LBL_BooksNO
             // 
@@ -193,7 +192,7 @@
             this.LBL_OverDueNO.TabIndex = 5;
             this.LBL_OverDueNO.Text = "12";
             // 
-            // FRM_DashBoard
+            // FRM_DBPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -203,7 +202,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FRM_DashBoard";
+            this.Name = "FRM_DBPanel";
             this.Text = "FRM_DashBoard";
             this.Load += new System.EventHandler(this.FRM_DashBoard_Load);
             this.panel1.ResumeLayout(false);

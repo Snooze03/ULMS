@@ -28,19 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PNL_Options = new System.Windows.Forms.Panel();
+            this.BTN_Edit = new System.Windows.Forms.Button();
             this.BTN_Delete = new System.Windows.Forms.Button();
             this.BTN_Add = new System.Windows.Forms.Button();
             this.CBX_Sort = new System.Windows.Forms.ComboBox();
             this.TXTBX_Search = new System.Windows.Forms.TextBox();
-            this.LSTV_Inventory = new System.Windows.Forms.ListView();
-            this.Title = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Author = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.CH_Genre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.CH_DatePub = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.CH_Price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.BTN_Edit = new System.Windows.Forms.Button();
+            this.DGV_Inventory = new System.Windows.Forms.DataGridView();
             this.PNL_Options.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Inventory)).BeginInit();
             this.SuspendLayout();
             // 
             // PNL_Options
@@ -55,6 +53,21 @@
             this.PNL_Options.Name = "PNL_Options";
             this.PNL_Options.Size = new System.Drawing.Size(941, 39);
             this.PNL_Options.TabIndex = 3;
+            // 
+            // BTN_Edit
+            // 
+            this.BTN_Edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.BTN_Edit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTN_Edit.FlatAppearance.BorderSize = 0;
+            this.BTN_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Edit.ForeColor = System.Drawing.Color.White;
+            this.BTN_Edit.Location = new System.Drawing.Point(108, 7);
+            this.BTN_Edit.Name = "BTN_Edit";
+            this.BTN_Edit.Size = new System.Drawing.Size(80, 26);
+            this.BTN_Edit.TabIndex = 5;
+            this.BTN_Edit.Text = "Edit";
+            this.BTN_Edit.UseVisualStyleBackColor = false;
             // 
             // BTN_Delete
             // 
@@ -119,68 +132,36 @@
             this.TXTBX_Search.TabIndex = 1;
             this.TXTBX_Search.Text = " Search";
             // 
-            // LSTV_Inventory
+            // DGV_Inventory
             // 
-            this.LSTV_Inventory.BackColor = System.Drawing.Color.White;
-            this.LSTV_Inventory.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Title,
-            this.Author,
-            this.CH_Genre,
-            this.CH_DatePub,
-            this.CH_Price});
-            this.LSTV_Inventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LSTV_Inventory.GridLines = true;
-            this.LSTV_Inventory.HideSelection = false;
-            this.LSTV_Inventory.Location = new System.Drawing.Point(12, 67);
-            this.LSTV_Inventory.Name = "LSTV_Inventory";
-            this.LSTV_Inventory.Size = new System.Drawing.Size(941, 482);
-            this.LSTV_Inventory.TabIndex = 2;
-            this.LSTV_Inventory.UseCompatibleStateImageBehavior = false;
-            this.LSTV_Inventory.View = System.Windows.Forms.View.Details;
-            // 
-            // Title
-            // 
-            this.Title.Text = "                         Title";
-            this.Title.Width = 205;
-            // 
-            // Author
-            // 
-            this.Author.Text = "Author";
-            this.Author.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Author.Width = 200;
-            // 
-            // CH_Genre
-            // 
-            this.CH_Genre.Text = "Genre";
-            this.CH_Genre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.CH_Genre.Width = 250;
-            // 
-            // CH_DatePub
-            // 
-            this.CH_DatePub.Text = "Date Published";
-            this.CH_DatePub.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.CH_DatePub.Width = 200;
-            // 
-            // CH_Price
-            // 
-            this.CH_Price.Text = "Price";
-            this.CH_Price.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.CH_Price.Width = 80;
-            // 
-            // BTN_Edit
-            // 
-            this.BTN_Edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.BTN_Edit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BTN_Edit.FlatAppearance.BorderSize = 0;
-            this.BTN_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTN_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Edit.ForeColor = System.Drawing.Color.White;
-            this.BTN_Edit.Location = new System.Drawing.Point(108, 7);
-            this.BTN_Edit.Name = "BTN_Edit";
-            this.BTN_Edit.Size = new System.Drawing.Size(80, 26);
-            this.BTN_Edit.TabIndex = 5;
-            this.BTN_Edit.Text = "Edit";
-            this.BTN_Edit.UseVisualStyleBackColor = false;
+            this.DGV_Inventory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DGV_Inventory.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.DGV_Inventory.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.DGV_Inventory.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_Inventory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.DGV_Inventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_Inventory.DefaultCellStyle = dataGridViewCellStyle2;
+            this.DGV_Inventory.Location = new System.Drawing.Point(12, 66);
+            this.DGV_Inventory.Margin = new System.Windows.Forms.Padding(0);
+            this.DGV_Inventory.Name = "DGV_Inventory";
+            this.DGV_Inventory.ReadOnly = true;
+            this.DGV_Inventory.RowHeadersWidth = 10;
+            this.DGV_Inventory.Size = new System.Drawing.Size(941, 492);
+            this.DGV_Inventory.TabIndex = 7;
             // 
             // FRM_Admin_Inventory
             // 
@@ -188,13 +169,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(967, 567);
+            this.Controls.Add(this.DGV_Inventory);
             this.Controls.Add(this.PNL_Options);
-            this.Controls.Add(this.LSTV_Inventory);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FRM_Admin_Inventory";
             this.Text = "FRM_Admin_Inventory";
+            this.Load += new System.EventHandler(this.FRM_Admin_Inventory_Load);
             this.PNL_Options.ResumeLayout(false);
             this.PNL_Options.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Inventory)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -204,14 +187,9 @@
         private System.Windows.Forms.Panel PNL_Options;
         private System.Windows.Forms.ComboBox CBX_Sort;
         private System.Windows.Forms.TextBox TXTBX_Search;
-        private System.Windows.Forms.ListView LSTV_Inventory;
-        private System.Windows.Forms.ColumnHeader Title;
-        private System.Windows.Forms.ColumnHeader Author;
-        private System.Windows.Forms.ColumnHeader CH_Genre;
-        private System.Windows.Forms.ColumnHeader CH_DatePub;
-        private System.Windows.Forms.ColumnHeader CH_Price;
         private System.Windows.Forms.Button BTN_Add;
         private System.Windows.Forms.Button BTN_Delete;
         private System.Windows.Forms.Button BTN_Edit;
+        private System.Windows.Forms.DataGridView DGV_Inventory;
     }
 }

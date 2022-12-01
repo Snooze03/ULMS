@@ -28,75 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.LSTV_Lending = new System.Windows.Forms.ListView();
-            this.CH_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.CH_BookBorrowed = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.CH_DateBorrowed = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.CH_ReturnDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.CH_Phone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.CH_Email = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PNL_Options = new System.Windows.Forms.Panel();
             this.CBX_Sort = new System.Windows.Forms.ComboBox();
             this.BTN_Delete = new System.Windows.Forms.Button();
             this.TXTBX_Search = new System.Windows.Forms.TextBox();
             this.BTN_Add = new System.Windows.Forms.Button();
+            this.DGV_Lending = new System.Windows.Forms.DataGridView();
             this.PNL_Options.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Lending)).BeginInit();
             this.SuspendLayout();
-            // 
-            // LSTV_Lending
-            // 
-            this.LSTV_Lending.BackColor = System.Drawing.Color.White;
-            this.LSTV_Lending.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.CH_Name,
-            this.CH_BookBorrowed,
-            this.CH_DateBorrowed,
-            this.CH_ReturnDate,
-            this.CH_Phone,
-            this.CH_Email});
-            this.LSTV_Lending.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LSTV_Lending.GridLines = true;
-            this.LSTV_Lending.HideSelection = false;
-            this.LSTV_Lending.Location = new System.Drawing.Point(12, 67);
-            this.LSTV_Lending.Name = "LSTV_Lending";
-            this.LSTV_Lending.Size = new System.Drawing.Size(941, 482);
-            this.LSTV_Lending.TabIndex = 1;
-            this.LSTV_Lending.UseCompatibleStateImageBehavior = false;
-            this.LSTV_Lending.View = System.Windows.Forms.View.Details;
-            // 
-            // CH_Name
-            // 
-            this.CH_Name.Text = "                   Name";
-            this.CH_Name.Width = 200;
-            // 
-            // CH_BookBorrowed
-            // 
-            this.CH_BookBorrowed.Text = "Book Borrowed";
-            this.CH_BookBorrowed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.CH_BookBorrowed.Width = 177;
-            // 
-            // CH_DateBorrowed
-            // 
-            this.CH_DateBorrowed.Text = "Date Borrowed";
-            this.CH_DateBorrowed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.CH_DateBorrowed.Width = 150;
-            // 
-            // CH_ReturnDate
-            // 
-            this.CH_ReturnDate.Text = "Return Date";
-            this.CH_ReturnDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.CH_ReturnDate.Width = 150;
-            // 
-            // CH_Phone
-            // 
-            this.CH_Phone.Text = "Phone #";
-            this.CH_Phone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.CH_Phone.Width = 130;
-            // 
-            // CH_Email
-            // 
-            this.CH_Email.Text = "Email";
-            this.CH_Email.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.CH_Email.Width = 130;
             // 
             // PNL_Options
             // 
@@ -173,38 +115,64 @@
             this.BTN_Add.UseVisualStyleBackColor = false;
             this.BTN_Add.Click += new System.EventHandler(this.BTN_Add_Click);
             // 
+            // DGV_Lending
+            // 
+            this.DGV_Lending.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DGV_Lending.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.DGV_Lending.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.DGV_Lending.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_Lending.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.DGV_Lending.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_Lending.DefaultCellStyle = dataGridViewCellStyle4;
+            this.DGV_Lending.Location = new System.Drawing.Point(12, 64);
+            this.DGV_Lending.Margin = new System.Windows.Forms.Padding(0);
+            this.DGV_Lending.Name = "DGV_Lending";
+            this.DGV_Lending.ReadOnly = true;
+            this.DGV_Lending.RowHeadersWidth = 10;
+            this.DGV_Lending.Size = new System.Drawing.Size(941, 488);
+            this.DGV_Lending.TabIndex = 9;
+            // 
             // FRM_Lending
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(968, 561);
+            this.Controls.Add(this.DGV_Lending);
             this.Controls.Add(this.PNL_Options);
-            this.Controls.Add(this.LSTV_Lending);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FRM_Lending";
             this.Text = "Lending";
+            this.Load += new System.EventHandler(this.FRM_Lending_Load);
             this.PNL_Options.ResumeLayout(false);
             this.PNL_Options.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Lending)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ListView LSTV_Lending;
         private System.Windows.Forms.Panel PNL_Options;
         private System.Windows.Forms.TextBox TXTBX_Search;
         private System.Windows.Forms.Button BTN_Add;
-        private System.Windows.Forms.ColumnHeader CH_Name;
-        private System.Windows.Forms.ColumnHeader CH_BookBorrowed;
-        private System.Windows.Forms.ColumnHeader CH_DateBorrowed;
-        private System.Windows.Forms.ColumnHeader CH_ReturnDate;
-        private System.Windows.Forms.ColumnHeader CH_Email;
         private System.Windows.Forms.Button BTN_Delete;
-        private System.Windows.Forms.ColumnHeader CH_Phone;
         private System.Windows.Forms.ComboBox CBX_Sort;
+        private System.Windows.Forms.DataGridView DGV_Lending;
     }
 }
