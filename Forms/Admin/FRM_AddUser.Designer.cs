@@ -248,10 +248,9 @@
             // 
             // FRM_AddUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.ClientSize = new System.Drawing.Size(501, 659);
+            this.ClientSize = new System.Drawing.Size(501, 653);
             this.Controls.Add(this.TXTBX_UserName);
             this.Controls.Add(this.LBL_UserName);
             this.Controls.Add(this.RB_Librarian);

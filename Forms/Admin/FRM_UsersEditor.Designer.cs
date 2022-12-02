@@ -68,6 +68,7 @@
             this.BTN_Delete.TabIndex = 5;
             this.BTN_Delete.Text = "Delete";
             this.BTN_Delete.UseVisualStyleBackColor = false;
+            this.BTN_Delete.Click += new System.EventHandler(this.BTN_Delete_Click);
             // 
             // BTN_Edit
             // 
@@ -83,7 +84,7 @@
             this.BTN_Edit.TabIndex = 4;
             this.BTN_Edit.Text = "Edit";
             this.BTN_Edit.UseVisualStyleBackColor = false;
-            this.BTN_Edit.Click += new System.EventHandler(this.BTN_Delete_Click);
+            this.BTN_Edit.Click += new System.EventHandler(this.BTN_Edit_Click);
             // 
             // BTN_Add
             // 

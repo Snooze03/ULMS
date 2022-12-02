@@ -10,9 +10,11 @@ namespace ULMS_Forms
 {
     public partial class FRM_Login : Form
     {
+        private string usrNamePLHolder = "User name", pswdPlHolder = "Password";
+
         private FRM_Events frmEvents = new FRM_Events();
         private DBAccess dbAccess = new DBAccess();
-        private string usrNamePLHolder = "User name", pswdPlHolder = "Password";
+
         private DataTable dtUsers = new DataTable();
 
         public FRM_Login()
@@ -36,6 +38,7 @@ namespace ULMS_Forms
             {
                 dbAccess.closeConn();
 
+                // Open new form in new thread and close current form
                 Thread th;
                 th = new Thread(OpenNewForm);
                 th.SetApartmentState(ApartmentState.STA);

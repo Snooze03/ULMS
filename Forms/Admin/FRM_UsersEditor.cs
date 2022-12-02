@@ -32,11 +32,16 @@ namespace ULMS_Forms.Forms
             addUser.ShowDialog();
         }
 
+        private void BTN_Edit_Click(object sender, EventArgs e)
+        {
+            FRM_EditUser editUser = new FRM_EditUser();
+            editUser.ShowDialog();  
+        }
+
         private void BTN_Delete_Click(object sender, EventArgs e)
         {
             FRM_Delete delete = new FRM_Delete();
             delete.ShowDialog();
         }
-
     }
 }
