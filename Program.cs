@@ -18,7 +18,7 @@ namespace ULMS_Forms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FRM_LibrarianDB());
+            Application.Run(new FRM_Login());
         }
     }
 }

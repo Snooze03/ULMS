@@ -69,7 +69,12 @@ namespace ULMS_Forms
 
         private void OpenNewForm()
         {
-            Application.Run(new FRM_AdminDB());
+            Form frm;
+
+            if (dtUsers.Rows[0]["Role"].ToString() == "Admin") frm = new FRM_AdminDB();
+            else frm = new FRM_LibrarianDB();
+
+            Application.Run(frm);
         }
     }
 }
