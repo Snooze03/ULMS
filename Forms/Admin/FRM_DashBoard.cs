@@ -7,12 +7,7 @@ namespace ULMS_Forms.Forms
 {
     public partial class FRM_AdminDB : Form
     {
-
         private FRM_Events frmEvents = new FRM_Events();
-
-        // UI Instances
-        private FRM_Admin_Inventory adminInven = new FRM_Admin_Inventory();
-        private FRM_AdminUserEditor adminUserEditor = new FRM_AdminUserEditor();
 
         public FRM_AdminDB()
         {
@@ -21,12 +16,12 @@ namespace ULMS_Forms.Forms
 
         private void IBTN_Inventory_Click(object sender, EventArgs e)
         {
-            frmEvents.PNL_ShowForm(PNL_DashBoard, adminInven);
+            frmEvents.PNL_ShowForm(PNL_DashBoard, new FRM_Admin_Inventory());
         }
 
         private void IBTN_Users_Click(object sender, EventArgs e)
         {
-            frmEvents.PNL_ShowForm(PNL_DashBoard, adminUserEditor);
+            frmEvents.PNL_ShowForm(PNL_DashBoard, new FRM_AdminUserEditor());
         }
 
         private void IBTN_LogOut_Click(object sender, EventArgs e)

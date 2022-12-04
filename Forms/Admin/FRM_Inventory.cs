@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DatabaseProject;
+using ULMS_Forms.Forms.Admin;
 
 namespace ULMS_Forms.Forms
 {
@@ -29,7 +30,6 @@ namespace ULMS_Forms.Forms
 
             DGV_Inventory.DataSource = dtInventory;
             dbAccess.closeConn();
-
         }
 
         private void BTN_Add_Click(object sender, EventArgs e)
@@ -38,10 +38,17 @@ namespace ULMS_Forms.Forms
             addBook.ShowDialog();
         }
 
+        private void BTN_Edit_Click(object sender, EventArgs e)
+        {
+            FRM_EditBook editBook = new FRM_EditBook();
+            editBook.ShowDialog();
+        }
+
         private void BTN_Delete_Click(object sender, EventArgs e)
         {
             FRM_Delete delete = new FRM_Delete();
             delete.ShowDialog();
         }
+
     }
 }

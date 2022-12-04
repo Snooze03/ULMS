@@ -304,7 +304,6 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_EditUser";
-            this.Load += new System.EventHandler(this.FRM_EditUser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -25,10 +25,6 @@ namespace ULMS_Forms.Forms.Admin
             InitializeComponent();
         }
 
-        private void FRM_EditUser_Load(object sender, EventArgs e)
-        {
-        }
-
         private void BTN_Update_Click(object sender, EventArgs e)
         {
             string newName = TXTBX_LastName.Text + ", " + TXTBX_FirstName.Text;
