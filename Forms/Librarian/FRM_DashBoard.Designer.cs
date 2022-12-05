@@ -42,7 +42,8 @@
             // 
             // PNL_NavBar
             // 
-            this.PNL_NavBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.PNL_NavBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
+            this.PNL_NavBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PNL_NavBar.Controls.Add(this.IBTN_LogOut);
             this.PNL_NavBar.Controls.Add(this.IBTN_Lending);
             this.PNL_NavBar.Controls.Add(this.IBTN_Inventory);
@@ -61,21 +62,21 @@
             this.IBTN_LogOut.FlatAppearance.BorderSize = 0;
             this.IBTN_LogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.IBTN_LogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IBTN_LogOut.ForeColor = System.Drawing.Color.White;
+            this.IBTN_LogOut.ForeColor = System.Drawing.Color.Black;
             this.IBTN_LogOut.IconChar = FontAwesome.Sharp.IconChar.SignOut;
-            this.IBTN_LogOut.IconColor = System.Drawing.Color.White;
+            this.IBTN_LogOut.IconColor = System.Drawing.Color.Black;
             this.IBTN_LogOut.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IBTN_LogOut.IconSize = 30;
             this.IBTN_LogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.IBTN_LogOut.Location = new System.Drawing.Point(0, 513);
+            this.IBTN_LogOut.Location = new System.Drawing.Point(0, 511);
             this.IBTN_LogOut.Name = "IBTN_LogOut";
             this.IBTN_LogOut.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.IBTN_LogOut.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.IBTN_LogOut.Size = new System.Drawing.Size(200, 48);
+            this.IBTN_LogOut.Size = new System.Drawing.Size(198, 48);
             this.IBTN_LogOut.TabIndex = 5;
             this.IBTN_LogOut.Text = "         Logout";
             this.IBTN_LogOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.IBTN_LogOut.UseVisualStyleBackColor = true;
+            this.IBTN_LogOut.UseVisualStyleBackColor = false;
             this.IBTN_LogOut.Click += new System.EventHandler(this.IBTN_LogOut_Click);
             // 
             // IBTN_Lending
@@ -85,9 +86,9 @@
             this.IBTN_Lending.FlatAppearance.BorderSize = 0;
             this.IBTN_Lending.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.IBTN_Lending.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IBTN_Lending.ForeColor = System.Drawing.Color.White;
+            this.IBTN_Lending.ForeColor = System.Drawing.Color.Black;
             this.IBTN_Lending.IconChar = FontAwesome.Sharp.IconChar.HandHoldingHand;
-            this.IBTN_Lending.IconColor = System.Drawing.Color.White;
+            this.IBTN_Lending.IconColor = System.Drawing.Color.Black;
             this.IBTN_Lending.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IBTN_Lending.IconSize = 30;
             this.IBTN_Lending.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -95,7 +96,7 @@
             this.IBTN_Lending.Name = "IBTN_Lending";
             this.IBTN_Lending.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.IBTN_Lending.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.IBTN_Lending.Size = new System.Drawing.Size(200, 48);
+            this.IBTN_Lending.Size = new System.Drawing.Size(198, 48);
             this.IBTN_Lending.TabIndex = 4;
             this.IBTN_Lending.Text = "Lending‎ ‎ ‎ ‎ ‎ ";
             this.IBTN_Lending.UseVisualStyleBackColor = true;
@@ -108,9 +109,9 @@
             this.IBTN_Inventory.FlatAppearance.BorderSize = 0;
             this.IBTN_Inventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.IBTN_Inventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IBTN_Inventory.ForeColor = System.Drawing.Color.White;
+            this.IBTN_Inventory.ForeColor = System.Drawing.Color.Black;
             this.IBTN_Inventory.IconChar = FontAwesome.Sharp.IconChar.Book;
-            this.IBTN_Inventory.IconColor = System.Drawing.Color.White;
+            this.IBTN_Inventory.IconColor = System.Drawing.Color.Black;
             this.IBTN_Inventory.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IBTN_Inventory.IconSize = 30;
             this.IBTN_Inventory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -118,7 +119,7 @@
             this.IBTN_Inventory.Name = "IBTN_Inventory";
             this.IBTN_Inventory.Padding = new System.Windows.Forms.Padding(15, 0, 35, 0);
             this.IBTN_Inventory.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.IBTN_Inventory.Size = new System.Drawing.Size(200, 48);
+            this.IBTN_Inventory.Size = new System.Drawing.Size(198, 48);
             this.IBTN_Inventory.TabIndex = 3;
             this.IBTN_Inventory.Text = "Books";
             this.IBTN_Inventory.UseVisualStyleBackColor = true;
@@ -131,9 +132,9 @@
             this.IBTN_DashBoard.FlatAppearance.BorderSize = 0;
             this.IBTN_DashBoard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.IBTN_DashBoard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IBTN_DashBoard.ForeColor = System.Drawing.Color.White;
+            this.IBTN_DashBoard.ForeColor = System.Drawing.Color.Black;
             this.IBTN_DashBoard.IconChar = FontAwesome.Sharp.IconChar.Navicon;
-            this.IBTN_DashBoard.IconColor = System.Drawing.Color.White;
+            this.IBTN_DashBoard.IconColor = System.Drawing.Color.Black;
             this.IBTN_DashBoard.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IBTN_DashBoard.IconSize = 30;
             this.IBTN_DashBoard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -141,7 +142,7 @@
             this.IBTN_DashBoard.Name = "IBTN_DashBoard";
             this.IBTN_DashBoard.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.IBTN_DashBoard.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.IBTN_DashBoard.Size = new System.Drawing.Size(200, 48);
+            this.IBTN_DashBoard.Size = new System.Drawing.Size(198, 48);
             this.IBTN_DashBoard.TabIndex = 2;
             this.IBTN_DashBoard.Text = "Dashboard";
             this.IBTN_DashBoard.UseVisualStyleBackColor = true;
@@ -153,7 +154,7 @@
             this.PNL_ULMS.Dock = System.Windows.Forms.DockStyle.Top;
             this.PNL_ULMS.Location = new System.Drawing.Point(0, 0);
             this.PNL_ULMS.Name = "PNL_ULMS";
-            this.PNL_ULMS.Size = new System.Drawing.Size(200, 100);
+            this.PNL_ULMS.Size = new System.Drawing.Size(198, 100);
             this.PNL_ULMS.TabIndex = 0;
             // 
             // LBL_ULMS
@@ -161,7 +162,7 @@
             this.LBL_ULMS.AutoSize = true;
             this.LBL_ULMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LBL_ULMS.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_ULMS.ForeColor = System.Drawing.Color.White;
+            this.LBL_ULMS.ForeColor = System.Drawing.Color.Black;
             this.LBL_ULMS.Location = new System.Drawing.Point(39, 29);
             this.LBL_ULMS.Name = "LBL_ULMS";
             this.LBL_ULMS.Size = new System.Drawing.Size(126, 42);
@@ -170,6 +171,8 @@
             // 
             // PNL_DashBoard
             // 
+            this.PNL_DashBoard.BackColor = System.Drawing.Color.White;
+            this.PNL_DashBoard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PNL_DashBoard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PNL_DashBoard.Location = new System.Drawing.Point(200, 0);
             this.PNL_DashBoard.Name = "PNL_DashBoard";

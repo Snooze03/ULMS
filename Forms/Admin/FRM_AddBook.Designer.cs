@@ -48,7 +48,7 @@
             // 
             this.LBL_Title.AutoSize = true;
             this.LBL_Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_Title.ForeColor = System.Drawing.Color.White;
+            this.LBL_Title.ForeColor = System.Drawing.Color.Black;
             this.LBL_Title.Location = new System.Drawing.Point(48, 81);
             this.LBL_Title.Name = "LBL_Title";
             this.LBL_Title.Size = new System.Drawing.Size(53, 25);
@@ -59,7 +59,7 @@
             // 
             this.LBL_BookInfo.AutoSize = true;
             this.LBL_BookInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_BookInfo.ForeColor = System.Drawing.Color.White;
+            this.LBL_BookInfo.ForeColor = System.Drawing.Color.Black;
             this.LBL_BookInfo.Location = new System.Drawing.Point(117, 20);
             this.LBL_BookInfo.Name = "LBL_BookInfo";
             this.LBL_BookInfo.Size = new System.Drawing.Size(314, 42);
@@ -68,31 +68,31 @@
             // 
             // TXTBX_Title
             // 
-            this.TXTBX_Title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
-            this.TXTBX_Title.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TXTBX_Title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(223)))), ((int)(((byte)(146)))));
+            this.TXTBX_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TXTBX_Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTBX_Title.ForeColor = System.Drawing.Color.White;
+            this.TXTBX_Title.ForeColor = System.Drawing.Color.Black;
             this.TXTBX_Title.Location = new System.Drawing.Point(53, 118);
             this.TXTBX_Title.Name = "TXTBX_Title";
-            this.TXTBX_Title.Size = new System.Drawing.Size(448, 24);
+            this.TXTBX_Title.Size = new System.Drawing.Size(448, 31);
             this.TXTBX_Title.TabIndex = 2;
             // 
             // TXTBX_FirstName
             // 
-            this.TXTBX_FirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
-            this.TXTBX_FirstName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TXTBX_FirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(223)))), ((int)(((byte)(146)))));
+            this.TXTBX_FirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TXTBX_FirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTBX_FirstName.ForeColor = System.Drawing.Color.White;
+            this.TXTBX_FirstName.ForeColor = System.Drawing.Color.Black;
             this.TXTBX_FirstName.Location = new System.Drawing.Point(53, 194);
             this.TXTBX_FirstName.Name = "TXTBX_FirstName";
-            this.TXTBX_FirstName.Size = new System.Drawing.Size(201, 24);
+            this.TXTBX_FirstName.Size = new System.Drawing.Size(201, 31);
             this.TXTBX_FirstName.TabIndex = 4;
             // 
             // LBL_Author
             // 
             this.LBL_Author.AutoSize = true;
             this.LBL_Author.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_Author.ForeColor = System.Drawing.Color.White;
+            this.LBL_Author.ForeColor = System.Drawing.Color.Black;
             this.LBL_Author.Location = new System.Drawing.Point(48, 157);
             this.LBL_Author.Name = "LBL_Author";
             this.LBL_Author.Size = new System.Drawing.Size(75, 25);
@@ -101,20 +101,20 @@
             // 
             // TXTBX_LastName
             // 
-            this.TXTBX_LastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
-            this.TXTBX_LastName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TXTBX_LastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(223)))), ((int)(((byte)(146)))));
+            this.TXTBX_LastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TXTBX_LastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTBX_LastName.ForeColor = System.Drawing.Color.White;
+            this.TXTBX_LastName.ForeColor = System.Drawing.Color.Black;
             this.TXTBX_LastName.Location = new System.Drawing.Point(278, 194);
             this.TXTBX_LastName.Name = "TXTBX_LastName";
-            this.TXTBX_LastName.Size = new System.Drawing.Size(223, 24);
+            this.TXTBX_LastName.Size = new System.Drawing.Size(223, 31);
             this.TXTBX_LastName.TabIndex = 6;
             // 
             // LBL_Genre
             // 
             this.LBL_Genre.AutoSize = true;
             this.LBL_Genre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_Genre.ForeColor = System.Drawing.Color.White;
+            this.LBL_Genre.ForeColor = System.Drawing.Color.Black;
             this.LBL_Genre.Location = new System.Drawing.Point(48, 249);
             this.LBL_Genre.Name = "LBL_Genre";
             this.LBL_Genre.Size = new System.Drawing.Size(71, 25);
@@ -123,9 +123,9 @@
             // 
             // CBX_Genre
             // 
-            this.CBX_Genre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.CBX_Genre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(223)))), ((int)(((byte)(146)))));
             this.CBX_Genre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBX_Genre.ForeColor = System.Drawing.Color.White;
+            this.CBX_Genre.ForeColor = System.Drawing.Color.Black;
             this.CBX_Genre.FormattingEnabled = true;
             this.CBX_Genre.Items.AddRange(new object[] {
             "Adventure",
@@ -152,7 +152,7 @@
             // 
             this.LBL_DatePub.AutoSize = true;
             this.LBL_DatePub.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_DatePub.ForeColor = System.Drawing.Color.White;
+            this.LBL_DatePub.ForeColor = System.Drawing.Color.Black;
             this.LBL_DatePub.Location = new System.Drawing.Point(48, 424);
             this.LBL_DatePub.Name = "LBL_DatePub";
             this.LBL_DatePub.Size = new System.Drawing.Size(158, 25);
@@ -161,9 +161,10 @@
             // 
             // DTP_DatePub
             // 
-            this.DTP_DatePub.CalendarForeColor = System.Drawing.Color.White;
-            this.DTP_DatePub.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
-            this.DTP_DatePub.CalendarTitleForeColor = System.Drawing.Color.White;
+            this.DTP_DatePub.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(223)))), ((int)(((byte)(146)))));
+            this.DTP_DatePub.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(223)))), ((int)(((byte)(146)))));
+            this.DTP_DatePub.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(223)))), ((int)(((byte)(146)))));
+            this.DTP_DatePub.CalendarTitleForeColor = System.Drawing.Color.Black;
             this.DTP_DatePub.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DTP_DatePub.Location = new System.Drawing.Point(53, 465);
             this.DTP_DatePub.Name = "DTP_DatePub";
@@ -172,13 +173,13 @@
             // 
             // BTN_Close
             // 
-            this.BTN_Close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.BTN_Close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
             this.BTN_Close.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN_Close.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.BTN_Close.FlatAppearance.BorderSize = 0;
-            this.BTN_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_Close.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Close.ForeColor = System.Drawing.Color.White;
+            this.BTN_Close.ForeColor = System.Drawing.Color.Black;
             this.BTN_Close.Location = new System.Drawing.Point(383, 525);
             this.BTN_Close.Name = "BTN_Close";
             this.BTN_Close.Size = new System.Drawing.Size(118, 35);
@@ -188,12 +189,12 @@
             // 
             // BTN_Ok
             // 
-            this.BTN_Ok.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.BTN_Ok.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
             this.BTN_Ok.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN_Ok.FlatAppearance.BorderSize = 0;
-            this.BTN_Ok.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_Ok.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_Ok.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Ok.ForeColor = System.Drawing.Color.White;
+            this.BTN_Ok.ForeColor = System.Drawing.Color.Black;
             this.BTN_Ok.Location = new System.Drawing.Point(240, 525);
             this.BTN_Ok.Name = "BTN_Ok";
             this.BTN_Ok.Size = new System.Drawing.Size(118, 35);
@@ -204,20 +205,20 @@
             // 
             // TXTBX_Price
             // 
-            this.TXTBX_Price.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
-            this.TXTBX_Price.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TXTBX_Price.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(223)))), ((int)(((byte)(146)))));
+            this.TXTBX_Price.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TXTBX_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTBX_Price.ForeColor = System.Drawing.Color.White;
+            this.TXTBX_Price.ForeColor = System.Drawing.Color.Black;
             this.TXTBX_Price.Location = new System.Drawing.Point(53, 382);
             this.TXTBX_Price.Name = "TXTBX_Price";
-            this.TXTBX_Price.Size = new System.Drawing.Size(201, 24);
+            this.TXTBX_Price.Size = new System.Drawing.Size(201, 31);
             this.TXTBX_Price.TabIndex = 14;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(48, 345);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 25);
@@ -229,7 +230,7 @@
             this.AcceptButton = this.BTN_Close;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.BTN_Close;
             this.ClientSize = new System.Drawing.Size(550, 588);
             this.Controls.Add(this.TXTBX_Price);

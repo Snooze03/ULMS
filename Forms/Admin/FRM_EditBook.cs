@@ -101,6 +101,5 @@ namespace ULMS_Forms.Forms.Admin
         {
            newGenre = CBX_Genre.GetItemText(CBX_Genre.SelectedItem);  
         }
-
     }
 }

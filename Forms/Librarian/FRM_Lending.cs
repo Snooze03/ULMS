@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ULMS_Forms.Forms.Librarian;
 
 namespace ULMS_Forms.Forms
 {
@@ -37,10 +38,17 @@ namespace ULMS_Forms.Forms
             studentLend.ShowDialog();
         }
 
+        private void BTN_Edit_Click(object sender, EventArgs e)
+        {
+            FRM_EditStudent editStudent = new FRM_EditStudent();
+            editStudent.ShowDialog();
+        }
+
         private void BTN_Delete_Click(object sender, EventArgs e)
         {
             FRM_Delete delStudent = new FRM_Delete();
             delStudent.ShowDialog();
         }
+
     }
 }

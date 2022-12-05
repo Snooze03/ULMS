@@ -11,11 +11,6 @@ namespace ULMS_Forms
     {
         private FRM_Events frmEvents = new FRM_Events();
 
-        // UI instances
-        private FRM_DBPanel db = new FRM_DBPanel();
-        private FRM_Books inven = new FRM_Books();
-        private FRM_Lending lend = new FRM_Lending();
-
         public FRM_LibrarianDB()
         {
             InitializeComponent();
@@ -26,17 +21,17 @@ namespace ULMS_Forms
 
         private void IBTN_DashBoard_Click(object sender, EventArgs e)
         {
-            frmEvents.PNL_ShowForm(PNL_DashBoard, db);
+            frmEvents.PNL_ShowForm(PNL_DashBoard, new FRM_DBPanel());
         }
 
         private void IBTN_Inventory_Click(object sender, EventArgs e)
         {
-            frmEvents.PNL_ShowForm(PNL_DashBoard, inven);
+            frmEvents.PNL_ShowForm(PNL_DashBoard, new FRM_Books());
         }
 
         private void IBTN_Lending_Click(object sender, EventArgs e)
         {
-            frmEvents.PNL_ShowForm(PNL_DashBoard, lend);
+            frmEvents.PNL_ShowForm(PNL_DashBoard, new FRM_Lending());
         }
 
         private void IBTN_LogOut_Click(object sender, EventArgs e)

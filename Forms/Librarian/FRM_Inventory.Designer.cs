@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TXTBX_Search = new System.Windows.Forms.TextBox();
             this.CBX_Sort = new System.Windows.Forms.ComboBox();
             this.PNL_Options = new System.Windows.Forms.Panel();
@@ -40,11 +40,11 @@
             // 
             // TXTBX_Search
             // 
-            this.TXTBX_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.TXTBX_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
             this.TXTBX_Search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TXTBX_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTBX_Search.ForeColor = System.Drawing.Color.White;
-            this.TXTBX_Search.Location = new System.Drawing.Point(676, 7);
+            this.TXTBX_Search.ForeColor = System.Drawing.Color.Black;
+            this.TXTBX_Search.Location = new System.Drawing.Point(750, 6);
             this.TXTBX_Search.Name = "TXTBX_Search";
             this.TXTBX_Search.Size = new System.Drawing.Size(175, 26);
             this.TXTBX_Search.TabIndex = 1;
@@ -52,11 +52,11 @@
             // 
             // CBX_Sort
             // 
-            this.CBX_Sort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.CBX_Sort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
             this.CBX_Sort.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CBX_Sort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CBX_Sort.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CBX_Sort.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBX_Sort.ForeColor = System.Drawing.Color.White;
+            this.CBX_Sort.ForeColor = System.Drawing.Color.Black;
             this.CBX_Sort.FormattingEnabled = true;
             this.CBX_Sort.Items.AddRange(new object[] {
             "Ascending",
@@ -71,51 +71,51 @@
             // 
             // PNL_Options
             // 
-            this.PNL_Options.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.PNL_Options.BackColor = System.Drawing.Color.White;
+            this.PNL_Options.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PNL_Options.Controls.Add(this.CBX_Sort);
             this.PNL_Options.Controls.Add(this.TXTBX_Search);
             this.PNL_Options.Location = new System.Drawing.Point(12, 12);
             this.PNL_Options.Name = "PNL_Options";
-            this.PNL_Options.Size = new System.Drawing.Size(863, 39);
+            this.PNL_Options.Size = new System.Drawing.Size(940, 39);
             this.PNL_Options.TabIndex = 1;
             // 
             // DGV_Inventory
             // 
             this.DGV_Inventory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.DGV_Inventory.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.DGV_Inventory.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
-            this.DGV_Inventory.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_Inventory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.DGV_Inventory.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_Inventory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.DGV_Inventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGV_Inventory.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_Inventory.DefaultCellStyle = dataGridViewCellStyle6;
             this.DGV_Inventory.Location = new System.Drawing.Point(12, 64);
             this.DGV_Inventory.Margin = new System.Windows.Forms.Padding(0);
             this.DGV_Inventory.Name = "DGV_Inventory";
             this.DGV_Inventory.ReadOnly = true;
             this.DGV_Inventory.RowHeadersWidth = 10;
-            this.DGV_Inventory.Size = new System.Drawing.Size(863, 488);
+            this.DGV_Inventory.Size = new System.Drawing.Size(940, 488);
             this.DGV_Inventory.TabIndex = 8;
             // 
             // FRM_Books
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.ClientSize = new System.Drawing.Size(891, 561);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(967, 561);
             this.Controls.Add(this.DGV_Inventory);
             this.Controls.Add(this.PNL_Options);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

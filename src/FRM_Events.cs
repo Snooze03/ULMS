@@ -13,7 +13,7 @@ namespace ULMS_Forms.src
             if (string.IsNullOrEmpty(txtBX.Text))
             {
                 txtBX.Text = plHolder;
-                txtBX.ForeColor = Color.LightGray;
+                txtBX.ForeColor = Color.Gray;
                 if (isPSWD) txtBX.PasswordChar = '\0';
             }
         }
@@ -25,7 +25,7 @@ namespace ULMS_Forms.src
             if (txtBX.Text == plHolder)
             {
                 txtBX.Text = "";
-                txtBX.ForeColor = Color.White;
+                txtBX.ForeColor = Color.Black;
                 if (isPSWD) txtBX.PasswordChar = pswdChar;
             }
         }

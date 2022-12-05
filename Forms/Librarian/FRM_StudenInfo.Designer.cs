@@ -46,7 +46,7 @@
             // 
             // BTN_Ok
             // 
-            this.BTN_Ok.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.BTN_Ok.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
             this.BTN_Ok.FlatAppearance.BorderSize = 0;
             this.BTN_Ok.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_Ok.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -61,7 +61,7 @@
             // 
             // BTN_Close
             // 
-            this.BTN_Close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.BTN_Close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
             this.BTN_Close.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.BTN_Close.FlatAppearance.BorderSize = 0;
             this.BTN_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -89,7 +89,7 @@
             // 
             this.LBL_ReturnDate.AutoSize = true;
             this.LBL_ReturnDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_ReturnDate.ForeColor = System.Drawing.Color.White;
+            this.LBL_ReturnDate.ForeColor = System.Drawing.Color.Black;
             this.LBL_ReturnDate.Location = new System.Drawing.Point(42, 423);
             this.LBL_ReturnDate.Name = "LBL_ReturnDate";
             this.LBL_ReturnDate.Size = new System.Drawing.Size(127, 25);
@@ -98,10 +98,10 @@
             // 
             // TXTBX_LastName
             // 
-            this.TXTBX_LastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.TXTBX_LastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(223)))), ((int)(((byte)(146)))));
             this.TXTBX_LastName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TXTBX_LastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTBX_LastName.ForeColor = System.Drawing.Color.White;
+            this.TXTBX_LastName.ForeColor = System.Drawing.Color.Black;
             this.TXTBX_LastName.Location = new System.Drawing.Point(260, 127);
             this.TXTBX_LastName.Name = "TXTBX_LastName";
             this.TXTBX_LastName.Size = new System.Drawing.Size(235, 24);
@@ -109,10 +109,10 @@
             // 
             // TXTBX_FirstName
             // 
-            this.TXTBX_FirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.TXTBX_FirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(223)))), ((int)(((byte)(146)))));
             this.TXTBX_FirstName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TXTBX_FirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTBX_FirstName.ForeColor = System.Drawing.Color.White;
+            this.TXTBX_FirstName.ForeColor = System.Drawing.Color.Black;
             this.TXTBX_FirstName.Location = new System.Drawing.Point(47, 127);
             this.TXTBX_FirstName.Name = "TXTBX_FirstName";
             this.TXTBX_FirstName.Size = new System.Drawing.Size(198, 24);
@@ -122,7 +122,7 @@
             // 
             this.LBL_Name.AutoSize = true;
             this.LBL_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_Name.ForeColor = System.Drawing.Color.White;
+            this.LBL_Name.ForeColor = System.Drawing.Color.Black;
             this.LBL_Name.Location = new System.Drawing.Point(42, 90);
             this.LBL_Name.Name = "LBL_Name";
             this.LBL_Name.Size = new System.Drawing.Size(68, 25);
@@ -131,10 +131,10 @@
             // 
             // TXTBX_Email
             // 
-            this.TXTBX_Email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.TXTBX_Email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(223)))), ((int)(((byte)(146)))));
             this.TXTBX_Email.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TXTBX_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTBX_Email.ForeColor = System.Drawing.Color.White;
+            this.TXTBX_Email.ForeColor = System.Drawing.Color.Black;
             this.TXTBX_Email.Location = new System.Drawing.Point(47, 202);
             this.TXTBX_Email.Name = "TXTBX_Email";
             this.TXTBX_Email.Size = new System.Drawing.Size(448, 24);
@@ -144,7 +144,7 @@
             // 
             this.LBL_BookInfo.AutoSize = true;
             this.LBL_BookInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_BookInfo.ForeColor = System.Drawing.Color.White;
+            this.LBL_BookInfo.ForeColor = System.Drawing.Color.Black;
             this.LBL_BookInfo.Location = new System.Drawing.Point(100, 28);
             this.LBL_BookInfo.Name = "LBL_BookInfo";
             this.LBL_BookInfo.Size = new System.Drawing.Size(360, 42);
@@ -155,7 +155,7 @@
             // 
             this.LBL_Email.AutoSize = true;
             this.LBL_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_Email.ForeColor = System.Drawing.Color.White;
+            this.LBL_Email.ForeColor = System.Drawing.Color.Black;
             this.LBL_Email.Location = new System.Drawing.Point(42, 165);
             this.LBL_Email.Name = "LBL_Email";
             this.LBL_Email.Size = new System.Drawing.Size(65, 25);
@@ -164,10 +164,10 @@
             // 
             // TXTBX_PhoneNumber
             // 
-            this.TXTBX_PhoneNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.TXTBX_PhoneNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(223)))), ((int)(((byte)(146)))));
             this.TXTBX_PhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TXTBX_PhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTBX_PhoneNumber.ForeColor = System.Drawing.Color.White;
+            this.TXTBX_PhoneNumber.ForeColor = System.Drawing.Color.Black;
             this.TXTBX_PhoneNumber.Location = new System.Drawing.Point(47, 286);
             this.TXTBX_PhoneNumber.Name = "TXTBX_PhoneNumber";
             this.TXTBX_PhoneNumber.Size = new System.Drawing.Size(448, 24);
@@ -177,7 +177,7 @@
             // 
             this.LBL_Number.AutoSize = true;
             this.LBL_Number.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_Number.ForeColor = System.Drawing.Color.White;
+            this.LBL_Number.ForeColor = System.Drawing.Color.Black;
             this.LBL_Number.Location = new System.Drawing.Point(42, 249);
             this.LBL_Number.Name = "LBL_Number";
             this.LBL_Number.Size = new System.Drawing.Size(155, 25);
@@ -186,10 +186,10 @@
             // 
             // TXTBX_Book
             // 
-            this.TXTBX_Book.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.TXTBX_Book.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(223)))), ((int)(((byte)(146)))));
             this.TXTBX_Book.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TXTBX_Book.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTBX_Book.ForeColor = System.Drawing.Color.White;
+            this.TXTBX_Book.ForeColor = System.Drawing.Color.Black;
             this.TXTBX_Book.Location = new System.Drawing.Point(47, 371);
             this.TXTBX_Book.Name = "TXTBX_Book";
             this.TXTBX_Book.Size = new System.Drawing.Size(448, 24);
@@ -199,7 +199,7 @@
             // 
             this.LBL_Book.AutoSize = true;
             this.LBL_Book.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_Book.ForeColor = System.Drawing.Color.White;
+            this.LBL_Book.ForeColor = System.Drawing.Color.Black;
             this.LBL_Book.Location = new System.Drawing.Point(42, 334);
             this.LBL_Book.Name = "LBL_Book";
             this.LBL_Book.Size = new System.Drawing.Size(61, 25);
@@ -211,7 +211,7 @@
             this.AcceptButton = this.BTN_Ok;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.BTN_Close;
             this.ClientSize = new System.Drawing.Size(541, 587);
             this.Controls.Add(this.TXTBX_Book);

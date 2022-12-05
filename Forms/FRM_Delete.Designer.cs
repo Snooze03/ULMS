@@ -38,10 +38,10 @@
             // 
             // IPB_Trash
             // 
-            this.IPB_Trash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.IPB_Trash.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(208)))), ((int)(((byte)(245)))));
+            this.IPB_Trash.BackColor = System.Drawing.Color.White;
+            this.IPB_Trash.ForeColor = System.Drawing.Color.Black;
             this.IPB_Trash.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
-            this.IPB_Trash.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(208)))), ((int)(((byte)(245)))));
+            this.IPB_Trash.IconColor = System.Drawing.Color.Black;
             this.IPB_Trash.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IPB_Trash.IconSize = 125;
             this.IPB_Trash.Location = new System.Drawing.Point(33, 25);
@@ -55,7 +55,7 @@
             // 
             this.LBL_Msg1.AutoSize = true;
             this.LBL_Msg1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_Msg1.ForeColor = System.Drawing.Color.White;
+            this.LBL_Msg1.ForeColor = System.Drawing.Color.Black;
             this.LBL_Msg1.Location = new System.Drawing.Point(199, 25);
             this.LBL_Msg1.Name = "LBL_Msg1";
             this.LBL_Msg1.Size = new System.Drawing.Size(421, 24);
@@ -66,7 +66,7 @@
             // 
             this.LBL_Msg2.AutoSize = true;
             this.LBL_Msg2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_Msg2.ForeColor = System.Drawing.Color.White;
+            this.LBL_Msg2.ForeColor = System.Drawing.Color.Black;
             this.LBL_Msg2.Location = new System.Drawing.Point(199, 60);
             this.LBL_Msg2.Name = "LBL_Msg2";
             this.LBL_Msg2.Size = new System.Drawing.Size(385, 40);
@@ -75,12 +75,12 @@
             // 
             // BTN_Delete
             // 
-            this.BTN_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(130)))), ((int)(((byte)(132)))));
+            this.BTN_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
             this.BTN_Delete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN_Delete.FlatAppearance.BorderSize = 0;
-            this.BTN_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Delete.ForeColor = System.Drawing.Color.White;
+            this.BTN_Delete.ForeColor = System.Drawing.Color.Black;
             this.BTN_Delete.Location = new System.Drawing.Point(428, 115);
             this.BTN_Delete.Name = "BTN_Delete";
             this.BTN_Delete.Size = new System.Drawing.Size(108, 36);
@@ -90,13 +90,13 @@
             // 
             // BTN_Cancel
             // 
-            this.BTN_Cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.BTN_Cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
             this.BTN_Cancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN_Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.BTN_Cancel.FlatAppearance.BorderSize = 0;
-            this.BTN_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Cancel.ForeColor = System.Drawing.Color.White;
+            this.BTN_Cancel.ForeColor = System.Drawing.Color.Black;
             this.BTN_Cancel.Location = new System.Drawing.Point(560, 115);
             this.BTN_Cancel.Name = "BTN_Cancel";
             this.BTN_Cancel.Size = new System.Drawing.Size(108, 36);
@@ -109,7 +109,7 @@
             this.AcceptButton = this.BTN_Delete;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.BTN_Cancel;
             this.ClientSize = new System.Drawing.Size(699, 184);
             this.Controls.Add(this.BTN_Cancel);

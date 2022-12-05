@@ -6,8 +6,9 @@ A program intendted to help libraries manage their inventory, borrowed books, fe
 - **U.I**
     - [x] Admin Dashboard
     - [x] Show database data
-	- [ ] New color scheme
+	- [x] New color scheme
     - [ ] Search and sort 
+    - [ ] Display stats in DB panel
 	- [ ] Refine Dialogs: add, delete, sort, search
 	- [ ] Rounded corners
 	- [ ] Splash Screen
@@ -17,5 +18,6 @@ A program intendted to help libraries manage their inventory, borrowed books, fe
 	- [x] Connect DB to Program
 	- [x] Show ui corresponding to user role
 	- [ ] Insert, Edit, Delete
+	- [ ] Show overdue books
 	- [ ] Backup db
 

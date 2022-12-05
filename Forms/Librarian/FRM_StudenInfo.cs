@@ -17,7 +17,7 @@ namespace ULMS_Forms.Forms
         private void BTN_Ok_Click(object sender, EventArgs e)
         {
             // Store input in vars
-            string fullName = TXTBX_LastName + ", " + TXTBX_FirstName;
+            string fullName = TXTBX_LastName.Text + ", " + TXTBX_FirstName.Text;
             string phoneNumber = TXTBX_PhoneNumber.Text;
             string email = TXTBX_Email.Text;
             string book = TXTBX_PhoneNumber.Text;

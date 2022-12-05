@@ -43,7 +43,8 @@
             // 
             // PNL_Options
             // 
-            this.PNL_Options.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.PNL_Options.BackColor = System.Drawing.Color.White;
+            this.PNL_Options.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PNL_Options.Controls.Add(this.BTN_Edit);
             this.PNL_Options.Controls.Add(this.BTN_Delete);
             this.PNL_Options.Controls.Add(this.BTN_Add);
@@ -56,12 +57,12 @@
             // 
             // BTN_Edit
             // 
-            this.BTN_Edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.BTN_Edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
             this.BTN_Edit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN_Edit.FlatAppearance.BorderSize = 0;
-            this.BTN_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Edit.ForeColor = System.Drawing.Color.White;
+            this.BTN_Edit.ForeColor = System.Drawing.Color.Black;
             this.BTN_Edit.Location = new System.Drawing.Point(108, 7);
             this.BTN_Edit.Name = "BTN_Edit";
             this.BTN_Edit.Size = new System.Drawing.Size(80, 26);
@@ -72,12 +73,12 @@
             // 
             // BTN_Delete
             // 
-            this.BTN_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.BTN_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
             this.BTN_Delete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN_Delete.FlatAppearance.BorderSize = 0;
-            this.BTN_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Delete.ForeColor = System.Drawing.Color.White;
+            this.BTN_Delete.ForeColor = System.Drawing.Color.Black;
             this.BTN_Delete.Location = new System.Drawing.Point(206, 7);
             this.BTN_Delete.Name = "BTN_Delete";
             this.BTN_Delete.Size = new System.Drawing.Size(80, 26);
@@ -88,12 +89,12 @@
             // 
             // BTN_Add
             // 
-            this.BTN_Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.BTN_Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
             this.BTN_Add.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN_Add.FlatAppearance.BorderSize = 0;
-            this.BTN_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_Add.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Add.ForeColor = System.Drawing.Color.White;
+            this.BTN_Add.ForeColor = System.Drawing.Color.Black;
             this.BTN_Add.Location = new System.Drawing.Point(12, 7);
             this.BTN_Add.Name = "BTN_Add";
             this.BTN_Add.Size = new System.Drawing.Size(80, 26);
@@ -104,11 +105,11 @@
             // 
             // CBX_Sort
             // 
-            this.CBX_Sort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.CBX_Sort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
             this.CBX_Sort.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CBX_Sort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CBX_Sort.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CBX_Sort.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBX_Sort.ForeColor = System.Drawing.Color.White;
+            this.CBX_Sort.ForeColor = System.Drawing.Color.Black;
             this.CBX_Sort.FormattingEnabled = true;
             this.CBX_Sort.Items.AddRange(new object[] {
             "Ascending",
@@ -123,11 +124,11 @@
             // 
             // TXTBX_Search
             // 
-            this.TXTBX_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.TXTBX_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
             this.TXTBX_Search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TXTBX_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTBX_Search.ForeColor = System.Drawing.Color.White;
-            this.TXTBX_Search.Location = new System.Drawing.Point(759, 6);
+            this.TXTBX_Search.ForeColor = System.Drawing.Color.Black;
+            this.TXTBX_Search.Location = new System.Drawing.Point(752, 6);
             this.TXTBX_Search.Name = "TXTBX_Search";
             this.TXTBX_Search.Size = new System.Drawing.Size(175, 26);
             this.TXTBX_Search.TabIndex = 1;
@@ -137,8 +138,7 @@
             // 
             this.DGV_Inventory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.DGV_Inventory.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.DGV_Inventory.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
-            this.DGV_Inventory.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DGV_Inventory.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -168,7 +168,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(967, 567);
             this.Controls.Add(this.DGV_Inventory);
             this.Controls.Add(this.PNL_Options);

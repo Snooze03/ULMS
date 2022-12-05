@@ -50,7 +50,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(223)))), ((int)(((byte)(146)))));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.LBL_Students);
             this.panel1.Controls.Add(this.IPB_Student);
             this.panel1.Controls.Add(this.LBL_StudentsNO);
@@ -64,7 +65,7 @@
             this.LBL_Students.AutoSize = true;
             this.LBL_Students.BackColor = System.Drawing.Color.Transparent;
             this.LBL_Students.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_Students.ForeColor = System.Drawing.Color.White;
+            this.LBL_Students.ForeColor = System.Drawing.Color.Black;
             this.LBL_Students.Location = new System.Drawing.Point(30, 87);
             this.LBL_Students.Name = "LBL_Students";
             this.LBL_Students.Size = new System.Drawing.Size(97, 25);
@@ -89,7 +90,7 @@
             // 
             this.LBL_StudentsNO.AutoSize = true;
             this.LBL_StudentsNO.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_StudentsNO.ForeColor = System.Drawing.Color.White;
+            this.LBL_StudentsNO.ForeColor = System.Drawing.Color.Black;
             this.LBL_StudentsNO.Location = new System.Drawing.Point(48, 30);
             this.LBL_StudentsNO.Name = "LBL_StudentsNO";
             this.LBL_StudentsNO.Size = new System.Drawing.Size(57, 39);
@@ -98,7 +99,8 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(223)))), ((int)(((byte)(146)))));
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.LBL_Books);
             this.panel2.Controls.Add(this.IPB_Books);
             this.panel2.Controls.Add(this.LBL_BooksNO);
@@ -112,7 +114,7 @@
             this.LBL_Books.AutoSize = true;
             this.LBL_Books.BackColor = System.Drawing.Color.Transparent;
             this.LBL_Books.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_Books.ForeColor = System.Drawing.Color.White;
+            this.LBL_Books.ForeColor = System.Drawing.Color.Black;
             this.LBL_Books.Location = new System.Drawing.Point(41, 87);
             this.LBL_Books.Name = "LBL_Books";
             this.LBL_Books.Size = new System.Drawing.Size(72, 25);
@@ -137,7 +139,7 @@
             // 
             this.LBL_BooksNO.AutoSize = true;
             this.LBL_BooksNO.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_BooksNO.ForeColor = System.Drawing.Color.White;
+            this.LBL_BooksNO.ForeColor = System.Drawing.Color.Black;
             this.LBL_BooksNO.Location = new System.Drawing.Point(36, 30);
             this.LBL_BooksNO.Name = "LBL_BooksNO";
             this.LBL_BooksNO.Size = new System.Drawing.Size(77, 39);
@@ -146,7 +148,8 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(223)))), ((int)(((byte)(146)))));
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.LBL_OverDue);
             this.panel3.Controls.Add(this.IPB_OverDue);
             this.panel3.Controls.Add(this.LBL_OverDueNO);
@@ -160,7 +163,7 @@
             this.LBL_OverDue.AutoSize = true;
             this.LBL_OverDue.BackColor = System.Drawing.Color.Transparent;
             this.LBL_OverDue.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_OverDue.ForeColor = System.Drawing.Color.White;
+            this.LBL_OverDue.ForeColor = System.Drawing.Color.Black;
             this.LBL_OverDue.Location = new System.Drawing.Point(32, 87);
             this.LBL_OverDue.Name = "LBL_OverDue";
             this.LBL_OverDue.Size = new System.Drawing.Size(94, 25);
@@ -185,7 +188,7 @@
             // 
             this.LBL_OverDueNO.AutoSize = true;
             this.LBL_OverDueNO.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_OverDueNO.ForeColor = System.Drawing.Color.White;
+            this.LBL_OverDueNO.ForeColor = System.Drawing.Color.Black;
             this.LBL_OverDueNO.Location = new System.Drawing.Point(50, 30);
             this.LBL_OverDueNO.Name = "LBL_OverDueNO";
             this.LBL_OverDueNO.Size = new System.Drawing.Size(57, 39);
@@ -196,7 +199,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(972, 229);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
