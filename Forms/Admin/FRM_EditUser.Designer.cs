@@ -38,7 +38,7 @@
             this.TXTBX_PhoneNumber = new System.Windows.Forms.TextBox();
             this.LBL_Number = new System.Windows.Forms.Label();
             this.BTN_Update = new System.Windows.Forms.Button();
-            this.BTN_Cancel = new System.Windows.Forms.Button();
+            this.BTN_Delete = new System.Windows.Forms.Button();
             this.TXTBX_LastName = new System.Windows.Forms.TextBox();
             this.TXTBX_FirstName = new System.Windows.Forms.TextBox();
             this.LBL_Name = new System.Windows.Forms.Label();
@@ -167,20 +167,20 @@
             this.BTN_Update.UseVisualStyleBackColor = false;
             this.BTN_Update.Click += new System.EventHandler(this.BTN_Update_Click);
             // 
-            // BTN_Cancel
+            // BTN_Delete
             // 
-            this.BTN_Cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
-            this.BTN_Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.BTN_Cancel.FlatAppearance.BorderSize = 0;
-            this.BTN_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTN_Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Cancel.ForeColor = System.Drawing.Color.Black;
-            this.BTN_Cancel.Location = new System.Drawing.Point(359, 660);
-            this.BTN_Cancel.Name = "BTN_Cancel";
-            this.BTN_Cancel.Size = new System.Drawing.Size(118, 35);
-            this.BTN_Cancel.TabIndex = 54;
-            this.BTN_Cancel.Text = "Cancel";
-            this.BTN_Cancel.UseVisualStyleBackColor = false;
+            this.BTN_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
+            this.BTN_Delete.FlatAppearance.BorderSize = 0;
+            this.BTN_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Delete.ForeColor = System.Drawing.Color.Black;
+            this.BTN_Delete.Location = new System.Drawing.Point(359, 660);
+            this.BTN_Delete.Name = "BTN_Delete";
+            this.BTN_Delete.Size = new System.Drawing.Size(118, 35);
+            this.BTN_Delete.TabIndex = 54;
+            this.BTN_Delete.Text = "Delete";
+            this.BTN_Delete.UseVisualStyleBackColor = false;
+            this.BTN_Delete.Click += new System.EventHandler(this.BTN_Delete_Click);
             // 
             // TXTBX_LastName
             // 
@@ -289,21 +289,21 @@
             this.Controls.Add(this.TXTBX_PhoneNumber);
             this.Controls.Add(this.LBL_Number);
             this.Controls.Add(this.BTN_Update);
-            this.Controls.Add(this.BTN_Cancel);
+            this.Controls.Add(this.BTN_Delete);
             this.Controls.Add(this.TXTBX_LastName);
             this.Controls.Add(this.TXTBX_FirstName);
             this.Controls.Add(this.LBL_Name);
             this.Controls.Add(this.TXTBX_Email);
             this.Controls.Add(this.LBL_EditUser);
             this.Controls.Add(this.LBL_Email);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FRM_EditUser";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FRM_EditUser";
+            this.Text = "Admin - Edit User";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -321,7 +321,7 @@
         private System.Windows.Forms.TextBox TXTBX_PhoneNumber;
         private System.Windows.Forms.Label LBL_Number;
         private System.Windows.Forms.Button BTN_Update;
-        private System.Windows.Forms.Button BTN_Cancel;
+        private System.Windows.Forms.Button BTN_Delete;
         private System.Windows.Forms.TextBox TXTBX_LastName;
         private System.Windows.Forms.TextBox TXTBX_FirstName;
         private System.Windows.Forms.Label LBL_Name;

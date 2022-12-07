@@ -268,13 +268,13 @@
             this.Controls.Add(this.TXTBX_Email);
             this.Controls.Add(this.LBL_BookInfo);
             this.Controls.Add(this.LBL_Email);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FRM_AddUser";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FRM_StudentAdd";
+            this.Text = "Admin - Add User";
             this.ResumeLayout(false);
             this.PerformLayout();
 

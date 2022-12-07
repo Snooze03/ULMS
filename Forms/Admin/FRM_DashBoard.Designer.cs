@@ -165,7 +165,7 @@
             this.Name = "FRM_AdminDB";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FRM_AdminDB";
+            this.Text = "ULMS - Admin Dashboard";
             this.PNL_NavBar.ResumeLayout(false);
             this.PNL_ULMS.ResumeLayout(false);
             this.PNL_ULMS.PerformLayout();

@@ -48,7 +48,7 @@
             // 
             this.BTN_Ok.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
             this.BTN_Ok.FlatAppearance.BorderSize = 0;
-            this.BTN_Ok.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_Ok.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_Ok.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_Ok.ForeColor = System.Drawing.Color.White;
             this.BTN_Ok.Location = new System.Drawing.Point(234, 523);
@@ -64,7 +64,7 @@
             this.BTN_Close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
             this.BTN_Close.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.BTN_Close.FlatAppearance.BorderSize = 0;
-            this.BTN_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_Close.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_Close.ForeColor = System.Drawing.Color.White;
             this.BTN_Close.Location = new System.Drawing.Point(377, 523);
@@ -99,23 +99,23 @@
             // TXTBX_LastName
             // 
             this.TXTBX_LastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(223)))), ((int)(((byte)(146)))));
-            this.TXTBX_LastName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TXTBX_LastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TXTBX_LastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TXTBX_LastName.ForeColor = System.Drawing.Color.Black;
             this.TXTBX_LastName.Location = new System.Drawing.Point(260, 127);
             this.TXTBX_LastName.Name = "TXTBX_LastName";
-            this.TXTBX_LastName.Size = new System.Drawing.Size(235, 24);
+            this.TXTBX_LastName.Size = new System.Drawing.Size(235, 31);
             this.TXTBX_LastName.TabIndex = 19;
             // 
             // TXTBX_FirstName
             // 
             this.TXTBX_FirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(223)))), ((int)(((byte)(146)))));
-            this.TXTBX_FirstName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TXTBX_FirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TXTBX_FirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TXTBX_FirstName.ForeColor = System.Drawing.Color.Black;
             this.TXTBX_FirstName.Location = new System.Drawing.Point(47, 127);
             this.TXTBX_FirstName.Name = "TXTBX_FirstName";
-            this.TXTBX_FirstName.Size = new System.Drawing.Size(198, 24);
+            this.TXTBX_FirstName.Size = new System.Drawing.Size(198, 31);
             this.TXTBX_FirstName.TabIndex = 17;
             // 
             // LBL_Name
@@ -132,12 +132,12 @@
             // TXTBX_Email
             // 
             this.TXTBX_Email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(223)))), ((int)(((byte)(146)))));
-            this.TXTBX_Email.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TXTBX_Email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TXTBX_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TXTBX_Email.ForeColor = System.Drawing.Color.Black;
             this.TXTBX_Email.Location = new System.Drawing.Point(47, 202);
             this.TXTBX_Email.Name = "TXTBX_Email";
-            this.TXTBX_Email.Size = new System.Drawing.Size(448, 24);
+            this.TXTBX_Email.Size = new System.Drawing.Size(448, 31);
             this.TXTBX_Email.TabIndex = 15;
             // 
             // LBL_BookInfo
@@ -165,12 +165,12 @@
             // TXTBX_PhoneNumber
             // 
             this.TXTBX_PhoneNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(223)))), ((int)(((byte)(146)))));
-            this.TXTBX_PhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TXTBX_PhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TXTBX_PhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TXTBX_PhoneNumber.ForeColor = System.Drawing.Color.Black;
             this.TXTBX_PhoneNumber.Location = new System.Drawing.Point(47, 286);
             this.TXTBX_PhoneNumber.Name = "TXTBX_PhoneNumber";
-            this.TXTBX_PhoneNumber.Size = new System.Drawing.Size(448, 24);
+            this.TXTBX_PhoneNumber.Size = new System.Drawing.Size(448, 31);
             this.TXTBX_PhoneNumber.TabIndex = 27;
             // 
             // LBL_Number
@@ -187,12 +187,12 @@
             // TXTBX_Book
             // 
             this.TXTBX_Book.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(223)))), ((int)(((byte)(146)))));
-            this.TXTBX_Book.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TXTBX_Book.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TXTBX_Book.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TXTBX_Book.ForeColor = System.Drawing.Color.Black;
             this.TXTBX_Book.Location = new System.Drawing.Point(47, 371);
             this.TXTBX_Book.Name = "TXTBX_Book";
-            this.TXTBX_Book.Size = new System.Drawing.Size(448, 24);
+            this.TXTBX_Book.Size = new System.Drawing.Size(448, 31);
             this.TXTBX_Book.TabIndex = 29;
             // 
             // LBL_Book
@@ -228,14 +228,14 @@
             this.Controls.Add(this.TXTBX_Email);
             this.Controls.Add(this.LBL_BookInfo);
             this.Controls.Add(this.LBL_Email);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FRM_StudenInfo";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " ";
+            this.Text = " Librarian - Add Student";
             this.ResumeLayout(false);
             this.PerformLayout();
 

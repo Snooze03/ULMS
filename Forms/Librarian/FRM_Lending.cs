@@ -44,11 +44,5 @@ namespace ULMS_Forms.Forms
             editStudent.ShowDialog();
         }
 
-        private void BTN_Delete_Click(object sender, EventArgs e)
-        {
-            FRM_Delete delStudent = new FRM_Delete();
-            delStudent.ShowDialog();
-        }
-
     }
 }

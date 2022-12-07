@@ -248,14 +248,14 @@
             this.Controls.Add(this.LBL_BookInfo);
             this.Controls.Add(this.LBL_Title);
             this.ForeColor = System.Drawing.Color.White;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FRM_AddBook";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FRM_AddBook";
+            this.Text = "Admin - Add Book";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -44,11 +44,5 @@ namespace ULMS_Forms.Forms
             editBook.ShowDialog();
         }
 
-        private void BTN_Delete_Click(object sender, EventArgs e)
-        {
-            FRM_Delete delete = new FRM_Delete();
-            delete.ShowDialog();
-        }
-
     }
 }

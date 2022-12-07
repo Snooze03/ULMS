@@ -31,7 +31,7 @@
             this.TXTBX_Price = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.BTN_Update = new System.Windows.Forms.Button();
-            this.BTN_Cancel = new System.Windows.Forms.Button();
+            this.BTN_Delete = new System.Windows.Forms.Button();
             this.DTP_DatePub = new System.Windows.Forms.DateTimePicker();
             this.LBL_DatePub = new System.Windows.Forms.Label();
             this.CBX_Genre = new System.Windows.Forms.ComboBox();
@@ -84,21 +84,21 @@
             this.BTN_Update.UseVisualStyleBackColor = false;
             this.BTN_Update.Click += new System.EventHandler(this.BTN_Update_Click);
             // 
-            // BTN_Cancel
+            // BTN_Delete
             // 
-            this.BTN_Cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
-            this.BTN_Cancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BTN_Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.BTN_Cancel.FlatAppearance.BorderSize = 0;
-            this.BTN_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTN_Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Cancel.ForeColor = System.Drawing.Color.Black;
-            this.BTN_Cancel.Location = new System.Drawing.Point(381, 594);
-            this.BTN_Cancel.Name = "BTN_Cancel";
-            this.BTN_Cancel.Size = new System.Drawing.Size(118, 35);
-            this.BTN_Cancel.TabIndex = 25;
-            this.BTN_Cancel.Text = "Cancel";
-            this.BTN_Cancel.UseVisualStyleBackColor = false;
+            this.BTN_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
+            this.BTN_Delete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTN_Delete.FlatAppearance.BorderSize = 0;
+            this.BTN_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Delete.ForeColor = System.Drawing.Color.Black;
+            this.BTN_Delete.Location = new System.Drawing.Point(381, 594);
+            this.BTN_Delete.Name = "BTN_Delete";
+            this.BTN_Delete.Size = new System.Drawing.Size(118, 35);
+            this.BTN_Delete.TabIndex = 25;
+            this.BTN_Delete.Text = "Delete";
+            this.BTN_Delete.UseVisualStyleBackColor = false;
+            this.BTN_Delete.Click += new System.EventHandler(this.BTN_Delete_Click);
             // 
             // DTP_DatePub
             // 
@@ -260,7 +260,7 @@
             this.Controls.Add(this.TXTBX_Price);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BTN_Update);
-            this.Controls.Add(this.BTN_Cancel);
+            this.Controls.Add(this.BTN_Delete);
             this.Controls.Add(this.DTP_DatePub);
             this.Controls.Add(this.LBL_DatePub);
             this.Controls.Add(this.CBX_Genre);
@@ -271,14 +271,14 @@
             this.Controls.Add(this.TXTBX_Title);
             this.Controls.Add(this.LBL_BookInfo);
             this.Controls.Add(this.LBL_Title);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FRM_EditBook";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FRM_EditBook";
+            this.Text = "Admin - Edit Book";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,7 +289,7 @@
         private System.Windows.Forms.TextBox TXTBX_Price;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BTN_Update;
-        private System.Windows.Forms.Button BTN_Cancel;
+        private System.Windows.Forms.Button BTN_Delete;
         private System.Windows.Forms.DateTimePicker DTP_DatePub;
         private System.Windows.Forms.Label LBL_DatePub;
         private System.Windows.Forms.ComboBox CBX_Genre;

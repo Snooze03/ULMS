@@ -24,6 +24,12 @@ namespace ULMS_Forms.Forms.Librarian
             InitializeComponent();
         }
 
+        private void TXTBX_Id_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (!int.TryParse(TXTBX_Id.Text, out id) && !string.IsNullOrEmpty(TXTBX_Id.Text)) MessageBox.Show("Please enter an ID");
+            else fillTXTBX(id);
+        }
+
         private void BTN_Update_Click(object sender, EventArgs e)
         {
             string newName = TXTBX_LastName.Text + ", " + TXTBX_FirstName.Text; 
@@ -51,10 +57,29 @@ namespace ULMS_Forms.Forms.Librarian
             else MessageBox.Show("Empty fields are not allowed");
         }
 
-        private void TXTBX_Id_KeyUp(object sender, KeyEventArgs e)
+        private void BTN_Delete_Click(object sender, EventArgs e)
         {
-            if (!int.TryParse(TXTBX_Id.Text, out id) && !string.IsNullOrEmpty(TXTBX_Id.Text)) MessageBox.Show("Please enter an ID");
-            else fillTXTBX(id);
+            if (!string.IsNullOrEmpty(TXTBX_Id.Text))
+            {
+                DialogResult dialog = MessageBox.Show($"{id} will be permanently deleted", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (dialog == DialogResult.Yes)
+                {
+                    string query = "DELETE from TBL_Students Where ID ='" + id + "'";
+
+                    SqlCommand delete = new SqlCommand(query);
+
+                    int row = dbAccess.executeQuery(delete);
+
+                    if (row == 1)
+                    {
+                        clearTXTBX();
+                        MessageBox.Show("Student has been deleted");
+                    }
+
+                }
+            }
+            else MessageBox.Show("Please enter an ID");
         }
 
         private void fillTXTBX(int id)
@@ -77,6 +102,16 @@ namespace ULMS_Forms.Forms.Librarian
             }
 
             dtStudents.Clear();
+        }
+
+        private void clearTXTBX()
+        {
+            TXTBX_Id.Text = string.Empty;
+            TXTBX_FirstName.Text = string.Empty;
+            TXTBX_LastName.Text = string.Empty;
+            TXTBX_Email.Text = string.Empty;
+            TXTBX_PhoneNumber.Text = string.Empty;
+            TXTBX_Book.Text = string.Empty;
         }
 
         // Checks if textboxes are filled

@@ -193,7 +193,7 @@
             this.Name = "FRM_LibrarianDB";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dashboard";
+            this.Text = "ULMS - Librarian Dashboard";
             this.PNL_NavBar.ResumeLayout(false);
             this.PNL_ULMS.ResumeLayout(false);
             this.PNL_ULMS.PerformLayout();

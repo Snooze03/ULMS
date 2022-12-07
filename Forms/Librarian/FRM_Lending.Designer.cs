@@ -28,12 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PNL_Options = new System.Windows.Forms.Panel();
             this.BTN_Edit = new System.Windows.Forms.Button();
             this.CBX_Sort = new System.Windows.Forms.ComboBox();
-            this.BTN_Delete = new System.Windows.Forms.Button();
             this.TXTBX_Search = new System.Windows.Forms.TextBox();
             this.BTN_Add = new System.Windows.Forms.Button();
             this.DGV_Lending = new System.Windows.Forms.DataGridView();
@@ -47,7 +46,6 @@
             this.PNL_Options.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PNL_Options.Controls.Add(this.BTN_Edit);
             this.PNL_Options.Controls.Add(this.CBX_Sort);
-            this.PNL_Options.Controls.Add(this.BTN_Delete);
             this.PNL_Options.Controls.Add(this.TXTBX_Search);
             this.PNL_Options.Controls.Add(this.BTN_Add);
             this.PNL_Options.Location = new System.Drawing.Point(12, 12);
@@ -84,27 +82,11 @@
             "Descending",
             "Genre",
             "Price"});
-            this.CBX_Sort.Location = new System.Drawing.Point(297, 5);
+            this.CBX_Sort.Location = new System.Drawing.Point(200, 6);
             this.CBX_Sort.Name = "CBX_Sort";
             this.CBX_Sort.Size = new System.Drawing.Size(115, 28);
             this.CBX_Sort.TabIndex = 3;
             this.CBX_Sort.Text = "  Sort";
-            // 
-            // BTN_Delete
-            // 
-            this.BTN_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
-            this.BTN_Delete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BTN_Delete.FlatAppearance.BorderSize = 0;
-            this.BTN_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTN_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Delete.ForeColor = System.Drawing.Color.Black;
-            this.BTN_Delete.Location = new System.Drawing.Point(199, 6);
-            this.BTN_Delete.Name = "BTN_Delete";
-            this.BTN_Delete.Size = new System.Drawing.Size(80, 26);
-            this.BTN_Delete.TabIndex = 2;
-            this.BTN_Delete.Text = "Delete";
-            this.BTN_Delete.UseVisualStyleBackColor = false;
-            this.BTN_Delete.Click += new System.EventHandler(this.BTN_Delete_Click);
             // 
             // TXTBX_Search
             // 
@@ -139,29 +121,29 @@
             this.DGV_Lending.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.DGV_Lending.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DGV_Lending.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_Lending.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_Lending.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DGV_Lending.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGV_Lending.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_Lending.DefaultCellStyle = dataGridViewCellStyle2;
             this.DGV_Lending.Location = new System.Drawing.Point(12, 64);
             this.DGV_Lending.Margin = new System.Windows.Forms.Padding(0);
             this.DGV_Lending.Name = "DGV_Lending";
             this.DGV_Lending.ReadOnly = true;
             this.DGV_Lending.RowHeadersWidth = 10;
-            this.DGV_Lending.Size = new System.Drawing.Size(941, 488);
+            this.DGV_Lending.Size = new System.Drawing.Size(941, 486);
             this.DGV_Lending.TabIndex = 9;
             // 
             // FRM_Lending
@@ -169,7 +151,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(968, 561);
+            this.ClientSize = new System.Drawing.Size(968, 559);
             this.Controls.Add(this.DGV_Lending);
             this.Controls.Add(this.PNL_Options);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -189,7 +171,6 @@
         private System.Windows.Forms.Panel PNL_Options;
         private System.Windows.Forms.TextBox TXTBX_Search;
         private System.Windows.Forms.Button BTN_Add;
-        private System.Windows.Forms.Button BTN_Delete;
         private System.Windows.Forms.ComboBox CBX_Sort;
         private System.Windows.Forms.DataGridView DGV_Lending;
         private System.Windows.Forms.Button BTN_Edit;

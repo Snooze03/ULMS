@@ -32,8 +32,6 @@
             this.LBL_Book = new System.Windows.Forms.Label();
             this.TXTBX_PhoneNumber = new System.Windows.Forms.TextBox();
             this.LBL_Number = new System.Windows.Forms.Label();
-            this.BTN_Update = new System.Windows.Forms.Button();
-            this.BTN_Close = new System.Windows.Forms.Button();
             this.DTP_ReturnDate = new System.Windows.Forms.DateTimePicker();
             this.LBL_ReturnDate = new System.Windows.Forms.Label();
             this.TXTBX_LastName = new System.Windows.Forms.TextBox();
@@ -44,6 +42,8 @@
             this.LBL_Email = new System.Windows.Forms.Label();
             this.TXTBX_Id = new System.Windows.Forms.TextBox();
             this.LBL_Id = new System.Windows.Forms.Label();
+            this.BTN_Delete = new System.Windows.Forms.Button();
+            this.BTN_Update = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TXTBX_Book
@@ -89,36 +89,6 @@
             this.LBL_Number.Size = new System.Drawing.Size(155, 25);
             this.LBL_Number.TabIndex = 40;
             this.LBL_Number.Text = "Phone Number";
-            // 
-            // BTN_Update
-            // 
-            this.BTN_Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
-            this.BTN_Update.FlatAppearance.BorderSize = 0;
-            this.BTN_Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTN_Update.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Update.ForeColor = System.Drawing.Color.Black;
-            this.BTN_Update.Location = new System.Drawing.Point(223, 592);
-            this.BTN_Update.Name = "BTN_Update";
-            this.BTN_Update.Size = new System.Drawing.Size(118, 35);
-            this.BTN_Update.TabIndex = 39;
-            this.BTN_Update.Text = "Update";
-            this.BTN_Update.UseVisualStyleBackColor = false;
-            this.BTN_Update.Click += new System.EventHandler(this.BTN_Update_Click);
-            // 
-            // BTN_Close
-            // 
-            this.BTN_Close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
-            this.BTN_Close.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.BTN_Close.FlatAppearance.BorderSize = 0;
-            this.BTN_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTN_Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Close.ForeColor = System.Drawing.Color.Black;
-            this.BTN_Close.Location = new System.Drawing.Point(366, 592);
-            this.BTN_Close.Name = "BTN_Close";
-            this.BTN_Close.Size = new System.Drawing.Size(118, 35);
-            this.BTN_Close.TabIndex = 38;
-            this.BTN_Close.Text = "Close";
-            this.BTN_Close.UseVisualStyleBackColor = false;
             // 
             // DTP_ReturnDate
             // 
@@ -232,20 +202,50 @@
             this.LBL_Id.TabIndex = 67;
             this.LBL_Id.Text = "ID";
             // 
+            // BTN_Delete
+            // 
+            this.BTN_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
+            this.BTN_Delete.FlatAppearance.BorderSize = 0;
+            this.BTN_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Delete.ForeColor = System.Drawing.Color.Black;
+            this.BTN_Delete.Location = new System.Drawing.Point(366, 592);
+            this.BTN_Delete.Name = "BTN_Delete";
+            this.BTN_Delete.Size = new System.Drawing.Size(118, 35);
+            this.BTN_Delete.TabIndex = 38;
+            this.BTN_Delete.Text = "Delete";
+            this.BTN_Delete.UseVisualStyleBackColor = false;
+            this.BTN_Delete.Click += new System.EventHandler(this.BTN_Delete_Click);
+            // 
+            // BTN_Update
+            // 
+            this.BTN_Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
+            this.BTN_Update.FlatAppearance.BorderSize = 0;
+            this.BTN_Update.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN_Update.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Update.ForeColor = System.Drawing.Color.Black;
+            this.BTN_Update.Location = new System.Drawing.Point(225, 592);
+            this.BTN_Update.Name = "BTN_Update";
+            this.BTN_Update.Size = new System.Drawing.Size(118, 35);
+            this.BTN_Update.TabIndex = 69;
+            this.BTN_Update.Text = "Update";
+            this.BTN_Update.UseVisualStyleBackColor = false;
+            this.BTN_Update.Click += new System.EventHandler(this.BTN_Update_Click);
+            // 
             // FRM_EditStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(522, 661);
+            this.Controls.Add(this.BTN_Update);
             this.Controls.Add(this.TXTBX_Id);
             this.Controls.Add(this.LBL_Id);
             this.Controls.Add(this.TXTBX_Book);
             this.Controls.Add(this.LBL_Book);
             this.Controls.Add(this.TXTBX_PhoneNumber);
             this.Controls.Add(this.LBL_Number);
-            this.Controls.Add(this.BTN_Update);
-            this.Controls.Add(this.BTN_Close);
+            this.Controls.Add(this.BTN_Delete);
             this.Controls.Add(this.DTP_ReturnDate);
             this.Controls.Add(this.LBL_ReturnDate);
             this.Controls.Add(this.TXTBX_LastName);
@@ -254,14 +254,14 @@
             this.Controls.Add(this.TXTBX_Email);
             this.Controls.Add(this.LBL_BookInfo);
             this.Controls.Add(this.LBL_Email);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FRM_EditStudent";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FRM_EditStudent";
+            this.Text = "Librarian - Student Editor";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -273,8 +273,6 @@
         private System.Windows.Forms.Label LBL_Book;
         private System.Windows.Forms.TextBox TXTBX_PhoneNumber;
         private System.Windows.Forms.Label LBL_Number;
-        private System.Windows.Forms.Button BTN_Update;
-        private System.Windows.Forms.Button BTN_Close;
         private System.Windows.Forms.DateTimePicker DTP_ReturnDate;
         private System.Windows.Forms.Label LBL_ReturnDate;
         private System.Windows.Forms.TextBox TXTBX_LastName;
@@ -285,5 +283,7 @@
         private System.Windows.Forms.Label LBL_Email;
         private System.Windows.Forms.TextBox TXTBX_Id;
         private System.Windows.Forms.Label LBL_Id;
+        private System.Windows.Forms.Button BTN_Delete;
+        private System.Windows.Forms.Button BTN_Update;
     }
 }

@@ -80,6 +80,40 @@ namespace ULMS_Forms.Forms.Admin
             dtBooks.Clear();
         }
 
+        private void BTN_Delete_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(TXTBX_Id.Text))
+            {
+                DialogResult dialog = MessageBox.Show($"{id} will be permanently deleted", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (dialog == DialogResult.Yes)
+                {
+                    string query = "DELETE from TBL_Books Where ID ='" + id + "'";
+
+                    SqlCommand delete = new SqlCommand(query);
+
+                    int row = dbAccess.executeQuery(delete);
+
+                    if (row == 1)
+                    {
+                        clearTXTBX();
+                        MessageBox.Show("Book has been deleted");
+                    }
+
+                }
+            }
+            else MessageBox.Show("Please enter an ID");
+        }
+
+        private void clearTXTBX()
+        {
+            TXTBX_Id.Text = string.Empty;
+            TXTBX_FirstName.Text = string.Empty;
+            TXTBX_LastName.Text = string.Empty;
+            CBX_Genre.Text = string.Empty;
+            TXTBX_Price.Text = string.Empty;
+        }
+        
         // Checks if textboxes are filled
         private bool IsValid()  
         {

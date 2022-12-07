@@ -87,6 +87,42 @@ namespace ULMS_Forms.Forms.Admin
             dtUsers.Clear();
         }
 
+        private void BTN_Delete_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(TXTBX_Id.Text))
+            {
+                DialogResult dialog = MessageBox.Show($"{id} will be permanently deleted", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (dialog == DialogResult.Yes)
+                {
+                    string query = "DELETE from TBL_Users Where ID ='" + id + "'";
+
+                    SqlCommand delete = new SqlCommand(query);
+
+                    int row = dbAccess.executeQuery(delete);
+
+                    if (row == 1)
+                    {
+                        clearTXTBX();
+                        MessageBox.Show("User has been deleted");
+                    }
+                }
+            }
+            else MessageBox.Show("Please enter an ID");
+
+        }
+
+        private void clearTXTBX()
+        {
+            TXTBX_Id.Text = string.Empty;
+            TXTBX_FirstName.Text = string.Empty;
+            TXTBX_LastName.Text = string.Empty;
+            TXTBX_UserName.Text = string.Empty;
+            TXTBX_Email.Text = string.Empty;
+            TXTBX_PhoneNumber.Text = string.Empty;
+            TXTBX_PassWord.Text = string.Empty;
+        }
+
         // Checks if textboxes are filled
         private bool IsValid()  
         {
@@ -103,5 +139,6 @@ namespace ULMS_Forms.Forms.Admin
             if (validData) return true;
             return false;
         }
+
     }
 }
