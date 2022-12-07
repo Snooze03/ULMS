@@ -15,5 +15,6 @@ A program intendted to help libraries manage their inventory, borrowed books, fe
 	- [x] Show ui corresponding to user role
 	- [x] Insert, Edit, Delete
 	- [ ] Show overdue books
+	- [ ] Email students
 	- [ ] Backup db
 
