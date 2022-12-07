@@ -21,7 +21,7 @@ namespace ULMS_Forms.Forms
             string phoneNumber = TXTBX_PhoneNumber.Text;
             string email = TXTBX_Email.Text;
             string book = TXTBX_PhoneNumber.Text;
-            DateTime returnDate = DTP_ReturnDate.Value;
+            DateTime returnDate = DTP_ReturnDate.Value.Date + DTP_ReturnTime.Value.TimeOfDay;
 
             if (IsValid())
             {
