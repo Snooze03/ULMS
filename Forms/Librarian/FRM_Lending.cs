@@ -67,6 +67,8 @@ namespace ULMS_Forms.Forms
             foreach(DataRow row in overdues.Rows)
             {
                 Console.WriteLine(row["Email"].ToString());
+
+                // Insert logic to email student
             }
 
             dbAccess.closeConn();
