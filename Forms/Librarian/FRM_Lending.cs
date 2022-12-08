@@ -1,12 +1,6 @@
 ﻿using DatabaseProject;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using ULMS_Forms.Forms.Librarian;
 
@@ -26,10 +20,28 @@ namespace ULMS_Forms.Forms
         private void FRM_Lending_Load(object sender, EventArgs e)
         {
             string query = "Select * from TBL_Students";
-
             dbAccess.readDatathroughAdapter(query, dtLending);
-
             DGV_Lending.DataSource = dtLending;
+
+            // cheks for overdue's
+            foreach(DataRow row in dtLending.Rows)
+            {
+                DateTime currentTime = DateTime.Now;
+                DateTime returnDate = (DateTime)row["ReturnDate"];
+
+                // Compares if current time is greater than return date 
+                int result = DateTime.Compare(currentTime, returnDate); 
+
+                if (result > 0)
+                {
+                    Console.WriteLine($"{row["Name"]} Overdue!");
+
+                    // Updates the datatable 
+                    string updateQuery = "Update TBL_Students SET Overdue ='" + true + "'Where ID ='" + int.Parse(row["ID"].ToString()) + "'";
+                    dbAccess.readDatathroughAdapter(updateQuery, dtLending);
+                    DGV_Lending.DataSource = dtLending;
+                }
+            }
 
             dbAccess.closeConn();
         }
