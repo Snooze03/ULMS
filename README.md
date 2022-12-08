@@ -7,7 +7,6 @@ A program intendted to help libraries manage their inventory, borrowed books, fe
     - [x] Admin Dashboard
     - [x] Show database data
 	- [x] New color scheme
-    - [ ] Search and sort 
     - [ ] Display stats in DB panel
  - **Backend**
 	- [x] Create DB

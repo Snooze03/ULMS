@@ -36,7 +36,7 @@ namespace ULMS_Forms.Forms.Librarian
             string newEmail = TXTBX_Email.Text;
             string newPhoneNumber = TXTBX_PhoneNumber.Text;
             string newBook = TXTBX_Book.Text;
-            DateTime newReturnDate = DTP_ReturnDate.Value;
+            DateTime newReturnDate = DTP_ReturnDate.Value.Date + DTP_ReturnTime.Value.TimeOfDay;
 
             if (IsValid())
             {

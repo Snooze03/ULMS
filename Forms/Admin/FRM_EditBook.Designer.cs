@@ -142,6 +142,8 @@
             "Health",
             "History",
             "Travel",
+            "Academic",
+            "Programming",
             "Other"});
             this.CBX_Genre.Location = new System.Drawing.Point(51, 360);
             this.CBX_Genre.Name = "CBX_Genre";

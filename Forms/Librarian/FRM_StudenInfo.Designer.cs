@@ -51,7 +51,7 @@
             this.BTN_Ok.FlatAppearance.BorderSize = 0;
             this.BTN_Ok.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_Ok.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Ok.ForeColor = System.Drawing.Color.White;
+            this.BTN_Ok.ForeColor = System.Drawing.Color.Black;
             this.BTN_Ok.Location = new System.Drawing.Point(284, 527);
             this.BTN_Ok.Name = "BTN_Ok";
             this.BTN_Ok.Size = new System.Drawing.Size(118, 35);
@@ -67,7 +67,7 @@
             this.BTN_Close.FlatAppearance.BorderSize = 0;
             this.BTN_Close.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Close.ForeColor = System.Drawing.Color.White;
+            this.BTN_Close.ForeColor = System.Drawing.Color.Black;
             this.BTN_Close.Location = new System.Drawing.Point(427, 527);
             this.BTN_Close.Name = "BTN_Close";
             this.BTN_Close.Size = new System.Drawing.Size(118, 35);

@@ -18,7 +18,7 @@ namespace ULMS_Forms.Forms
         private void BTN_Ok_Click(object sender, EventArgs e)
         {
             string title = TXTBX_Title.Text;
-            string authorName = TXTBX_LastName.Text + ", " + TXTBX_LastName.Text;
+            string authorName = TXTBX_LastName.Text + ", " + TXTBX_FirstName.Text;
             decimal price = decimal.Parse(TXTBX_Price.Text);
             DateTime datePublished = DTP_DatePub.Value;
 

@@ -31,7 +31,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TXTBX_Search = new System.Windows.Forms.TextBox();
-            this.CBX_Sort = new System.Windows.Forms.ComboBox();
             this.PNL_Options = new System.Windows.Forms.Panel();
             this.DGV_Inventory = new System.Windows.Forms.DataGridView();
             this.PNL_Options.SuspendLayout();
@@ -50,30 +49,10 @@
             this.TXTBX_Search.TabIndex = 1;
             this.TXTBX_Search.Text = " Search";
             // 
-            // CBX_Sort
-            // 
-            this.CBX_Sort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
-            this.CBX_Sort.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CBX_Sort.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.CBX_Sort.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBX_Sort.ForeColor = System.Drawing.Color.Black;
-            this.CBX_Sort.FormattingEnabled = true;
-            this.CBX_Sort.Items.AddRange(new object[] {
-            "Ascending",
-            "Descending",
-            "Genre",
-            "Price"});
-            this.CBX_Sort.Location = new System.Drawing.Point(12, 5);
-            this.CBX_Sort.Name = "CBX_Sort";
-            this.CBX_Sort.Size = new System.Drawing.Size(115, 28);
-            this.CBX_Sort.TabIndex = 2;
-            this.CBX_Sort.Text = "  Sort";
-            // 
             // PNL_Options
             // 
             this.PNL_Options.BackColor = System.Drawing.Color.White;
             this.PNL_Options.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PNL_Options.Controls.Add(this.CBX_Sort);
             this.PNL_Options.Controls.Add(this.TXTBX_Search);
             this.PNL_Options.Location = new System.Drawing.Point(12, 12);
             this.PNL_Options.Name = "PNL_Options";
@@ -133,7 +112,6 @@
 
         #endregion
         private System.Windows.Forms.TextBox TXTBX_Search;
-        private System.Windows.Forms.ComboBox CBX_Sort;
         private System.Windows.Forms.Panel PNL_Options;
         private System.Windows.Forms.DataGridView DGV_Inventory;
     }

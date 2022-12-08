@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PNL_Options = new System.Windows.Forms.Panel();
             this.BTN_Edit = new System.Windows.Forms.Button();
-            this.CBX_Sort = new System.Windows.Forms.ComboBox();
             this.TXTBX_Search = new System.Windows.Forms.TextBox();
             this.BTN_Add = new System.Windows.Forms.Button();
             this.DGV_Lending = new System.Windows.Forms.DataGridView();
+            this.BTN_Email = new System.Windows.Forms.Button();
             this.PNL_Options.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Lending)).BeginInit();
             this.SuspendLayout();
@@ -44,8 +44,8 @@
             // 
             this.PNL_Options.BackColor = System.Drawing.Color.White;
             this.PNL_Options.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PNL_Options.Controls.Add(this.BTN_Email);
             this.PNL_Options.Controls.Add(this.BTN_Edit);
-            this.PNL_Options.Controls.Add(this.CBX_Sort);
             this.PNL_Options.Controls.Add(this.TXTBX_Search);
             this.PNL_Options.Controls.Add(this.BTN_Add);
             this.PNL_Options.Location = new System.Drawing.Point(12, 12);
@@ -68,25 +68,6 @@
             this.BTN_Edit.Text = "Edit";
             this.BTN_Edit.UseVisualStyleBackColor = false;
             this.BTN_Edit.Click += new System.EventHandler(this.BTN_Edit_Click);
-            // 
-            // CBX_Sort
-            // 
-            this.CBX_Sort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
-            this.CBX_Sort.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CBX_Sort.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.CBX_Sort.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBX_Sort.ForeColor = System.Drawing.Color.Black;
-            this.CBX_Sort.FormattingEnabled = true;
-            this.CBX_Sort.Items.AddRange(new object[] {
-            "Ascending",
-            "Descending",
-            "Genre",
-            "Price"});
-            this.CBX_Sort.Location = new System.Drawing.Point(200, 6);
-            this.CBX_Sort.Name = "CBX_Sort";
-            this.CBX_Sort.Size = new System.Drawing.Size(115, 28);
-            this.CBX_Sort.TabIndex = 3;
-            this.CBX_Sort.Text = "  Sort";
             // 
             // TXTBX_Search
             // 
@@ -121,23 +102,23 @@
             this.DGV_Lending.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.DGV_Lending.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DGV_Lending.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_Lending.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_Lending.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.DGV_Lending.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGV_Lending.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_Lending.DefaultCellStyle = dataGridViewCellStyle4;
             this.DGV_Lending.Location = new System.Drawing.Point(12, 64);
             this.DGV_Lending.Margin = new System.Windows.Forms.Padding(0);
             this.DGV_Lending.Name = "DGV_Lending";
@@ -145,6 +126,22 @@
             this.DGV_Lending.RowHeadersWidth = 10;
             this.DGV_Lending.Size = new System.Drawing.Size(941, 486);
             this.DGV_Lending.TabIndex = 9;
+            // 
+            // BTN_Email
+            // 
+            this.BTN_Email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(203)))), ((int)(((byte)(104)))));
+            this.BTN_Email.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTN_Email.FlatAppearance.BorderSize = 0;
+            this.BTN_Email.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Email.ForeColor = System.Drawing.Color.Black;
+            this.BTN_Email.Location = new System.Drawing.Point(200, 6);
+            this.BTN_Email.Name = "BTN_Email";
+            this.BTN_Email.Size = new System.Drawing.Size(80, 26);
+            this.BTN_Email.TabIndex = 6;
+            this.BTN_Email.Text = "Email";
+            this.BTN_Email.UseVisualStyleBackColor = false;
+            this.BTN_Email.Click += new System.EventHandler(this.BTN_Email_Click);
             // 
             // FRM_Lending
             // 
@@ -171,8 +168,8 @@
         private System.Windows.Forms.Panel PNL_Options;
         private System.Windows.Forms.TextBox TXTBX_Search;
         private System.Windows.Forms.Button BTN_Add;
-        private System.Windows.Forms.ComboBox CBX_Sort;
         private System.Windows.Forms.DataGridView DGV_Lending;
         private System.Windows.Forms.Button BTN_Edit;
+        private System.Windows.Forms.Button BTN_Email;
     }
 }

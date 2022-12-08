@@ -44,6 +44,7 @@
             this.LBL_Id = new System.Windows.Forms.Label();
             this.BTN_Delete = new System.Windows.Forms.Button();
             this.BTN_Update = new System.Windows.Forms.Button();
+            this.DTP_ReturnTime = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // TXTBX_Book
@@ -54,7 +55,7 @@
             this.TXTBX_Book.ForeColor = System.Drawing.Color.Black;
             this.TXTBX_Book.Location = new System.Drawing.Point(57, 439);
             this.TXTBX_Book.Name = "TXTBX_Book";
-            this.TXTBX_Book.Size = new System.Drawing.Size(448, 31);
+            this.TXTBX_Book.Size = new System.Drawing.Size(506, 31);
             this.TXTBX_Book.TabIndex = 43;
             // 
             // LBL_Book
@@ -76,7 +77,7 @@
             this.TXTBX_PhoneNumber.ForeColor = System.Drawing.Color.Black;
             this.TXTBX_PhoneNumber.Location = new System.Drawing.Point(57, 354);
             this.TXTBX_PhoneNumber.Name = "TXTBX_PhoneNumber";
-            this.TXTBX_PhoneNumber.Size = new System.Drawing.Size(448, 31);
+            this.TXTBX_PhoneNumber.Size = new System.Drawing.Size(506, 31);
             this.TXTBX_PhoneNumber.TabIndex = 41;
             // 
             // LBL_Number
@@ -99,7 +100,7 @@
             this.DTP_ReturnDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DTP_ReturnDate.Location = new System.Drawing.Point(57, 532);
             this.DTP_ReturnDate.Name = "DTP_ReturnDate";
-            this.DTP_ReturnDate.Size = new System.Drawing.Size(448, 31);
+            this.DTP_ReturnDate.Size = new System.Drawing.Size(359, 31);
             this.DTP_ReturnDate.TabIndex = 37;
             // 
             // LBL_ReturnDate
@@ -119,9 +120,9 @@
             this.TXTBX_LastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TXTBX_LastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TXTBX_LastName.ForeColor = System.Drawing.Color.Black;
-            this.TXTBX_LastName.Location = new System.Drawing.Point(270, 195);
+            this.TXTBX_LastName.Location = new System.Drawing.Point(304, 195);
             this.TXTBX_LastName.Name = "TXTBX_LastName";
-            this.TXTBX_LastName.Size = new System.Drawing.Size(235, 31);
+            this.TXTBX_LastName.Size = new System.Drawing.Size(259, 31);
             this.TXTBX_LastName.TabIndex = 35;
             // 
             // TXTBX_FirstName
@@ -132,7 +133,7 @@
             this.TXTBX_FirstName.ForeColor = System.Drawing.Color.Black;
             this.TXTBX_FirstName.Location = new System.Drawing.Point(57, 195);
             this.TXTBX_FirstName.Name = "TXTBX_FirstName";
-            this.TXTBX_FirstName.Size = new System.Drawing.Size(198, 31);
+            this.TXTBX_FirstName.Size = new System.Drawing.Size(225, 31);
             this.TXTBX_FirstName.TabIndex = 34;
             // 
             // LBL_Name
@@ -154,7 +155,7 @@
             this.TXTBX_Email.ForeColor = System.Drawing.Color.Black;
             this.TXTBX_Email.Location = new System.Drawing.Point(57, 270);
             this.TXTBX_Email.Name = "TXTBX_Email";
-            this.TXTBX_Email.Size = new System.Drawing.Size(448, 31);
+            this.TXTBX_Email.Size = new System.Drawing.Size(506, 31);
             this.TXTBX_Email.TabIndex = 32;
             // 
             // LBL_BookInfo
@@ -209,7 +210,7 @@
             this.BTN_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_Delete.ForeColor = System.Drawing.Color.Black;
-            this.BTN_Delete.Location = new System.Drawing.Point(387, 591);
+            this.BTN_Delete.Location = new System.Drawing.Point(445, 588);
             this.BTN_Delete.Name = "BTN_Delete";
             this.BTN_Delete.Size = new System.Drawing.Size(118, 35);
             this.BTN_Delete.TabIndex = 38;
@@ -224,7 +225,7 @@
             this.BTN_Update.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN_Update.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_Update.ForeColor = System.Drawing.Color.Black;
-            this.BTN_Update.Location = new System.Drawing.Point(246, 591);
+            this.BTN_Update.Location = new System.Drawing.Point(304, 588);
             this.BTN_Update.Name = "BTN_Update";
             this.BTN_Update.Size = new System.Drawing.Size(118, 35);
             this.BTN_Update.TabIndex = 69;
@@ -232,12 +233,27 @@
             this.BTN_Update.UseVisualStyleBackColor = false;
             this.BTN_Update.Click += new System.EventHandler(this.BTN_Update_Click);
             // 
+            // DTP_ReturnTime
+            // 
+            this.DTP_ReturnTime.CalendarForeColor = System.Drawing.Color.White;
+            this.DTP_ReturnTime.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(87)))), ((int)(((byte)(109)))));
+            this.DTP_ReturnTime.CalendarTitleForeColor = System.Drawing.Color.White;
+            this.DTP_ReturnTime.CustomFormat = "hh:mm tt";
+            this.DTP_ReturnTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DTP_ReturnTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DTP_ReturnTime.Location = new System.Drawing.Point(438, 532);
+            this.DTP_ReturnTime.Name = "DTP_ReturnTime";
+            this.DTP_ReturnTime.ShowUpDown = true;
+            this.DTP_ReturnTime.Size = new System.Drawing.Size(125, 31);
+            this.DTP_ReturnTime.TabIndex = 70;
+            // 
             // FRM_EditStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(561, 653);
+            this.ClientSize = new System.Drawing.Size(612, 653);
+            this.Controls.Add(this.DTP_ReturnTime);
             this.Controls.Add(this.BTN_Update);
             this.Controls.Add(this.TXTBX_Id);
             this.Controls.Add(this.LBL_Id);
@@ -285,5 +301,6 @@
         private System.Windows.Forms.Label LBL_Id;
         private System.Windows.Forms.Button BTN_Delete;
         private System.Windows.Forms.Button BTN_Update;
+        private System.Windows.Forms.DateTimePicker DTP_ReturnTime;
     }
 }

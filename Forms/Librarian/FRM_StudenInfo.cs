@@ -21,17 +21,19 @@ namespace ULMS_Forms.Forms
             string phoneNumber = TXTBX_PhoneNumber.Text;
             string email = TXTBX_Email.Text;
             string book = TXTBX_PhoneNumber.Text;
-            DateTime returnDate = DTP_ReturnDate.Value.Date + DTP_ReturnTime.Value.TimeOfDay;
+            DateTime returnDate = DTP_ReturnDate.Value+ DTP_ReturnTime.Value.TimeOfDay;
+            bool isOverdue = false;
 
             if (IsValid())
             {
-                SqlCommand insertCommand = new SqlCommand("insert into TBL_Students(Name, Email, PhoneNumber, Book, ReturnDate) values(@fullName, @email, @phoneNumber, @book, @returnDate)");
+                SqlCommand insertCommand = new SqlCommand("insert into TBL_Students(Name, Email, PhoneNumber, Book, ReturnDate, Overdue) values(@fullName, @email, @phoneNumber, @book, @returnDate, @isOverdue)");
 
                 insertCommand.Parameters.AddWithValue("@fullName", fullName);
                 insertCommand.Parameters.AddWithValue("@email", email);
                 insertCommand.Parameters.AddWithValue("@phoneNumber", phoneNumber);
                 insertCommand.Parameters.AddWithValue("@book", book);
                 insertCommand.Parameters.AddWithValue("@returnDate", returnDate);
+                insertCommand.Parameters.AddWithValue("@isOverdue", isOverdue);
 
                 int row = dbAccess.executeQuery(insertCommand);
 

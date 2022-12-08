@@ -16,6 +16,7 @@ namespace ULMS_Forms.Forms
     {
         private DBAccess dbAccess = new DBAccess();
         private DataTable dtLending = new DataTable();
+        private DataTable overdues = new DataTable();
 
         public FRM_Lending()
         {
@@ -29,6 +30,7 @@ namespace ULMS_Forms.Forms
             dbAccess.readDatathroughAdapter(query, dtLending);
 
             DGV_Lending.DataSource = dtLending;
+
             dbAccess.closeConn();
         }
 
@@ -44,5 +46,18 @@ namespace ULMS_Forms.Forms
             editStudent.ShowDialog();
         }
 
+        private void BTN_Email_Click(object sender, EventArgs e)
+        {
+            string query = "Select * from TBL_Students Where Overdue ='" + true + "'";
+
+            dbAccess.readDatathroughAdapter(query, overdues);
+
+            foreach(DataRow row in overdues.Rows)
+            {
+                Console.WriteLine(row["Email"].ToString());
+            }
+
+            dbAccess.closeConn();
+        }
     }
 }
