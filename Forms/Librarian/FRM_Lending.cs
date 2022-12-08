@@ -1,7 +1,11 @@
-﻿using DatabaseProject;
-using System;
+﻿using System;
 using System.Data;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net.Mail;
+using FluentEmail.Smtp;
+using FluentEmail.Core;
+using DatabaseProject;
 using ULMS_Forms.Forms.Librarian;
 
 namespace ULMS_Forms.Forms
@@ -34,8 +38,6 @@ namespace ULMS_Forms.Forms
 
                 if (result > 0)
                 {
-                    Console.WriteLine($"{row["Name"]} Overdue!");
-
                     // Updates the datatable 
                     string updateQuery = "Update TBL_Students SET Overdue ='" + true + "'Where ID ='" + int.Parse(row["ID"].ToString()) + "'";
                     dbAccess.readDatathroughAdapter(updateQuery, dtLending);
@@ -64,14 +66,37 @@ namespace ULMS_Forms.Forms
 
             dbAccess.readDatathroughAdapter(query, overdues);
 
-            foreach(DataRow row in overdues.Rows)
-            {
-                Console.WriteLine(row["Email"].ToString());
+            foreach(DataRow row in overdues.Rows) EmailClient(row["Email"].ToString());
 
-                // Insert logic to email student
-            }
-
+            overdues.Clear();
             dbAccess.closeConn();
+        }
+
+        private async Task EmailClient(string emailAddress)
+        {
+
+            DialogResult dialog = MessageBox.Show("Send email to students with overdue's?", "Send", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (dialog == DialogResult.Yes)
+            {
+                var sender = new SmtpSender(() => new SmtpClient("localhost")
+                {
+                    // disable for testing, enable for production
+                    EnableSsl = false,
+                    DeliveryMethod = SmtpDeliveryMethod.Network,
+                    Port = 25,
+                }) ;
+
+                Email.DefaultSender = sender;
+                var email = await Email
+                    .From("baayjohnzeus@gmail.com")
+                    .To(emailAddress, "ULMS")
+                    .Subject("Overdue book")
+                    .Body("Please return the the book this day.\nThank you.")
+                    .SendAsync();
+
+                MessageBox.Show("Email has been sent successfully!");
+            }
         }
     }
 }
