@@ -7,13 +7,13 @@ A program intendted to help libraries manage their inventory, borrowed books, fe
     - [x] Admin Dashboard
     - [x] Show database data
 	- [x] New color scheme
-    - [ ] Display stats in DB panel
+    - [x] Display stats in DB panel
  - **Backend**
 	- [x] Create DB
 	- [x] Connect DB to Program
 	- [x] Show ui corresponding to user role
 	- [x] Insert, Edit, Delete
-	- [ ] Show overdue books
+	- [x] Show overdue books
 	- [ ] Email students
 	- [ ] Backup db
 
